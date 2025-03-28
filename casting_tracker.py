@@ -149,31 +149,35 @@ os.makedirs(output_dir, exist_ok=True)
 
 today = datetime.now().strftime("%Y-%m-%d")
 output_html_path = f"{output_dir}/casting_report_{today}.html"
+latest_html_path = f"{output_dir}/latest_casting_report.html"
 
 # Write directly to HTML
-with open(output_html_path, "w") as html_file:
-    html_file.write("""
+html_template = f"""
 <!DOCTYPE html>
 <html lang=\"en\">
 <head>
     <meta charset=\"UTF-8\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Casting Report</title>
+    <title>Daily Casting Report</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }
-        h1 { font-size: 2rem; color: #222; }
-        h2 { font-size: 1.25rem; color: #444; margin-top: 2rem; }
-        .block { padding: 1rem; margin-bottom: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .block pre { white-space: pre-wrap; font-family: inherit; }
+        body {{ font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }}
+        h1 {{ font-size: 2rem; color: #222; }}
+        h2 {{ font-size: 1.25rem; color: #444; margin-top: 2rem; }}
+        .block {{ padding: 1rem; margin-bottom: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
+        .block pre {{ white-space: pre-wrap; font-family: inherit; }}
     </style>
 </head>
 <body>
-    <h1>Daily Casting Report – {}</h1>
-""".format(today))
+    <h1>Daily Casting Report – {today}</h1>
+"""
 
-    for result in results:
-        html_file.write(f"<div class='block'><pre>{result}</pre></div>\n")
-
-    html_file.write("</body></html>")
+# Write both dated and latest HTML reports
+for path in [output_html_path, latest_html_path]:
+    with open(path, "w") as html_file:
+        html_file.write(html_template)
+        for result in results:
+            html_file.write(f"<div class='block'><pre>{result}</pre></div>\n")
+        html_file.write("</body></html>")
 
 print(f"✅ HTML report generated: {output_html_path}")
+print(f"✅ Latest HTML report updated: {latest_html_path}")
