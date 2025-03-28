@@ -41,15 +41,18 @@ rss_feeds = [
     "https://ew.com/tag/casting/feed/"
 ]
 
-# Define Tier A and Tier B actors (updated list emphasizing household names)
+# Define Tier A and Tier B actors (updated list emphasizing true household names)
 A_TIER_ACTORS = [
-    "Tom Hanks", "Will Ferrell", "Regina Hall", "Adam Driver", "Leonardo DiCaprio", "Brad Pitt",
-    "Jennifer Lawrence", "Scarlett Johansson", "Zac Efron", "Sandra Bullock", "Denzel Washington"
+    "Tom Cruise", "Tom Hanks", "Will Ferrell", "Regina Hall", "Leonardo DiCaprio", "Brad Pitt",
+    "Jennifer Lawrence", "Scarlett Johansson", "Zac Efron", "Sandra Bullock", "Denzel Washington",
+    "Ryan Gosling", "Emma Stone", "George Clooney", "Julia Roberts", "Natalie Portman", "Chris Hemsworth",
+    "Anne Hathaway", "Matt Damon", "Robert Downey Jr."
 ]
 
 B_TIER_ACTORS = [
     "Kieran Culkin", "Jasmine Cephas Jones", "Kyle Chandler", "Garret Dillahunt",
-    "Vincent D'Onofrio", "James Van Der Beek", "Evan Peters", "Anya Taylor-Joy"
+    "Vincent D'Onofrio", "James Van Der Beek", "Evan Peters", "Anya Taylor-Joy",
+    "William Moseley", "Mark Valley", "Ted Danson"
 ]
 
 # Parse feeds and collect unique entries
