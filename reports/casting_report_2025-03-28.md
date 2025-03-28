@@ -1,8 +1,8 @@
 # Daily Casting Report
 
 ## ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
-A-TIER ACTORS: Ted Danson, Mary Steenburgen.
-B-TIER ACTORS: .
+A-TIER ACTORS: Mary Steenburgen.
+B-TIER ACTORS: Ted Danson.
 Posted Date: 2025-03-28 17:00:00.
 
 ## ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
@@ -21,8 +21,8 @@ B-TIER ACTORS: Lili Taylor, Matthew Lillard.
 Posted Date: 2025-03-27 19:49:42.
 
 ## ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: .
-B-TIER ACTORS: James Van Der Beek, Drew Ray Tanner, Charlie Gillespie.
+A-TIER ACTORS: James Van Der Beek.
+B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie.
 Posted Date: 2025-03-27 19:15:48.
 
 ## ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
@@ -46,8 +46,8 @@ B-TIER ACTORS: Mishael Morgan.
 Posted Date: 2025-03-27 16:25:21.
 
 ## ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
-A-TIER ACTORS: William Moseley, Mark Valley.
-B-TIER ACTORS: Arienne Mandi.
+A-TIER ACTORS: .
+B-TIER ACTORS: Arienne Mandi, William Moseley, Mark Valley.
 Posted Date: 2025-03-27 16:10:00.
 
 ## ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
