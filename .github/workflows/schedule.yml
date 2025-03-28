@@ -3,7 +3,7 @@ name: Run Casting Tracker Hourly
 on:
   schedule:
     - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:     # Optional: allows you to trigger manually
+  workflow_dispatch:     # Optional manual run
 
 jobs:
   run-casting-tracker:
@@ -26,3 +26,11 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: python casting_tracker.py
+
+    - name: Commit & Push Report
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add casting_report_*.md
+        git commit -m "Auto: Add casting report"
+        git push
