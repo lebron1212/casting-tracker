@@ -55,8 +55,7 @@ for feed_url in rss_feeds:
         if title not in seen_titles:
             seen_titles.add(title)
             articles.append({"title": title, "link": link, "summary": summary})
-            
-# GPT prompt logic
+
 # GPT prompt logic
 if TEST_MODE:
     prompt_template = """
@@ -70,6 +69,8 @@ You are to list the actors, the project title, and generate a short industry tag
 
 List **all Tier A actors first**! If there are Tier A actors, list only those and **no others**. If there are no Tier A actors, you may include **1 Tier B actor** with the highest fame score, but **do not include more than 1 Tier B actor** in any listing. There should **never be more than 2 actors listed**, unless all of them are **Tier A**.
 
+DO NOT list the **fame scores** for any actors in the output.
+
 Format the result as:
 
 ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
@@ -80,7 +81,7 @@ Rules:
 - Project title in ALL CAPS.
 - Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
 - End the entire line with a period.
-- No commentary, labels, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
+- No commentary, labels, fame scores, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
 
 ---
 
@@ -109,7 +110,7 @@ Rules:
 - Project title in ALL CAPS.
 - Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
 - End the entire line with a period.
-- No commentary, labels, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
+- No commentary, labels, fame scores, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
 
 ---
 
@@ -133,8 +134,38 @@ for article in articles:
             timeout=30
         )
         reply = response.choices[0].message.content.strip()
+        
+        # Post-process the GPT response to ensure proper formatting
         if not reply.startswith("SKIP"):
-            results.append(f"{reply} – [Source]({article['link']})")
+            # Filter out fame scores and ensure only valid actors are included
+            actors_start = reply.find("ATTACHED:") + len("ATTACHED: ")
+            actors_end = reply.find(".", actors_start)
+            actors_str = reply[actors_start:actors_end].strip()
+            actors_list = [actor.strip() for actor in actors_str.split(",")]
+            
+            # Define Tier A and Tier B actors (example list)
+            A_TIER_ACTORS = ["Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
+            B_TIER_ACTORS = ["Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
+
+            # Filter out Tier C actors and ensure only Tier A or Tier B actors are included
+            valid_actors = [actor for actor in actors_list if actor in A_TIER_ACTORS or actor in B_TIER_ACTORS]
+
+            # If there are more than 2 A-tier actors, list them all, else list up to 2
+            a_tier_actors = [actor for actor in valid_actors if actor in A_TIER_ACTORS]
+            if len(a_tier_actors) > 2:
+                filtered_actors = a_tier_actors
+            else:
+                filtered_actors = a_tier_actors[:2]  # Limit to 2 if more than 2 A-tier actors
+
+            # Ensure we only have 1 B-tier actor, but if no A-tier actors exist, include the highest ranked B-tier actor
+            if len(a_tier_actors) == 0 and len(filtered_actors) < 2:
+                b_tier_actors = [actor for actor in valid_actors if actor in B_TIER_ACTORS]
+                filtered_actors.append(b_tier_actors[0] if b_tier_actors else "")
+
+            # Rebuild the final response
+            filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {reply[actors_end:].strip()}"
+
+            results.append(f"{filtered_reply} – [Source]({article['link']})")
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
