@@ -1,8 +1,8 @@
 # Daily Casting Report
 
 ## ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
-A-TIER ACTORS: Ted Danson.
-B-TIER ACTORS: Mary Steenburgen.
+A-TIER ACTORS: Ted Danson, Mary Steenburgen.
+B-TIER ACTORS: .
 Posted Date: 2025-03-28 17:00:00.
 
 ## ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
@@ -21,8 +21,8 @@ B-TIER ACTORS: Lili Taylor, Matthew Lillard.
 Posted Date: 2025-03-27 19:49:42.
 
 ## ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: James Van Der Beek.
-B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie.
+A-TIER ACTORS: .
+B-TIER ACTORS: James Van Der Beek, Drew Ray Tanner, Charlie Gillespie.
 Posted Date: 2025-03-27 19:15:48.
 
 ## ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
@@ -31,8 +31,8 @@ B-TIER ACTORS: Chandler Kinney, Gabrielle Policano, Jacob Moskovitz, Lexi Minetr
 Posted Date: 2025-03-27 19:00:00.
 
 ## ARTICLE TITLE: Billy Eichner Joins Will Ferrell And Zac Efron In Comedy From Nicholas Stoller And Amazon MGM Studios.
-A-TIER ACTORS: Will Ferrell.
-B-TIER ACTORS: Zac Efron, Regina Hall.
+A-TIER ACTORS: Will Ferrell, Zac Efron, Regina Hall.
+B-TIER ACTORS: Billy Eichner, Jimmy Tatro.
 Posted Date: 2025-03-27 18:00:00.
 
 ## ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
@@ -50,10 +50,13 @@ A-TIER ACTORS: William Moseley, Mark Valley.
 B-TIER ACTORS: Arienne Mandi.
 Posted Date: 2025-03-27 16:10:00.
 
-## In order to provide the correct tiers for the actors, I would need their fame scores. Could you provide the fame scores for Felicity Huffman, Olga Petsa, and Eric Johnson?
+## ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
+A-TIER ACTORS: Felicity Huffman.
+B-TIER ACTORS: Olga Petsa, Eric Johnson.
+Posted Date: 2025-03-27 16:00:00.
 
 ## ARTICLE TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
-A-TIER ACTORS: None.
+A-TIER ACTORS: .
 B-TIER ACTORS: Halle Bailey, Regé-Jean Page.
 Posted Date: 2025-03-27 16:00:00.
 
