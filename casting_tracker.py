@@ -55,25 +55,32 @@ for feed_url in rss_feeds:
         if title not in seen_titles:
             seen_titles.add(title)
             articles.append({"title": title, "link": link, "summary": summary})
-
-# GPT prompt logic
+            
 # GPT prompt logic
 if TEST_MODE:
     prompt_template = """
-You are a casting tracker. Your job is to extract casting attachments for **Tier A actors** and **at most one Tier B actor** per project.
+You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
+
+- **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
+- **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
+- **Tier C actors** and below: Fame score lower than **6.4** (lesser-known, emerging actors)
+
+**Override Rule**: If the project involves a major IP (big franchise, famous director, or highly anticipated series), include actors regardless of their fame score.
+
+If a project has **more than 2 A-tier actors**, list **all of them**. For a project with **1 or 2 A-tier actors**, list only those A-tier actors. You may include **at most one B-tier actor**, but only for major IPs.
 
 Format the result as:
 
 ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
 
 Rules:
-- Only include **Tier A actors** and **at most one Tier B actor**
-- Skip unknown or Tier C actors
-- End actor list with a period
-- Project title in ALL CAPS
-- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g. SQL TO $300M BO HIT, MCU PH4)
-- End the entire line with a period
-- No commentary, labels, or source links
+- Only include **Tier A actors** and **Tier B actors** unless the project involves a major IP.
+- If the project has more than 2 A-tier actors, list **all** A-tier actors.
+- End actor list with a period.
+- Project title in ALL CAPS.
+- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
+- End the entire line with a period.
+- No commentary, labels, or source links.
 
 ---
 
@@ -82,22 +89,28 @@ Summary: {summary}
 """
 else:
     prompt_template = """
-You are a casting tracker. Only return projects that feature:
-- Tier A actors and **at most one Tier B actor**
-- Lesser-known actors in major IP (franchise, bestseller, streamer, top director)
+You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
+
+- **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
+- **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
+- **Tier C actors** and below: Fame score lower than **6.4** (lesser-known, emerging actors)
+
+**Override Rule**: If the project involves a major IP (big franchise, famous director, or highly anticipated series), include actors regardless of their fame score.
+
+If a project has **more than 2 A-tier actors**, list **all of them**. For a project with **1 or 2 A-tier actors**, list only those A-tier actors. You may include **at most one B-tier actor**, but only for major IPs.
 
 Return only in this format:
 
 ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
 
 Rules:
-- Only include **Tier A actors** and **at most one Tier B actor**
-- Skip unknown or Tier C actors
-- End actor list with a period
-- Project title in ALL CAPS
-- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g. SQL TO $300M BO HIT, MCU PH4)
-- End the entire line with a period
-- No commentary, labels, or source links
+- Only include **Tier A actors** and **Tier B actors** unless the project involves a major IP.
+- If the project has more than 2 A-tier actors, list **all** A-tier actors.
+- End actor list with a period.
+- Project title in ALL CAPS.
+- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
+- End the entire line with a period.
+- No commentary, labels, or source links.
 
 ---
 
