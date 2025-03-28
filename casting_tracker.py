@@ -41,9 +41,16 @@ rss_feeds = [
     "https://ew.com/tag/casting/feed/"
 ]
 
-# Define Tier A and Tier B actors (example list)
-A_TIER_ACTORS = ["Adam Driver", "Tom Hanks", "Will Ferrell", "Regina Hall"]
-B_TIER_ACTORS = ["Kieran Culkin", "Jasmine Cephas Jones", "Kyle Chandler", "Garret Dillahunt"]
+# Define Tier A and Tier B actors (updated list emphasizing household names)
+A_TIER_ACTORS = [
+    "Tom Hanks", "Will Ferrell", "Regina Hall", "Adam Driver", "Leonardo DiCaprio", "Brad Pitt",
+    "Jennifer Lawrence", "Scarlett Johansson", "Zac Efron", "Sandra Bullock", "Denzel Washington"
+]
+
+B_TIER_ACTORS = [
+    "Kieran Culkin", "Jasmine Cephas Jones", "Kyle Chandler", "Garret Dillahunt",
+    "Vincent D'Onofrio", "James Van Der Beek", "Evan Peters", "Anya Taylor-Joy"
+]
 
 # Parse feeds and collect unique entries
 seen_titles = set()
@@ -82,7 +89,7 @@ def get_readable_published_time(published_parsed):
 prompt_template = """
 You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
 
-- **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
+- **Tier A actors**: Fame score of at least **8** (household names, long career, prestigious awards, high box office recognition)
 - **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
 - **Tier C actors**: Fame score lower than **6.4** (lesser-known, emerging actors) – **DO NOT include these actors under any circumstances!**
 
