@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install feedparser python-dotenv openai
+   
+      - name: Install dependencies
+        run: |
+          pip install feedparser python-dotenv openai httpx
 
       - name: Run Script
         env:
