@@ -114,8 +114,8 @@ for article in articles:
             actors_list = [actor.strip() for actor in actors_str.split(",")]
 
             # Define Tier A and Tier B actors (example list)
-            A_TIER_ACTORS = ["Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
-            B_TIER_ACTORS = ["Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
+            A_TIER_ACTORS = ["Leonardo DiCaprio", "Tom Hanks", "Tom Cruise", "Adam Driver", "Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
+            B_TIER_ACTORS = ["Kieran Culkin", "Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
 
             # Filter out Tier C actors and ensure only Tier A or Tier B actors are included
             valid_actors = [actor for actor in actors_list if actor in A_TIER_ACTORS or actor in B_TIER_ACTORS]
