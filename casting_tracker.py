@@ -1,14 +1,10 @@
 TEST_MODE = True  # Set to False for normal filtering
-# Test Commit
+
 import feedparser
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from datetime import datetime
-
-import os
-from dotenv import load_dotenv
-from openai import OpenAI
 
 # Load environment variables from .env
 load_dotenv()
@@ -54,7 +50,6 @@ Return the result in this format ONLY:
 ATTACHED: **[Actor Name]**, [Project Title] ([<40 character descriptor])
 
 If not relevant, reply with: SKIP
-""
 
 ---
 
