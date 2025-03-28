@@ -3,34 +3,34 @@ name: Run Casting Tracker Hourly
 on:
   schedule:
     - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:     # Optional manual run
+  workflow_dispatch:
 
 jobs:
   run-casting-tracker:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
 
-    - name: Install dependencies
-      run: |
-        pip install feedparser openai python-dotenv
+      - name: Install dependencies
+        run: |
+          pip install feedparser python-dotenv openai
 
-    - name: Run Script
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      run: python casting_tracker.py
+      - name: Run Script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python casting_tracker.py
 
-    - name: Commit & Push Report
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add reports/
-        git commit -m "Auto: Add casting report" || true
-        git push || true
+      - name: Commit & Push Report
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add reports/
+          git commit -m "Auto: Add casting report" || true
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/lebron1212/casting-tracker.git || true
