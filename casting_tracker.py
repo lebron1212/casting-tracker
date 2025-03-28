@@ -5,10 +5,15 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime
 
-# Load OpenAI API key
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+
+# Load environment variables from .env
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI()
+
+# Initialize OpenAI client with API key
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # RSS feeds (casting-specific)
 rss_feeds = [
