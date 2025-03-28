@@ -134,15 +134,19 @@ for article in articles:
             timeout=30
         )
         reply = response.choices[0].message.content.strip()
-        
+
         # Post-process the GPT response to ensure proper formatting
         if not reply.startswith("SKIP"):
-            # Filter out fame scores and ensure only valid actors are included
+            # Extract actor names and split them into a list
             actors_start = reply.find("ATTACHED:") + len("ATTACHED: ")
             actors_end = reply.find(".", actors_start)
             actors_str = reply[actors_start:actors_end].strip()
+
+            if not actors_str:
+                actors_str = "UNKNOWN ACTORS"  # Set a default if actors list is empty
+
             actors_list = [actor.strip() for actor in actors_str.split(",")]
-            
+
             # Define Tier A and Tier B actors (example list)
             A_TIER_ACTORS = ["Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
             B_TIER_ACTORS = ["Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
@@ -162,8 +166,9 @@ for article in articles:
                 b_tier_actors = [actor for actor in valid_actors if actor in B_TIER_ACTORS]
                 filtered_actors.append(b_tier_actors[0] if b_tier_actors else "")
 
-            # Rebuild the final response
-            filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {reply[actors_end:].strip()}"
+            # Format project title properly
+            title_str = article["title"].upper()  # Ensure title is in uppercase
+            filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {title_str} ({article['summary'][:27].upper()})"
 
             results.append(f"{filtered_reply} – [Source]({article['link']})")
     except Exception as e:
