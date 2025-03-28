@@ -180,7 +180,9 @@ for article in articles:
         
         # Process the GPT response
         if reply:
-            results.append(reply)
+            # Ensure that we clean the result, removing repeated titles and irrelevant text
+            clean_result = re.sub(r"(Project Title:.*?)(\s+Project Title:)", r"\1", reply)  # Remove repeated titles
+            results.append(clean_result)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
