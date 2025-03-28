@@ -34,13 +34,20 @@ for feed_url in rss_feeds:
             articles.append({"title": title, "link": link, "summary": summary})
 
 # Prompt for filtering + formatting
-prompt_template = """
+if TEST_MODE:
+    prompt_template = """
+Extract the actor name(s), project title, and create a 40-character industry-style descriptor. Format your output as:
+ATTACHED: **[Actor Name]**, [Project Title] ([Descriptor])
+"""
+else:
+    prompt_template = """
 Evaluate the following casting article. If it includes a Tier A or B actor, or a lesser-known actor in a major project (franchise, major director, major streamer), include it.
 
 Return the result in this format ONLY:
 ATTACHED: **[Actor Name]**, [Project Title] ([<40 character descriptor])
 
 If not relevant, reply with: SKIP
+""
 
 ---
 
