@@ -1,6 +1,6 @@
 TEST_MODE = True  # Set to False for normal filtering
 import feedparser
-import openai
+from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from datetime import datetime
@@ -8,6 +8,7 @@ from datetime import datetime
 # Load OpenAI API key
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI()
 
 # RSS feeds (casting-specific)
 rss_feeds = [
@@ -60,7 +61,7 @@ results = []
 for article in articles:
     prompt = prompt_template.format(title=article['title'], summary=article['summary'])
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are an expert entertainment news analyst."},
