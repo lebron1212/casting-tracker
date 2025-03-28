@@ -1,5 +1,3 @@
-TEST_MODE = True  # Set to False for normal filtering
-
 import os
 import feedparser
 import requests
@@ -57,39 +55,7 @@ for feed_url in rss_feeds:
             articles.append({"title": title, "link": link, "summary": summary})
 
 # GPT prompt logic
-if TEST_MODE:
-    prompt_template = """
-You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
-
-- **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
-- **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
-- **Tier C actors**: Fame score lower than **6.4** (lesser-known, emerging actors) – **DO NOT include these actors under any circumstances!**
-
-You are to list the actors, the project title, and generate a short industry tag, using the following rules.
-
-List **all Tier A actors first**! If there are Tier A actors, list only those and **no others**. If there are no Tier A actors, you may include **1 Tier B actor** with the highest fame score, but **do not include more than 1 Tier B actor** in any listing. There should **never be more than 2 actors listed**, unless all of them are **Tier A**.
-
-DO NOT list the **fame scores** for any actors in the output.
-
-Format the result as:
-
-ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
-
-Rules:
-- **DO NOT include any Tier C actors**.
-- End actor list with a period.
-- Project title in ALL CAPS.
-- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
-- End the entire line with a period.
-- No commentary, labels, fame scores, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
-
----
-
-Title: {title}
-Summary: {summary}
-"""
-else:
-    prompt_template = """
+prompt_template = """
 You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
 
 - **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
