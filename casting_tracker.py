@@ -68,8 +68,6 @@ You are a casting tracker. Your job is to extract casting attachments for actors
 
 You are to list the actors, the project title, and generate a short industry tag, using the following rules.
 
-List **all Tier A actors first**! If there are Tier A actors, list only those and **no others**. If there are no Tier A actors, you may include **1 Tier B actor** with the highest fame score, but **do not include more than 1 Tier B actor** in any listing. There should **never be more than 2 actors listed**, unless all of them are **Tier A**.
-
 Return only in this format:
 
 PROJECT TITLE: {title}.
@@ -106,6 +104,18 @@ for article in articles:
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
-# Output the results (printing to console for now)
-for result in results:
-    print(result)
+# Ensure the output directory exists
+output_dir = "reports"
+os.makedirs(output_dir, exist_ok=True)
+
+# Define the output path and write the results to the HTML file
+today = datetime.now().strftime("%Y-%m-%d")
+output_path = f"{output_dir}/casting_report_{today}.html"
+
+with open(output_path, "w") as f:
+    f.write("<html><body><h1>Daily Casting Report</h1>")
+    for result in results:
+        f.write(f"<p>{result}</p>\n")
+    f.write("</body></html>")
+
+print(f"✅ Report generated: {output_path}")
