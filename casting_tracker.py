@@ -5,7 +5,6 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
 import re
-import markdown
 
 # Load environment variables from .env
 load_dotenv()
@@ -149,22 +148,32 @@ output_dir = "reports"
 os.makedirs(output_dir, exist_ok=True)
 
 today = datetime.now().strftime("%Y-%m-%d")
-output_md_path = f"{output_dir}/casting_report_{today}.md"
 output_html_path = f"{output_dir}/casting_report_{today}.html"
 
-# Write to Markdown
-with open(output_md_path, "w") as f:
-    f.write("# Daily Casting Report\n\n")
-    for result in results:
-        f.write(f"## {result}\n\n")
-
-# Convert to HTML
-with open(output_md_path, "r") as md_file:
-    md_content = md_file.read()
-    html_content = markdown.markdown(md_content)
-
+# Write directly to HTML
 with open(output_html_path, "w") as html_file:
-    html_file.write(html_content)
+    html_file.write("""
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Casting Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }
+        h1 { font-size: 2rem; color: #222; }
+        h2 { font-size: 1.25rem; color: #444; margin-top: 2rem; }
+        .block { padding: 1rem; margin-bottom: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .block pre { white-space: pre-wrap; font-family: inherit; }
+    </style>
+</head>
+<body>
+    <h1>Daily Casting Report – {}</h1>
+""".format(today))
 
-print(f"✅ Markdown report generated: {output_md_path}")
+    for result in results:
+        html_file.write(f"<div class='block'><pre>{result}</pre></div>\n")
+
+    html_file.write("</body></html>")
+
 print(f"✅ HTML report generated: {output_html_path}")
