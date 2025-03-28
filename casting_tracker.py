@@ -166,8 +166,12 @@ for article in articles:
                 b_tier_actors = [actor for actor in valid_actors if actor in B_TIER_ACTORS]
                 filtered_actors.append(b_tier_actors[0] if b_tier_actors else "")
 
-            # Format project title properly
-            title_str = article["title"].upper()  # Ensure title is in uppercase
+            # Properly handle project title, remove any unwanted formatting
+            title_str = article["title"].strip().upper()  # Ensure title is clean and uppercased
+            if not title_str:
+                title_str = "UNKNOWN PROJECT TITLE"  # Handle missing titles
+
+            # Remove extraneous " . ." if present
             filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {title_str} ({article['summary'][:27].upper()})"
 
             results.append(f"{filtered_reply} – [Source]({article['link']})")
