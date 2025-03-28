@@ -81,10 +81,22 @@ Title: {title}
 Summary: {summary}
 """
 
+# Function to extract project title from the article title
+def extract_project_title(title):
+    # Try to detect common project title keywords and split accordingly
+    keywords = ['project', 'movie', 'series', 'film', 'show', 'drama']
+    for keyword in keywords:
+        if keyword in title.lower():
+            return title.split(keyword)[0].strip()
+    return title.split(":")[0].strip()  # Default fallback (take everything before a colon)
+
 # Process each article using GPT to extract actors, project titles, and industry tags
 results = []
 
 for article in articles:
+    # Extract project title using the function
+    project_title = extract_project_title(article['title'])
+
     # Extract actors from the article title
     a_tier_actors = [actor for actor in A_TIER_ACTORS if actor in article['title']]
     b_tier_actors = [actor for actor in B_TIER_ACTORS if actor in article['title']]
@@ -94,7 +106,7 @@ for article in articles:
 
     # Format the prompt for GPT
     prompt = prompt_template.format(
-        title=article['title'],
+        title=project_title,
         summary=article['summary'],
         a_tier_actors=", ".join(a_tier_actors),
         b_tier_actors=", ".join(b_tier_actors),
