@@ -56,16 +56,24 @@ for feed_url in rss_feeds:
         link = entry.link
         summary = entry.get("summary", "")
         published = entry.get("published", "")
+        published_parsed = entry.get("published_parsed")
         if title not in seen_titles:
             seen_titles.add(title)
-            articles.append({"title": title, "link": link, "summary": summary, "published": published})
+            articles.append({
+                "title": title,
+                "link": link,
+                "summary": summary,
+                "published": published,
+                "published_parsed": published_parsed
+            })
 
 # Function to convert the published time to a readable format
-def get_readable_published_time(published_str):
+def get_readable_published_time(published_parsed):
     try:
-        parsed_time = feedparser.parse(published_str)
-        published_time = datetime(*parsed_time['published_parsed'][:6])
-        return published_time.strftime("%Y-%m-%d %H:%M:%S")
+        if published_parsed:
+            published_time = datetime(*published_parsed[:6])
+            return published_time.strftime("%Y-%m-%d %H:%M:%S")
+        return "Unknown"
     except Exception as e:
         print(f"Error parsing published date: {e}")
         return "Unknown"
@@ -95,7 +103,7 @@ Summary: {summary}
 results = []
 
 for article in articles:
-    posted_time = get_readable_published_time(article['published'])
+    posted_time = get_readable_published_time(article['published_parsed'])
 
     a_tier_actors = [actor for actor in A_TIER_ACTORS if actor in article['title'] or actor in article['summary']]
     b_tier_actors = [actor for actor in B_TIER_ACTORS if actor in article['title'] or actor in article['summary']]
