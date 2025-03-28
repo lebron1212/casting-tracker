@@ -5,6 +5,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
 import re
+import markdown
 
 # Load environment variables from .env
 load_dotenv()
@@ -41,18 +42,18 @@ rss_feeds = [
     "https://ew.com/tag/casting/feed/"
 ]
 
-# Define Tier A and Tier B actors (updated list emphasizing true household names)
+# Define Tier A and Tier B actors (refined household names only)
 A_TIER_ACTORS = [
-    "Tom Cruise", "Tom Hanks", "Will Ferrell", "Regina Hall", "Leonardo DiCaprio", "Brad Pitt",
+    "Tom Cruise", "Tom Hanks", "Will Ferrell", "Leonardo DiCaprio", "Brad Pitt",
     "Jennifer Lawrence", "Scarlett Johansson", "Zac Efron", "Sandra Bullock", "Denzel Washington",
     "Ryan Gosling", "Emma Stone", "George Clooney", "Julia Roberts", "Natalie Portman", "Chris Hemsworth",
-    "Anne Hathaway", "Matt Damon", "Robert Downey Jr."
+    "Anne Hathaway", "Matt Damon", "Robert Downey Jr.", "Ben Affleck", "Morgan Freeman"
 ]
 
 B_TIER_ACTORS = [
     "Kieran Culkin", "Jasmine Cephas Jones", "Kyle Chandler", "Garret Dillahunt",
     "Vincent D'Onofrio", "James Van Der Beek", "Evan Peters", "Anya Taylor-Joy",
-    "William Moseley", "Mark Valley", "Ted Danson"
+    "William Moseley", "Mark Valley", "Ted Danson", "Mary Steenburgen"
 ]
 
 # Parse feeds and collect unique entries
@@ -148,11 +149,22 @@ output_dir = "reports"
 os.makedirs(output_dir, exist_ok=True)
 
 today = datetime.now().strftime("%Y-%m-%d")
-output_path = f"{output_dir}/casting_report_{today}.md"
+output_md_path = f"{output_dir}/casting_report_{today}.md"
+output_html_path = f"{output_dir}/casting_report_{today}.html"
 
-with open(output_path, "w") as f:
+# Write to Markdown
+with open(output_md_path, "w") as f:
     f.write("# Daily Casting Report\n\n")
     for result in results:
         f.write(f"## {result}\n\n")
 
-print(f"✅ Report generated: {output_path}")
+# Convert to HTML
+with open(output_md_path, "r") as md_file:
+    md_content = md_file.read()
+    html_content = markdown.markdown(md_content)
+
+with open(output_html_path, "w") as html_file:
+    html_file.write(html_content)
+
+print(f"✅ Markdown report generated: {output_md_path}")
+print(f"✅ HTML report generated: {output_html_path}")
