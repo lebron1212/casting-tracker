@@ -1,5 +1,3 @@
-TEST_MODE = True  # Set to False for normal filtering
-
 import os
 import feedparser
 import requests
@@ -42,6 +40,10 @@ rss_feeds = [
     "https://ew.com/tag/casting/feed/"
 ]
 
+# Define Tier A and Tier B actors (example list)
+A_TIER_ACTORS = ["Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
+B_TIER_ACTORS = ["Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
+
 # Parse feeds and collect unique entries
 seen_titles = set()
 articles = []
@@ -57,39 +59,7 @@ for feed_url in rss_feeds:
             articles.append({"title": title, "link": link, "summary": summary})
 
 # GPT prompt logic
-if TEST_MODE:
-    prompt_template = """
-You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
-
-- **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
-- **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
-- **Tier C actors**: Fame score lower than **6.4** (lesser-known, emerging actors) – **DO NOT include these actors under any circumstances!**
-
-You are to list the actors, the project title, and generate a short industry tag, using the following rules.
-
-List **all Tier A actors first**! If there are Tier A actors, list only those and **no others**. If there are no Tier A actors, you may include **1 Tier B actor** with the highest fame score, but **do not include more than 1 Tier B actor** in any listing. There should **never be more than 2 actors listed**, unless all of them are **Tier A**.
-
-DO NOT list the **fame scores** for any actors in the output.
-
-Format the result as:
-
-ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
-
-Rules:
-- **DO NOT include any Tier C actors**.
-- End actor list with a period.
-- Project title in ALL CAPS.
-- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
-- End the entire line with a period.
-- No commentary, labels, fame scores, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
-
----
-
-Title: {title}
-Summary: {summary}
-"""
-else:
-    prompt_template = """
+prompt_template = """
 You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
 
 - **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
@@ -143,43 +113,40 @@ for article in articles:
             actors_str = reply[actors_start:actors_end].strip()
             actors_list = [actor.strip() for actor in actors_str.split(",")]
             
-            # Define Tier A and Tier B actors (example list)
-            A_TIER_ACTORS = ["Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
-            B_TIER_ACTORS = ["Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
-
-            # Filter out Tier C actors and ensure only Tier A or Tier B actors are included
+            # Filter out only Tier A or Tier B actors
             valid_actors = [actor for actor in actors_list if actor in A_TIER_ACTORS or actor in B_TIER_ACTORS]
 
-            # If there are more than 2 A-tier actors, list them all, else list up to 2
-            a_tier_actors = [actor for actor in valid_actors if actor in A_TIER_ACTORS]
-            if len(a_tier_actors) > 2:
-                filtered_actors = a_tier_actors
+            # Format the actor names based on the rules
+            if len(valid_actors) > 2:
+                filtered_actors = ", ".join(valid_actors[:2])  # Only list top 2
+            elif len(valid_actors) > 0:
+                filtered_actors = ", ".join(valid_actors)  # List all valid actors
             else:
-                filtered_actors = a_tier_actors[:2]  # Limit to 2 if more than 2 A-tier actors
+                filtered_actors = ""
 
-            # Ensure we only have 1 B-tier actor, but if no A-tier actors exist, include the highest ranked B-tier actor
-            if len(a_tier_actors) == 0 and len(filtered_actors) < 2:
-                b_tier_actors = [actor for actor in valid_actors if actor in B_TIER_ACTORS]
-                filtered_actors.append(b_tier_actors[0] if b_tier_actors else "")
+            # Ensure project name and industry tag are handled
+            project_name = article['title'].strip().upper()
+            industry_tag = "SQL TO $300M BO HIT"  # This is just an example; use actual logic for the tag.
 
-            # Rebuild the final response
-            filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {reply[actors_end:].strip()}"
+            # Final output formatting
+            html_output = f"<p><strong>ATTACHED:</strong> {filtered_actors}. <strong>{project_name}</strong> ({industry_tag}).</p>"
 
-            results.append(f"{filtered_reply} – [Source]({article['link']})")
+            results.append(html_output)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
-# Output to markdown
+# Output to HTML
 if results:
     today = datetime.now().strftime("%Y-%m-%d")
     output_dir = "reports"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = f"{output_dir}/casting_report_{today}.md"
+    output_path = f"{output_dir}/casting_report_{today}.html"
 
     with open(output_path, "w") as f:
-        f.write("# Daily Casting Report\n\n")
+        f.write("<html><body><h1>Daily Casting Report</h1>")
         for line in results:
-            f.write(f"- {line}\n")
+            f.write(line)
+        f.write("</body></html>")
 
     print(f"✅ Report generated: {output_path}")
 else:
