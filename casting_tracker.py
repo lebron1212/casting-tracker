@@ -69,7 +69,9 @@ for article in articles:
 # Output to markdown
 if results:
     today = datetime.now().strftime("%Y-%m-%d")
-    with open(f"casting_report_{today}.md", "w") as f:
+output_dir = "reports"
+os.makedirs(output_dir, exist_ok=True)
+with open(f"{output_dir}/casting_report_{today}.md", "w") as f:
         f.write("# Daily Casting Report\n\n")
         for line in results:
             f.write(f"- {line}\n")
