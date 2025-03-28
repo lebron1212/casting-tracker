@@ -1,3 +1,4 @@
+TEST_MODE = True  # Set to False for normal filtering
 import feedparser
 import openai
 import os
