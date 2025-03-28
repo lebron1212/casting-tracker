@@ -23,6 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install feedparser python-dotenv openai requests
+
+      - name: Install dependencies
+        run: |
           pip install feedparser python-dotenv openai
    
       - name: Install dependencies
