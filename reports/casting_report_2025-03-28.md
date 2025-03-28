@@ -1,62 +1,78 @@
 # Daily Casting Report
 
-## PROJECT TITLE: UNT MARY STEENBURGEN COMEDY SERIES.
+## PROJECT TITLE: UNT ‘A Man On The Inside’:
 A Tier Actors: Mary Steenburgen, Ted Danson.
 B Tier Actors: .
-Industry Tag: NTFLX COMEDY SERIES.
+Industry Tag: NTFLX COMEDY.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: LANTERNS HBO GREEN LANTERN SERIES.
-A Tier Actors: Kyle Chandler, Kelly MacDonald, Garret Dillahunt.
-B Tier Actors: Jasmine Cephas Jones, Aaron Pierre, Poorna Jagannathan, Ulrich Thomsen.
+## PROJECT TITLE: UNT Jasmine Cephas Jones Joins ‘Lanterns’.
+A Tier Actors: Kyle Chandler, Kelly MacDonald.
+B Tier Actors: Jasmine Cephas Jones, Aaron Pierre, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen.
 Industry Tag: HBO DC COMIC DRAMA.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT NEUROMANCER SCI-FI DRAMA SERIES.
-A Tier Actors: André De Shields.
-B Tier Actors: Max Irons, Marc Menchaca, Callum Turner, Briana Middleton.
-Industry Tag: APPLE TV+ SCI-FI DRAMA.
+## PROJECT TITLE: Neuromancer
+A Tier Actors: Max Irons, André De Shields.
+B Tier Actors: Marc Menchaca.
+Industry Tag: APPLE TV+ DRAMA SERIES.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT DAREDEVIL: BORN AGAIN SERIES.
+## PROJECT TITLE: UNT Lili Taylor Joins ‘Daredevil: Born
 A Tier Actors: Vincent D'Onofrio.
 B Tier Actors: Lili Taylor, Matthew Lillard.
-Industry Tag: DISNEY+ MARVEL DRAMA.
+Industry Tag: DSNEY+ SUPERHERO SERIES.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT SIDELINED 2: INTERCEPTED FOOTBALL DRAMA MOVIE.
+## PROJECT TITLE: UNT James Van Der Beek &.
 A Tier Actors: James Van Der Beek.
-B Tier Actors: Drew Ray Tanner, Noah Beck, Siena Agudong, Charlie Gillespie.
-Industry Tag: TUBI SPORTS DRAMA.
+B Tier Actors: Drew Ray Tanner, Charlie Gillespie.
+Industry Tag: SEQUEL DRAMA.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT LEGALLY BLONDE PREQUEL SERIES.
+## PROJECT TITLE: UNT Chandler Kinney, Gabrielle Policano &
 A Tier Actors: Reese Witherspoon.
-B Tier Actors: Gabrielle Policano, Jacob Moskovitz, Chandler Kinney, Lexi Minetree, June Diane Raphael.
-Industry Tag: PRIME VIDEO COMEDY DRAMA.
+B Tier Actors: Chandler Kinney, Gabrielle Policano, Jacob Moskovitz, Lexi Minetree, June Diane Raphael.
+Industry Tag: PRIME VIDEO LEGALLY BLONDE PREQUEL.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT NICHOLAS STOLLER COMEDY (MOVIE).
+## PROJECT TITLE: UNT Billy Eichner Joins Will Ferrell.
 A Tier Actors: Will Ferrell.
-B Tier Actors: Zac Efron, Regina Hall, Billy Eichner.
+B Tier Actors: Billy Eichner, Zac Efron, Regina Hall, Jimmy Tatro.
 Industry Tag: AMZN MGM COMEDY.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT JOSH BROLIN WHALEFALL ADAPTATION MOVIE.
-A Tier Actors: Josh Brolin.
-B Tier Actors: Austin Abrams.
-Industry Tag: 20TH CENTURY ADVENTURE DRAMA.
+## PROJECT TITLE: UNT Josh Brolin In Talks To
+A Tier Actors: Josh Brolin
+B Tier Actors: Austin Abrams
+Industry Tag: 20TH CENTURY ADAPTATION
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT Amanda Sinclair RETURN SOAP OPERA.
-A Tier Actors: Mishael Morgan.
-B Tier Actors: .
+## PROJECT TITLE: UNT ‘The Young & The Restless’.
+A Tier Actors: .
+B Tier Actors: Mishael Morgan.
 Industry Tag: CBS SOAP OPERA.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT HOSTAGE THRILLER MOVIE.
+## PROJECT TITLE: UNT ‘The Night Agent’s Arienne Mandi.
 A Tier Actors: William Moseley, Mark Valley.
 B Tier Actors: Arienne Mandi.
-Industry Tag: STAGMOOR STUDIOS POLITICAL THRILLER.
+Industry Tag: THRILLER DRAMA.
+Article Posted: Unknown hours ago.
 
-## PROJECT TITLE: UNT THE 13TH WIFE: ESCAPING POLYGAMY LIFETIME MOVIE.
-A Tier Actors: Felicity Huffman.
-B Tier Actors: Olga Petsa, Eric Johnson.
-Industry Tag: LIFETIME TRUE STORY DRAMA.
+## PROJECT TITLE: UNT Felicity Huffman, Olga Petsa &
 
-## PROJECT TITLE: UNT HALLE BAILEY/REGÉ-JEAN PAGE ITALIANNA MOVIE.
-A Tier Actors: Halle Bailey.
-B Tier Actors: Regé-Jean Page.
-Industry Tag: UNIVERSAL PICTURES DRAMA.
+A Tier Actors: Felicity Huffman
+
+B Tier Actors: Olga Petsa, Eric Johnson
+
+Industry Tag: LIFETIME BIOPIC DRAMA
+
+Article Posted: Unknown hours ago.
+
+## PROJECT TITLE: UNT Halle Bailey And Regé-Jean Page.
+A Tier Actors: .
+B Tier Actors: Halle Bailey, Regé-Jean Page.
+Industry Tag: UNIV PICTURES MYSTERY.
+Article Posted: Unknown hours ago.
 
