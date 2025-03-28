@@ -3,59 +3,57 @@
 ## ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A-TIER ACTORS: Ted Danson.
 B-TIER ACTORS: Mary Steenburgen.
-Posted Date: Unknown.
+Posted Date: 2025-03-28 17:00:00.
 
 ## ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
 A-TIER ACTORS: .
 B-TIER ACTORS: Jasmine Cephas Jones, Kyle Chandler, Garret Dillahunt.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 21:24:37.
 
 ## ARTICLE TITLE: Max Irons, André De Shields & Marc Menchaca Round Out Cast Of ‘Neuromancer’ Apple TV+ Series.
 A-TIER ACTORS: André De Shields.
 B-TIER ACTORS: Max Irons, Marc Menchaca.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 21:15:15.
 
 ## ARTICLE TITLE: Lili Taylor Joins ‘Daredevil: Born Again’ Season 2.
 A-TIER ACTORS: Vincent D'Onofrio.
 B-TIER ACTORS: Lili Taylor, Matthew Lillard.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 19:49:42.
 
-## A-TIER ACTORS: James Van Der Beek.
+## ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
+A-TIER ACTORS: James Van Der Beek.
 B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 19:15:48.
 
 ## ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
 A-TIER ACTORS: Reese Witherspoon.
 B-TIER ACTORS: Chandler Kinney, Gabrielle Policano, Jacob Moskovitz, Lexi Minetree, June Diane Raphael.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 19:00:00.
 
 ## ARTICLE TITLE: Billy Eichner Joins Will Ferrell And Zac Efron In Comedy From Nicholas Stoller And Amazon MGM Studios.
 A-TIER ACTORS: Will Ferrell.
-B-TIER ACTORS: Zac Efron, Regina Hall, Billy Eichner.
-Posted Date: Unknown.
+B-TIER ACTORS: Zac Efron, Regina Hall.
+Posted Date: 2025-03-27 18:00:00.
 
 ## ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
 A-TIER ACTORS: Josh Brolin.
 B-TIER ACTORS: Austin Abrams.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 17:00:00.
 
 ## ARTICLE TITLE: ‘The Young & The Restless’ Brings Back Mishael Morgan.
 A-TIER ACTORS: .
 B-TIER ACTORS: Mishael Morgan.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 16:25:21.
 
 ## ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
 A-TIER ACTORS: William Moseley, Mark Valley.
 B-TIER ACTORS: Arienne Mandi.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 16:10:00.
 
-## ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
-A-TIER ACTORS: Felicity Huffman.
-B-TIER ACTORS: Olga Petsa, Eric Johnson.
-Posted Date: Unknown.
+## In order to provide the correct tiers for the actors, I would need their fame scores. Could you provide the fame scores for Felicity Huffman, Olga Petsa, and Eric Johnson?
 
 ## ARTICLE TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
-A-TIER ACTORS: .
+A-TIER ACTORS: None.
 B-TIER ACTORS: Halle Bailey, Regé-Jean Page.
-Posted Date: Unknown.
+Posted Date: 2025-03-27 16:00:00.
 
