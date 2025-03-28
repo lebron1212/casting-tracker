@@ -63,9 +63,20 @@ for feed_url in rss_feeds:
 # Function to calculate hours ago from the published time
 def hours_ago(published_str):
     if published_str:
-        published_time = datetime(*feedparser.parse(published_str).tm_year, feedparser.parse(published_str).tm_mon, feedparser.parse(published_str).tm_mday, feedparser.parse(published_str).tm_hour, feedparser.parse(published_str).tm_min, feedparser.parse(published_str).tm_sec)
-        delta = datetime.now() - published_time
-        return delta.total_seconds() // 3600
+        # Parse the published date string into a datetime object using feedparser
+        parsed_time = feedparser.parse(published_str)
+        
+        # Check if the time is parsed successfully (this may vary based on feed formatting)
+        try:
+            # Extract date and time in a proper format (using datetime directly)
+            published_time = datetime(*parsed_time['published_parsed'][:6])  # Convert the parsed time tuple to datetime
+            
+            # Calculate time difference
+            delta = datetime.now() - published_time
+            return int(delta.total_seconds() // 3600)  # Return the difference in hours
+        except Exception as e:
+            print(f"Error parsing published date: {e}")
+            return "Unknown"
     return "Unknown"
 
 # Function to extract project title from the article title
@@ -122,7 +133,7 @@ for article in articles:
     industry_tag = "NTFLX CRIME DRAMA"  # Example industry tag; you can modify this logic based on article content
     
     # Get the number of hours since the article was posted
-    hours_ago = hours_ago(article['published'])
+    hours_ago_value = hours_ago(article['published'])
 
     # Format the prompt for GPT
     prompt = prompt_template.format(
@@ -131,7 +142,7 @@ for article in articles:
         a_tier_actors=", ".join(a_tier_actors),
         b_tier_actors=", ".join(b_tier_actors),
         industry_tag=industry_tag,
-        hours_ago=hours_ago
+        hours_ago=hours_ago_value
     )
     
     try:
