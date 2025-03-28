@@ -117,8 +117,6 @@ few_shot_examples = """
    Project Title: The Actor
 9. Headline: Paapa Essiedu Nears Deal to Play Severus Snape in ‘Harry Potter’ Series
    Project Title: Harry Potter (TV Series)
-10. Headline: Nick Frost Rumored to Portray Rubeus Hagrid in Upcoming ‘Harry Potter’ Series
-    Project Title: Harry Potter (TV Series)
 """
 
 prompt_template = f"""
