@@ -4,6 +4,7 @@ import requests
 from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
+import re
 
 # Load environment variables from .env
 load_dotenv()
@@ -75,28 +76,69 @@ def get_readable_published_time(published_str):
         print(f"Error parsing published date: {e}")
         return "Unknown"
 
-# GPT prompt logic for extraction
-prompt_template = """
+# Function to extract project title from the article title and summary
+def extract_project_title(title, summary):
+    # Step 1: Extract from text inside single quotes (' ') or double quotes (" ")
+    quote_pattern = r"['\"](.*?)['\"]"
+    quotes_match = re.findall(quote_pattern, title + summary)
+
+    if quotes_match:
+        return quotes_match[0].strip()
+
+    # Step 2: If no quotes are found, try extracting the most relevant project detail
+    # Find key words like "project", "movie", "series", or names like "Scorsese", "Spielberg"
+    fallback_keywords = ["project", "movie", "series", "film", "show"]
+    for keyword in fallback_keywords:
+        if keyword in title.lower():
+            # Using the most relevant part (first few words) as the fallback title
+            words = title.split()
+            return "UNT " + " ".join(words[:5])  # Example: "UNT MARTIN SCORSESE MOVIE"
+
+    # If still no match, return a generic UNT title
+    return "UNT **BIG NAME MOVIE/SERIES PROJECT**"
+
+# GPT prompt logic for extraction with Few-Shot Learning
+few_shot_examples = """
+1. Headline: Jennifer Lopez Reunites with Edward James Olmos in ‘Office Romance’ 28 Years After ‘Selena’
+   Project Title: Office Romance
+2. Headline: John Lithgow Cast as Albus Dumbledore in New ‘Harry Potter’ Series
+   Project Title: Harry Potter (TV Series)
+3. Headline: Matthew Lillard Joins ‘Daredevil: Born Again’ Season 2
+   Project Title: Daredevil: Born Again
+4. Headline: Bradley Whitford Joins ‘The Diplomat’ Season 3
+   Project Title: The Diplomat
+5. Headline: Jared Padalecki to Star in New CBS Medical Drama Set in Rural Texas
+   Project Title: UNT CBS Medical Drama
+6. Headline: Stephen Amell to Lead NBC’s ‘Suits’ Spinoff ‘Suits: LA’
+   Project Title: Suits: LA
+7. Headline: Tye Sheridan Joins Jude Law and Nicholas Hoult in ‘The Order’
+   Project Title: The Order
+8. Headline: André Holland and Gemma Chan to Star in ‘The Actor’
+   Project Title: The Actor
+9. Headline: Paapa Essiedu Nears Deal to Play Severus Snape in ‘Harry Potter’ Series
+   Project Title: Harry Potter (TV Series)
+10. Headline: Nick Frost Rumored to Portray Rubeus Hagrid in Upcoming ‘Harry Potter’ Series
+    Project Title: Harry Potter (TV Series)
+"""
+
+prompt_template = f"""
 You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
 
 - **Tier A actors**: Fame score of at least **8** (high name recognition, long career, prestigious awards, etc.)
 - **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
 - **Tier C actors**: Fame score lower than **6.4** (lesser-known, emerging actors) – **DO NOT include these actors under any circumstances!**
 
-You are to list the actors, the project title, and generate a short industry tag, using the following rules.
+Please extract the project title from the following headlines, using the example patterns provided.
 
-Return only in this format:
-
-PROJECT TITLE: {title}.
-A Tier Actors: {a_tier_actors}.
-B Tier Actors: {b_tier_actors}.
-Industry Tag: {industry_tag}.
-Article Posted: {posted_time}.
+### Examples:
+{few_shot_examples}
 
 ---
 
 Title: {title}
 Summary: {summary}
+
+Extract the project title:
 """
 
 # Process each article using GPT to extract actors, project titles, and industry tags
@@ -113,9 +155,12 @@ for article in articles:
     # Assign industry tag (this is hardcoded for simplicity, you can adjust this logic based on content)
     industry_tag = "NTFLX CRIME DRAMA"  # Example industry tag; you can modify this logic based on article content
 
+    # Extract the project title reliably using the function
+    project_title = extract_project_title(article['title'], article['summary'])
+
     # Ask GPT to extract the project title from the article's title and summary
     prompt = prompt_template.format(
-        title=article['title'],
+        title=project_title,
         summary=article['summary'],
         a_tier_actors=", ".join(a_tier_actors),
         b_tier_actors=", ".join(b_tier_actors),
