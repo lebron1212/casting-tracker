@@ -41,8 +41,8 @@ rss_feeds = [
 ]
 
 # Define Tier A and Tier B actors (example list)
-A_TIER_ACTORS = ["Billy Eichner", "Will Ferrell", "Zac Efron", "Regina Hall", "Josh Brolin", "Max Irons"]
-B_TIER_ACTORS = ["Kyle Chandler", "Aaron Pierre", "Garret Dillahunt", "Poorna Jagannathan", "Jasmine Cephas Jones", "Ulrich Thomsen"]
+A_TIER_ACTORS = ["Adam Driver", "Tom Hanks", "Will Ferrell", "Regina Hall"]
+B_TIER_ACTORS = ["Kieran Culkin", "Jasmine Cephas Jones", "Kyle Chandler", "Garret Dillahunt"]
 
 # Parse feeds and collect unique entries
 seen_titles = set()
@@ -58,7 +58,7 @@ for feed_url in rss_feeds:
             seen_titles.add(title)
             articles.append({"title": title, "link": link, "summary": summary})
 
-# GPT prompt logic
+# GPT prompt logic for extraction
 prompt_template = """
 You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
 
@@ -72,15 +72,10 @@ List **all Tier A actors first**! If there are Tier A actors, list only those an
 
 Return only in this format:
 
-ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
-
-Rules:
-- **DO NOT include any Tier C actors**.
-- End actor list with a period.
-- Project title in ALL CAPS.
-- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g., SQL TO $300M BO HIT, MCU PH4).
-- End the entire line with a period.
-- No commentary, labels, fame scores, or source links. The output should match exactly this format: ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
+PROJECT TITLE: {title}.
+A Tier Actors: {a_tier_actors}.
+B Tier Actors: {b_tier_actors}.
+Industry Tag: {industry_tag}.
 
 ---
 
@@ -88,7 +83,7 @@ Title: {title}
 Summary: {summary}
 """
 
-# Process each article
+# Process each article using GPT to extract actors, project titles, and industry tags
 results = []
 
 for article in articles:
@@ -105,49 +100,12 @@ for article in articles:
         )
         reply = response.choices[0].message.content.strip()
         
-        # Post-process the GPT response to ensure proper formatting
-        if not reply.startswith("SKIP"):
-            # Filter out fame scores and ensure only valid actors are included
-            actors_start = reply.find("ATTACHED:") + len("ATTACHED: ")
-            actors_end = reply.find(".", actors_start)
-            actors_str = reply[actors_start:actors_end].strip()
-            actors_list = [actor.strip() for actor in actors_str.split(",")]
-            
-            # Filter out only Tier A or Tier B actors
-            valid_actors = [actor for actor in actors_list if actor in A_TIER_ACTORS or actor in B_TIER_ACTORS]
-
-            # Format the actor names based on the rules
-            if len(valid_actors) > 2:
-                filtered_actors = ", ".join(valid_actors[:2])  # Only list top 2
-            elif len(valid_actors) > 0:
-                filtered_actors = ", ".join(valid_actors)  # List all valid actors
-            else:
-                filtered_actors = ""
-
-            # Ensure project name and industry tag are handled
-            project_name = article['title'].strip().upper()
-            industry_tag = "SQL TO $300M BO HIT"  # This is just an example; use actual logic for the tag.
-
-            # Final output formatting
-            html_output = f"<p><strong>ATTACHED:</strong> {filtered_actors}. <strong>{project_name}</strong> ({industry_tag}).</p>"
-
-            results.append(html_output)
+        # Process the GPT response
+        if reply:
+            results.append(reply)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
-# Output to HTML
-if results:
-    today = datetime.now().strftime("%Y-%m-%d")
-    output_dir = "reports"
-    os.makedirs(output_dir, exist_ok=True)
-    output_path = f"{output_dir}/casting_report_{today}.html"
-
-    with open(output_path, "w") as f:
-        f.write("<html><body><h1>Daily Casting Report</h1>")
-        for line in results:
-            f.write(line)
-        f.write("</body></html>")
-
-    print(f"✅ Report generated: {output_path}")
-else:
-    print("No relevant casting news found today.")
+# Output the results (printing to console for now)
+for result in results:
+    print(result)
