@@ -1,78 +1,74 @@
 # Daily Casting Report
 
-## PROJECT TITLE: UNT ‘A Man On The Inside’:
-A Tier Actors: Mary Steenburgen, Ted Danson.
-B Tier Actors: .
-Industry Tag: NTFLX COMEDY.
-Article Posted: Unknown hours ago.
+## PROJECT TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
+A Tier Actors: Ted Danson.
+B Tier Actors: Mary Steenburgen.
+Industry Tag: NTFLX COMEDY DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT Jasmine Cephas Jones Joins ‘Lanterns’.
+## PROJECT TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
 A Tier Actors: Kyle Chandler, Kelly MacDonald.
 B Tier Actors: Jasmine Cephas Jones, Aaron Pierre, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen.
-Industry Tag: HBO DC COMIC DRAMA.
-Article Posted: Unknown hours ago.
+Industry Tag: HBO SUPERHERO DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: Neuromancer
-A Tier Actors: Max Irons, André De Shields.
-B Tier Actors: Marc Menchaca.
-Industry Tag: APPLE TV+ DRAMA SERIES.
-Article Posted: Unknown hours ago.
+## PROJECT TITLE: Max Irons, André De Shields & Marc Menchaca Round Out Cast Of ‘Neuromancer’ Apple TV+ Series.
+A Tier Actors: .
+B Tier Actors: Max Irons, André De Shields, Marc Menchaca.
+Industry Tag: APPLE TV+ SCI-FI DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT Lili Taylor Joins ‘Daredevil: Born
+## PROJECT TITLE: Lili Taylor Joins ‘Daredevil: Born Again’ Season 2.
 A Tier Actors: Vincent D'Onofrio.
 B Tier Actors: Lili Taylor, Matthew Lillard.
-Industry Tag: DSNEY+ SUPERHERO SERIES.
-Article Posted: Unknown hours ago.
+Industry Tag: DSNEY+ MARVEL DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT James Van Der Beek &.
+## PROJECT TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
 A Tier Actors: James Van Der Beek.
 B Tier Actors: Drew Ray Tanner, Charlie Gillespie.
-Industry Tag: SEQUEL DRAMA.
-Article Posted: Unknown hours ago.
+Industry Tag: TUBI SPORTS DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT Chandler Kinney, Gabrielle Policano &
+## PROJECT TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
 A Tier Actors: Reese Witherspoon.
 B Tier Actors: Chandler Kinney, Gabrielle Policano, Jacob Moskovitz, Lexi Minetree, June Diane Raphael.
-Industry Tag: PRIME VIDEO LEGALLY BLONDE PREQUEL.
-Article Posted: Unknown hours ago.
+Industry Tag: PRIME VIDEO COMEDY DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT Billy Eichner Joins Will Ferrell.
+## PROJECT TITLE: Billy Eichner Joins Will Ferrell And Zac Efron In Comedy From Nicholas Stoller And Amazon MGM Studios.
 A Tier Actors: Will Ferrell.
-B Tier Actors: Billy Eichner, Zac Efron, Regina Hall, Jimmy Tatro.
-Industry Tag: AMZN MGM COMEDY.
-Article Posted: Unknown hours ago.
+B Tier Actors: Zac Efron, Regina Hall, Billy Eichner.
+Industry Tag: AMZ MGM COMEDY.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT Josh Brolin In Talks To
-A Tier Actors: Josh Brolin
-B Tier Actors: Austin Abrams
-Industry Tag: 20TH CENTURY ADAPTATION
-Article Posted: Unknown hours ago.
+## PROJECT TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
+A Tier Actors: Josh Brolin.
+B Tier Actors: Austin Abrams.
+Industry Tag: 20TH CENTURY ADVENTURE DRAMA.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT ‘The Young & The Restless’.
+## PROJECT TITLE: ‘The Young & The Restless’ Brings Back Mishael Morgan.
 A Tier Actors: .
 B Tier Actors: Mishael Morgan.
 Industry Tag: CBS SOAP OPERA.
-Article Posted: Unknown hours ago.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT ‘The Night Agent’s Arienne Mandi.
-A Tier Actors: William Moseley, Mark Valley.
-B Tier Actors: Arienne Mandi.
+## PROJECT TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
+A Tier Actors: Mark Valley.
+B Tier Actors: Arienne Mandi, William Moseley.
 Industry Tag: THRILLER DRAMA.
-Article Posted: Unknown hours ago.
+Article Posted: Unknown.
 
-## PROJECT TITLE: UNT Felicity Huffman, Olga Petsa &
+## PROJECT TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
+A Tier Actors: Felicity Huffman.
+B Tier Actors: Eric Johnson, Olga Petsa.
+Industry Tag: LFTM TRUE CRIME DRAMA.
+Article Posted: Unknown.
 
-A Tier Actors: Felicity Huffman
-
-B Tier Actors: Olga Petsa, Eric Johnson
-
-Industry Tag: LIFETIME BIOPIC DRAMA
-
-Article Posted: Unknown hours ago.
-
-## PROJECT TITLE: UNT Halle Bailey And Regé-Jean Page.
+## PROJECT TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
 A Tier Actors: .
 B Tier Actors: Halle Bailey, Regé-Jean Page.
-Industry Tag: UNIV PICTURES MYSTERY.
-Article Posted: Unknown hours ago.
+Industry Tag: UNIV MYSTERY DRAMA.
+Article Posted: Unknown.
 
