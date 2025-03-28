@@ -1,16 +1,19 @@
 TEST_MODE = True  # Set to False for normal filtering
 
+import os
 import feedparser
 from openai import OpenAI
-import os
 from dotenv import load_dotenv
 from datetime import datetime
 
 # Load environment variables from .env
 load_dotenv()
 
-# Initialize OpenAI client with API key
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Initialize OpenAI client with API key + base URL for GitHub Actions compatibility
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+    base_url="https://api.openai.com/v1"
+)
 
 # RSS feeds (casting-specific)
 rss_feeds = [
@@ -36,7 +39,7 @@ for feed_url in rss_feeds:
             seen_titles.add(title)
             articles.append({"title": title, "link": link, "summary": summary})
 
-# Prompt for filtering + formatting
+# Prompt logic
 if TEST_MODE:
     prompt_template = """
 Extract the actor name(s), project title, and create a 40-character industry-style descriptor. Format your output as:
@@ -57,6 +60,7 @@ Title: {title}
 Summary: {summary}
 """
 
+# Process each article
 results = []
 
 for article in articles:
@@ -68,13 +72,14 @@ for article in articles:
                 {"role": "system", "content": "You are an expert entertainment news analyst."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.4
+            temperature=0.4,
+            timeout=30
         )
         reply = response.choices[0].message.content.strip()
         if not reply.startswith("SKIP"):
             results.append(f"{reply} – [Source]({article['link']})")
     except Exception as e:
-        print(f"Error processing article: {article['title']}", e)
+        print(f"Error processing article: {article['title']} | {e}")
 
 # Output to markdown
 if results:
