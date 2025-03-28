@@ -83,12 +83,16 @@ Summary: {summary}
 
 # Function to extract project title from the article title
 def extract_project_title(title):
-    # Try to detect common project title keywords and split accordingly
-    keywords = ['project', 'movie', 'series', 'film', 'show', 'drama']
-    for keyword in keywords:
-        if keyword in title.lower():
-            return title.split(keyword)[0].strip()
-    return title.split(":")[0].strip()  # Default fallback (take everything before a colon)
+    # Try to extract from text inside single quotes
+    if "'" in title:
+        start = title.find("'") + 1
+        end = title.find("'", start)
+        if start != -1 and end != -1:
+            return title[start:end]
+    
+    # If no quotes, build a default project title
+    default_title = "UNT **BIG NAME/OTHER DETAIL** **GENRE/TYPE (MOVIE/SERIES)**"
+    return default_title
 
 # Process each article using GPT to extract actors, project titles, and industry tags
 results = []
