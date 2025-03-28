@@ -137,8 +137,11 @@ for article in articles:
             if not title_str:
                 title_str = "UNKNOWN PROJECT TITLE"  # Handle missing titles
 
+            # Format industry tag (truncated to 27 characters max)
+            industry_tag = article['summary'][:27].upper()
+
             # Remove extraneous " . ." if present
-            filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {title_str} ({article['summary'][:27].upper()})"
+            filtered_reply = f"ATTACHED: {', '.join(filtered_actors)}. {title_str} ({industry_tag})."
 
             results.append(f"{filtered_reply} – [Source]({article['link']})")
     except Exception as e:
