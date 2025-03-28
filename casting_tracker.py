@@ -69,12 +69,15 @@ for article in articles:
 # Output to markdown
 if results:
     today = datetime.now().strftime("%Y-%m-%d")
-output_dir = "reports"
-os.makedirs(output_dir, exist_ok=True)
-with open(f"{output_dir}/casting_report_{today}.md", "w") as f:
+    output_dir = "reports"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = f"{output_dir}/casting_report_{today}.md"
+
+    with open(output_path, "w") as f:
         f.write("# Daily Casting Report\n\n")
         for line in results:
             f.write(f"- {line}\n")
-    print(f"✅ Report generated: casting_report_{today}.md")
+
+    print(f"✅ Report generated: {output_path}")
 else:
     print("No relevant casting news found today.")
