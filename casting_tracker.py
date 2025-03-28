@@ -4,7 +4,6 @@ import requests
 from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
-from time import mktime
 
 # Load environment variables from .env
 load_dotenv()
@@ -60,39 +59,21 @@ for feed_url in rss_feeds:
             seen_titles.add(title)
             articles.append({"title": title, "link": link, "summary": summary, "published": published})
 
-# Function to calculate hours ago from the published time
-def hours_ago(published_str):
-    if published_str:
-        # Parse the published date string into a datetime object using feedparser
+# Function to convert the published time to a readable format
+def get_readable_published_time(published_str):
+    try:
+        # Parse the published time into a datetime object using feedparser
         parsed_time = feedparser.parse(published_str)
+        # Extract the full date and time as available
+        published_time = datetime(*parsed_time['published_parsed'][:6])  # Convert the parsed time tuple to datetime
         
-        # Check if the time is parsed successfully (this may vary based on feed formatting)
-        try:
-            # Extract date and time in a proper format (using datetime directly)
-            published_time = datetime(*parsed_time['published_parsed'][:6])  # Convert the parsed time tuple to datetime
-            
-            # Calculate time difference
-            delta = datetime.now() - published_time
-            return int(delta.total_seconds() // 3600)  # Return the difference in hours
-        except Exception as e:
-            print(f"Error parsing published date: {e}")
-            return "Unknown"
-    return "Unknown"
-
-# Function to extract project title from the article title
-def extract_project_title(title):
-    # Try to extract from text inside single quotes
-    if "'" in title or '"' in title:
-        start = title.find("'") + 1 if "'" in title else title.find('"') + 1
-        end = title.find("'", start) if "'" in title else title.find('"', start)
-        if start != -1 and end != -1:
-            return title[start:end]
-    
-    # If no quotes, build a default project title
-    # Focus on extracting the most important detail (e.g., director or other major details)
-    words = title.split()
-    project_title = "UNT " + " ".join(words[:5])  # Focus on the first 5 words to keep it relevant
-    return project_title if len(project_title) <= 50 else project_title[:50]  # Ensure it stays within 50 characters
+        # Fallback to just hour and date if minutes or seconds are missing
+        if len(parsed_time['published_parsed']) < 6:
+            return published_time.strftime("%Y-%m-%d %H:00")  # Fallback to hour-only format
+        return published_time.strftime("%Y-%m-%d %H:%M:%S")  # Full format with minutes and seconds
+    except Exception as e:
+        print(f"Error parsing published date: {e}")
+        return "Unknown"
 
 # GPT prompt logic for extraction
 prompt_template = """
@@ -110,7 +91,7 @@ PROJECT TITLE: {title}.
 A Tier Actors: {a_tier_actors}.
 B Tier Actors: {b_tier_actors}.
 Industry Tag: {industry_tag}.
-Article Posted: {hours_ago} hours ago.
+Article Posted: {posted_time}.
 
 ---
 
@@ -122,8 +103,8 @@ Summary: {summary}
 results = []
 
 for article in articles:
-    # Extract project title using the function
-    project_title = extract_project_title(article['title'])
+    # Get the exact published time of the article
+    posted_time = get_readable_published_time(article['published'])
 
     # Extract actors from the article title
     a_tier_actors = [actor for actor in A_TIER_ACTORS if actor in article['title']]
@@ -131,20 +112,17 @@ for article in articles:
 
     # Assign industry tag (this is hardcoded for simplicity, you can adjust this logic based on content)
     industry_tag = "NTFLX CRIME DRAMA"  # Example industry tag; you can modify this logic based on article content
-    
-    # Get the number of hours since the article was posted
-    hours_ago_value = hours_ago(article['published'])
 
-    # Format the prompt for GPT
+    # Ask GPT to extract the project title from the article's title and summary
     prompt = prompt_template.format(
-        title=project_title,
+        title=article['title'],
         summary=article['summary'],
         a_tier_actors=", ".join(a_tier_actors),
         b_tier_actors=", ".join(b_tier_actors),
         industry_tag=industry_tag,
-        hours_ago=hours_ago_value
+        posted_time=posted_time
     )
-    
+
     try:
         response = client.chat.completions.create(
             model="gpt-4",
