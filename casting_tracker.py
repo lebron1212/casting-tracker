@@ -2,6 +2,7 @@ TEST_MODE = True  # Set to False for normal filtering
 
 import os
 import feedparser
+import requests
 from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
@@ -9,7 +10,23 @@ from datetime import datetime
 # Load environment variables from .env
 load_dotenv()
 
-# Initialize OpenAI client with API key + base URL for GitHub Actions compatibility
+# Confirm network access to OpenAI before continuing
+try:
+    test_resp = requests.get(
+        "https://api.openai.com/v1/models",
+        headers={"Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}"},
+        timeout=10
+    )
+    if test_resp.status_code != 200:
+        print(f"❌ OpenAI pre-check failed: Status code {test_resp.status_code}")
+        exit(1)
+    else:
+        print("✅ Network access to OpenAI confirmed")
+except Exception as e:
+    print(f"❌ Failed to connect to OpenAI API: {e}")
+    exit(1)
+
+# Initialize OpenAI client
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
     base_url="https://api.openai.com/v1"
