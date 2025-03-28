@@ -57,16 +57,17 @@ for feed_url in rss_feeds:
             articles.append({"title": title, "link": link, "summary": summary})
 
 # GPT prompt logic
+# GPT prompt logic
 if TEST_MODE:
     prompt_template = """
-You are a casting tracker. Your job is to extract casting attachments only for **Tier A or B actors**.
+You are a casting tracker. Your job is to extract casting attachments for **Tier A actors** and **at most one Tier B actor** per project.
 
 Format the result as:
 
 ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
 
 Rules:
-- Only include **Tier A or B actors**
+- Only include **Tier A actors** and **at most one Tier B actor**
 - Skip unknown or Tier C actors
 - End actor list with a period
 - Project title in ALL CAPS
@@ -82,7 +83,7 @@ Summary: {summary}
 else:
     prompt_template = """
 You are a casting tracker. Only return projects that feature:
-- Tier A or B actors
+- Tier A actors and **at most one Tier B actor**
 - Lesser-known actors in major IP (franchise, bestseller, streamer, top director)
 
 Return only in this format:
@@ -90,7 +91,7 @@ Return only in this format:
 ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
 
 Rules:
-- Only include **Tier A or B actors**
+- Only include **Tier A actors** and **at most one Tier B actor**
 - Skip unknown or Tier C actors
 - End actor list with a period
 - Project title in ALL CAPS
