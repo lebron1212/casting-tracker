@@ -3,7 +3,7 @@
 ## PROJECT TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A Tier Actors: Ted Danson.
 B Tier Actors: Mary Steenburgen.
-Industry Tag: NTFLX COMEDY DRAMA.
+Industry Tag: NTFLX COMEDY.
 Article Posted: Unknown.
 
 ## PROJECT TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
@@ -12,9 +12,9 @@ B Tier Actors: Jasmine Cephas Jones, Aaron Pierre, Garret Dillahunt, Poorna Jaga
 Industry Tag: HBO SUPERHERO DRAMA.
 Article Posted: Unknown.
 
-## PROJECT TITLE: Max Irons, André De Shields & Marc Menchaca Round Out Cast Of ‘Neuromancer’ Apple TV+ Series.
-A Tier Actors: .
-B Tier Actors: Max Irons, André De Shields, Marc Menchaca.
+## PROJECT TITLE: Max Irons, André De Shields & Marc Menchaca Round Out Cast Of ‘Neuromancer’ Apple TV+ Series.
+A Tier Actors: André De Shields.
+B Tier Actors: Max Irons, Marc Menchaca.
 Industry Tag: APPLE TV+ SCI-FI DRAMA.
 Article Posted: Unknown.
 
@@ -39,7 +39,7 @@ Article Posted: Unknown.
 ## PROJECT TITLE: Billy Eichner Joins Will Ferrell And Zac Efron In Comedy From Nicholas Stoller And Amazon MGM Studios.
 A Tier Actors: Will Ferrell.
 B Tier Actors: Zac Efron, Regina Hall, Billy Eichner.
-Industry Tag: AMZ MGM COMEDY.
+Industry Tag: AMZN COMEDY.
 Article Posted: Unknown.
 
 ## PROJECT TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
@@ -54,7 +54,7 @@ B Tier Actors: Mishael Morgan.
 Industry Tag: CBS SOAP OPERA.
 Article Posted: Unknown.
 
-## PROJECT TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
+## PROJECT TITLE: 'The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
 A Tier Actors: Mark Valley.
 B Tier Actors: Arienne Mandi, William Moseley.
 Industry Tag: THRILLER DRAMA.
@@ -63,7 +63,7 @@ Article Posted: Unknown.
 ## PROJECT TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
 A Tier Actors: Felicity Huffman.
 B Tier Actors: Eric Johnson, Olga Petsa.
-Industry Tag: LFTM TRUE CRIME DRAMA.
+Industry Tag: LIFETIME TRUE STORY DRAMA.
 Article Posted: Unknown.
 
 ## PROJECT TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
