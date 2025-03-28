@@ -2,19 +2,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Casting Report</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }
-        h1 { font-size: 2rem; color: #222; }
-        h2 { font-size: 1.25rem; color: #444; margin-top: 2rem; }
-        .block { padding: 1rem; margin-bottom: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .block pre { white-space: pre-wrap; font-family: inherit; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Casting Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 3px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 20px;
+      background-color: white;
+      color: black;
+    }
+    h1 { display: none; }
+    .block {
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .block pre {
+      white-space: pre-wrap;
+      font-family: inherit;
+      display: inline-block;
+    }
+    .cypher {
+      display: inline-block;
+      overflow: hidden;
+      animation: scramble 1.5s steps(20) forwards;
+    }
+    @keyframes scramble {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+  <script>
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()';
+    function scrambleText(element, finalText, speed = 8) {
+      let i = 0;
+      function next() {
+        if (i >= finalText.length) return;
+        let cycles = 0, max = 5;
+        const interval = setInterval(() => {
+          const scrambled = finalText.substring(0, i) + (finalText[i] === ' ' ? ' ' : chars[Math.floor(Math.random() * chars.length)]) + ' '.repeat(finalText.length - i - 1);
+          element.textContent = scrambled;
+          if (++cycles >= max) {
+            clearInterval(interval);
+            element.textContent = finalText.substring(0, ++i);
+            next();
+          }
+        }, speed);
+      }
+      next();
+    }
+    window.onload = () => {
+      document.querySelectorAll('.block pre').forEach(pre => {
+        const text = pre.textContent;
+        pre.textContent = '';
+        scrambleText(pre, text);
+      });
+    };
+  </script>
 </head>
 <body>
-    <h1>Daily Casting Report – 2025-03-28</h1>
+  <h1>Daily Casting Report – 2025-03-28</h1>
 <div class='block'><pre>ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A-TIER ACTORS: .
 B-TIER ACTORS: Ted Danson, Mary Steenburgen.
@@ -34,7 +89,7 @@ Posted Date: 2025-03-27 19:49:42.</pre></div>
 <div class='block'><pre>ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
 A-TIER ACTORS: .
 B-TIER ACTORS: James Van Der Beek, Drew Ray Tanner, Charlie Gillespie.
-Posted Date: Not Provided.</pre></div>
+Posted Date: 2025-03-27 19:15:48.</pre></div>
 <div class='block'><pre>ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
 A-TIER ACTORS: Reese Witherspoon.
 B-TIER ACTORS: Chandler Kinney, Gabrielle Policano, Jacob Moskovitz, Lexi Minetree, June Diane Raphael.
@@ -55,12 +110,18 @@ Posted Date: 2025-03-27 16:25:21.</pre></div>
 A-TIER ACTORS: .
 B-TIER ACTORS: Arienne Mandi, William Moseley, Mark Valley.
 Posted Date: 2025-03-27 16:10:00.</pre></div>
-<div class='block'><pre>ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
+<div class='block'><pre>To provide the casting attachments, I need the fame scores of the actors mentioned in the article. However, based on my knowledge:
+
+Felicity Huffman is a well-known actress with a long career, including a role in "Desperate Housewives" and an Academy Award nomination. She would likely fall into the A-Tier category.
+
+Olga Petsa, known for "I Used To Be Funny," and Eric Johnson, known for "Fifty Shades of Grey," are both recognized actors but may not have the same level of fame as Huffman. They would likely fall into the B-Tier category.
+
+ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
 A-TIER ACTORS: Felicity Huffman.
-B-TIER ACTORS: Eric Johnson, Olga Petsa.
+B-TIER ACTORS: Olga Petsa, Eric Johnson.
 Posted Date: 2025-03-27 16:00:00.</pre></div>
 <div class='block'><pre>ARTICLE TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
-A-TIER ACTORS: Regé-Jean Page.
-B-TIER ACTORS: Halle Bailey.
+A-TIER ACTORS: .
+B-TIER ACTORS: Halle Bailey, Regé-Jean Page.
 Posted Date: 2025-03-27 16:00:00.</pre></div>
 </body></html>
