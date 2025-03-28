@@ -56,20 +56,47 @@ for feed_url in rss_feeds:
             seen_titles.add(title)
             articles.append({"title": title, "link": link, "summary": summary})
 
-# Prompt logic
+# GPT prompt logic
 if TEST_MODE:
     prompt_template = """
-Extract the actor name(s), project title, and create a 40-character industry-style descriptor. Format your output as:
-ATTACHED: **[Actor Name]**, [Project Title] ([Descriptor])
+You are a casting tracker. Your job is to extract casting attachments only for **Tier A or B actors**.
+
+Format the result as:
+
+ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
+
+Rules:
+- Only include **Tier A or B actors**
+- Skip unknown or Tier C actors
+- End actor list with a period
+- Project title in ALL CAPS
+- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g. SQL TO $300M BO HIT, MCU PH4)
+- End the entire line with a period
+- No commentary, labels, or source links
+
+---
+
+Title: {title}
+Summary: {summary}
 """
 else:
     prompt_template = """
-Evaluate the following casting article. If it includes a Tier A or B actor, or a lesser-known actor in a major project (franchise, major director, major streamer), include it.
+You are a casting tracker. Only return projects that feature:
+- Tier A or B actors
+- Lesser-known actors in major IP (franchise, bestseller, streamer, top director)
 
-Return the result in this format ONLY:
-ATTACHED: **[Actor Name]**, [Project Title] ([<40 character descriptor])
+Return only in this format:
 
-If not relevant, reply with: SKIP
+ATTACHED: Actor Name(s). PROJECT TITLE (SHORT INDUSTRY TAG).
+
+Rules:
+- Only include **Tier A or B actors**
+- Skip unknown or Tier C actors
+- End actor list with a period
+- Project title in ALL CAPS
+- Descriptor in ALL CAPS, ≤ 27 characters, industry-abbreviated (e.g. SQL TO $300M BO HIT, MCU PH4)
+- End the entire line with a period
+- No commentary, labels, or source links
 
 ---
 
