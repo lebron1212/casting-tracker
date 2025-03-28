@@ -161,7 +161,7 @@ html_template = f"""
     <title>Daily Casting Report</title>
     <style>
         body {{ font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; color: #333; }}
-        h1 {{ font-size: 2rem; color: #222; }}
+        h1 {{ display: none; }}
         h2 {{ font-size: 1.25rem; color: #444; margin-top: 2rem; }}
         .block {{ padding: 1rem; margin-bottom: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
         .block pre {{ white-space: pre-wrap; font-family: inherit; }}
