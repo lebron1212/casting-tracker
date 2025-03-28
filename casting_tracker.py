@@ -4,6 +4,7 @@ import requests
 from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
+from time import mktime
 
 # Load environment variables from .env
 load_dotenv()
@@ -54,9 +55,33 @@ for feed_url in rss_feeds:
         title = entry.title.strip()
         link = entry.link
         summary = entry.get("summary", "")
+        published = entry.get("published", "")  # Fetching published time
         if title not in seen_titles:
             seen_titles.add(title)
-            articles.append({"title": title, "link": link, "summary": summary})
+            articles.append({"title": title, "link": link, "summary": summary, "published": published})
+
+# Function to calculate hours ago from the published time
+def hours_ago(published_str):
+    if published_str:
+        published_time = datetime(*feedparser.parse(published_str).tm_year, feedparser.parse(published_str).tm_mon, feedparser.parse(published_str).tm_mday, feedparser.parse(published_str).tm_hour, feedparser.parse(published_str).tm_min, feedparser.parse(published_str).tm_sec)
+        delta = datetime.now() - published_time
+        return delta.total_seconds() // 3600
+    return "Unknown"
+
+# Function to extract project title from the article title
+def extract_project_title(title):
+    # Try to extract from text inside single quotes
+    if "'" in title or '"' in title:
+        start = title.find("'") + 1 if "'" in title else title.find('"') + 1
+        end = title.find("'", start) if "'" in title else title.find('"', start)
+        if start != -1 and end != -1:
+            return title[start:end]
+    
+    # If no quotes, build a default project title
+    # Focus on extracting the most important detail (e.g., director or other major details)
+    words = title.split()
+    project_title = "UNT " + " ".join(words[:5])  # Focus on the first 5 words to keep it relevant
+    return project_title if len(project_title) <= 50 else project_title[:50]  # Ensure it stays within 50 characters
 
 # GPT prompt logic for extraction
 prompt_template = """
@@ -74,25 +99,13 @@ PROJECT TITLE: {title}.
 A Tier Actors: {a_tier_actors}.
 B Tier Actors: {b_tier_actors}.
 Industry Tag: {industry_tag}.
+Article Posted: {hours_ago} hours ago.
 
 ---
 
 Title: {title}
 Summary: {summary}
 """
-
-# Function to extract project title from the article title
-def extract_project_title(title):
-    # Try to extract from text inside single quotes
-    if "'" in title:
-        start = title.find("'") + 1
-        end = title.find("'", start)
-        if start != -1 and end != -1:
-            return title[start:end]
-    
-    # If no quotes, build a default project title
-    default_title = "UNT **BIG NAME/OTHER DETAIL** **GENRE/TYPE (MOVIE/SERIES)**"
-    return default_title
 
 # Process each article using GPT to extract actors, project titles, and industry tags
 results = []
@@ -107,6 +120,9 @@ for article in articles:
 
     # Assign industry tag (this is hardcoded for simplicity, you can adjust this logic based on content)
     industry_tag = "NTFLX CRIME DRAMA"  # Example industry tag; you can modify this logic based on article content
+    
+    # Get the number of hours since the article was posted
+    hours_ago = hours_ago(article['published'])
 
     # Format the prompt for GPT
     prompt = prompt_template.format(
@@ -114,7 +130,8 @@ for article in articles:
         summary=article['summary'],
         a_tier_actors=", ".join(a_tier_actors),
         b_tier_actors=", ".join(b_tier_actors),
-        industry_tag=industry_tag
+        industry_tag=industry_tag,
+        hours_ago=hours_ago
     )
     
     try:
