@@ -85,7 +85,22 @@ Summary: {summary}
 results = []
 
 for article in articles:
-    prompt = prompt_template.format(title=article['title'], summary=article['summary'])
+    # Extract actors from the article title
+    a_tier_actors = [actor for actor in A_TIER_ACTORS if actor in article['title']]
+    b_tier_actors = [actor for actor in B_TIER_ACTORS if actor in article['title']]
+
+    # Assign industry tag (this is hardcoded for simplicity, you can adjust this logic based on content)
+    industry_tag = "NTFLX CRIME DRAMA"  # Example industry tag; you can modify this logic based on article content
+
+    # Format the prompt for GPT
+    prompt = prompt_template.format(
+        title=article['title'],
+        summary=article['summary'],
+        a_tier_actors=", ".join(a_tier_actors),
+        b_tier_actors=", ".join(b_tier_actors),
+        industry_tag=industry_tag
+    )
+    
     try:
         response = client.chat.completions.create(
             model="gpt-4",
@@ -108,14 +123,13 @@ for article in articles:
 output_dir = "reports"
 os.makedirs(output_dir, exist_ok=True)
 
-# Define the output path and write the results to the HTML file
+# Define the output path and write the results to the Markdown file
 today = datetime.now().strftime("%Y-%m-%d")
-output_path = f"{output_dir}/casting_report_{today}.html"
+output_path = f"{output_dir}/casting_report_{today}.md"
 
 with open(output_path, "w") as f:
-    f.write("<html><body><h1>Daily Casting Report</h1>")
+    f.write("# Daily Casting Report\n\n")
     for result in results:
-        f.write(f"<p>{result}</p>\n")
-    f.write("</body></html>")
+        f.write(f"## {result}\n\n")
 
 print(f"✅ Report generated: {output_path}")
