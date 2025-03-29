@@ -54,15 +54,17 @@ for feed_url in rss_feeds:
             try:
                 full_html = requests.get(link, timeout=10).text
                 paragraphs = re.findall(r"<p>(.*?)</p>", full_html, re.DOTALL)
-                cleaned_paragraphs = [re.sub(r"<.*?>", "", p).strip() for p in paragraphs if 'advertisement' not in p.lower() and len(p.strip()) > 30]
-                full_text = "
-".join(cleaned_paragraphs).join(cleaned_paragraphs)
+                cleaned_paragraphs = [
+                    re.sub(r"<.*?>", "", p).strip()
+                    for p in paragraphs
+                    if 'advertisement' not in p.lower() and len(p.strip()) > 30
+                ]
+                full_text = "\n".join(cleaned_paragraphs)
             except Exception as e:
                 print(f"⚠️ Failed to fetch full text from {link}: {e}")
                 full_text = ""
 
-            print(f"🎯 EXTRACTED TEXT for '{title}':
-{full_text[:500]}")
+            print(f"🎯 EXTRACTED TEXT for '{title}':\n{full_text[:500]}")
             articles.append({
                 "title": title,
                 "link": link,
@@ -96,8 +98,6 @@ def get_tmdb_popularity(name):
         print(f"TMDb error for {name}: {e}")
     return 0
 
-
-
 results = []
 
 for article in articles:
@@ -118,6 +118,7 @@ for article in articles:
 
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
+
     prompt = f"""
 You are a casting tracker. Classify only the actors who are newly joining the project — not producers, not existing stars. Use the article title, summary, and full article text to identify which names are being cast.
 
