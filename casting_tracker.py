@@ -95,35 +95,38 @@ for article in articles:
     possible_names = name_pattern.findall(article["title"] + " " + article["summary"])
     unique_names = list(set(possible_names))
 
-    a_tier_actors = []
-    b_tier_actors = []
+    actor_popularity = {}
 
     for name in unique_names:
         popularity = get_tmdb_popularity(name)
-        if popularity >= 80:
-            a_tier_actors.append(name)
-        elif popularity >= 40:
-            b_tier_actors.append(name)
+        actor_popularity[name] = popularity
+
+    actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
+    actor_block = "
+".join(actor_lines)
 
     prompt = f"""
-You are a casting tracker. Categorize actors into tiers based on TMDb popularity **and** household-name logic.
+You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity **and** whether they are widely known household names.
 
-Tier logic:
-- Tier A: popularity ≥ 80 or widely recognizable name (multiple blockbuster or award titles)
-- Tier B: popularity 40–79 and some industry buzz
-- Tier C: under 40 or unknown — DO NOT include
+- Tier A = popularity ≥ 80 **or** undeniably famous
+- Tier B = popularity 40–79 and solid industry presence
+- Ignore anyone else (Tier C)
 
-Return this format:
+Return only this format:
 
 ARTICLE TITLE: {article['title']}.
-A-TIER ACTORS: {', '.join(a_tier_actors)}.
-B-TIER ACTORS: {', '.join(b_tier_actors)}.
+A-TIER ACTORS: [names]
+B-TIER ACTORS: [names]
 Posted Date: {posted_time}.
 
 ---
 
 Title: {article['title']}
-Summary: {article['summary']}"""
+Summary: {article['summary']}
+
+Actors:
+{actor_block}
+"""
 
     try:
         response = client.chat.completions.create(
