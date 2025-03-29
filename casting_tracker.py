@@ -51,12 +51,23 @@ for feed_url in rss_feeds:
         published_parsed = entry.get("published_parsed")
         if title not in seen_titles:
             seen_titles.add(title)
+            try:
+                full_html = requests.get(link, timeout=10).text
+                paragraphs = re.findall(r"<p>(.*?)</p>", full_html, re.DOTALL)
+                cleaned_paragraphs = [re.sub(r"<.*?>", "", p).strip() for p in paragraphs if 'advertisement' not in p.lower() and len(p.strip()) > 30]
+                full_text = "
+".join(cleaned_paragraphs)
+            except Exception as e:
+                print(f"⚠️ Failed to fetch full text from {link}: {e}")
+                full_text = ""
+
             articles.append({
                 "title": title,
                 "link": link,
                 "summary": summary,
                 "published": published,
-                "published_parsed": published_parsed
+                "published_parsed": published_parsed,
+                "full_text": full_text
             })
 
 # Parse published date
@@ -106,7 +117,7 @@ for article in articles:
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
     prompt = f"""
-You are a casting tracker. Classify only the actors who are newly joining the project — not producers, not existing stars. Use the article title and summary to identify which names are being cast.
+You are a casting tracker. Classify only the actors who are newly joining the project — not producers, not existing stars. Use the article title, summary, and full article text to identify which names are being cast.
 
 - Tier A = popularity ≥ 80 or widely famous
 - Tier B = popularity 25–79, rising, trending, or buzzworthy
@@ -135,6 +146,9 @@ Posted Date: {posted_time}.
 
 Title: {article['title']}
 Summary: {article['summary']}
+
+Full Article Text:
+{article.get('full_text', '[No full text available]')}
 
 Actors:
 {actor_block}
