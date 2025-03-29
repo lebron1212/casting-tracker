@@ -1,5 +1,5 @@
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
-A-TIER ACTORS: [Ted Danson, Mary Steenburgen]
+A-TIER ACTORS: [Mary Steenburgen, Ted Danson]
 B-TIER ACTORS: []
 Posted Date: 2025-03-28 17:00:00.
 
@@ -19,8 +19,8 @@ B-TIER ACTORS: []
 Posted Date: 2025-03-27 19:49:42.
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: []
-B-TIER ACTORS: []
+A-TIER ACTORS: [James Van Der Beek]
+B-TIER ACTORS: [Drew Ray Tanner, Charlie Gillespie]
 Posted Date: 2025-03-27 19:15:48.
 
 ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
@@ -30,7 +30,7 @@ Posted Date: 2025-03-27 19:00:00.
 
 ARTICLE TITLE: Billy Eichner Joins Will Ferrell And Zac Efron In Comedy From Nicholas Stoller And Amazon MGM Studios.
 A-TIER ACTORS: [Will Ferrell, Zac Efron]
-B-TIER ACTORS: [Billy Eichner, Regina Hall, Nicholas Stoller]
+B-TIER ACTORS: [Billy Eichner, Regina Hall, Jimmy Tatro]
 Posted Date: 2025-03-27 18:00:00.
 
 ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
@@ -49,8 +49,8 @@ B-TIER ACTORS: []
 Posted Date: 2025-03-27 16:10:00.
 
 ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
-A-TIER ACTORS: []
-B-TIER ACTORS: []
+A-TIER ACTORS: [Felicity Huffman]
+B-TIER ACTORS: [Eric Johnson]
 Posted Date: 2025-03-27 16:00:00.
 
 ARTICLE TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
