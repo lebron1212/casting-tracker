@@ -106,23 +106,28 @@ for article in articles:
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
     prompt = f"""
-You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity, cultural relevance, and the fact that they're being mentioned in an article. Lean generous on B-tier — if they're mentioned in a casting article, they likely qualify.
+You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity, cultural relevance, and the fact that they're being mentioned in an article. Be generous with B-tier — if they're the subject of casting news, they likely qualify.
 
-- Tier A = popularity ≥ 80 **or** undeniably famous
-- Tier B = popularity 25–79 and solid industry presence or buzz
-- Ignore names that are unrecognizable, irrelevant, or below 25 (Tier C)
+- Tier A = popularity ≥ 80 or widely famous
+- Tier B = popularity 25–79, rising, trending, or buzzworthy
+- Tier C = below 25 or unrecognizable — skip
 
-After classifying actors, generate 1–2 sentence blurbs about each A- and B-tier actor. The blurb should briefly describe their career position, recent trends, and what likely drew them to this project.
+After the tier breakdown, write 1–2 sentence **career blurbs** for each A- and B-tier actor. Keep it contextual and insight-driven: recent work, patterns, career stage, why this project fits.
 
-Return only this format:
+⛔️ Do not explain or justify tier rankings.
+⛔️ Do not say "none qualify" — always return structured output.
+
+Blurb length limit: **max 40 characters per blurb**. If over, abbreviate names or phrases — do not cut off.
+
+Return in this exact format:
 
 ARTICLE TITLE: {article['title']}.
 A-TIER ACTORS: [names]
 B-TIER ACTORS: [names]
 
 BLURBS:
-Name: Description...
-Name: Description...
+Name: 40-char-max context line
+Name: 40-char-max context line
 
 Posted Date: {posted_time}.
 
