@@ -83,23 +83,7 @@ def get_tmdb_popularity(name):
         print(f"TMDb error for {name}: {e}")
     return 0
 
-# Prompt template
-- **Tier A actors**: Fame score of at least **8** (household names, long career, prestigious awards, high box office recognition)
-- **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
-- **Tier C actors**: Fame score lower than **6.4** (lesser-known, emerging actors) – **DO NOT include these actors under any circumstances!**
 
-Return only in this format:
-
-ARTICLE TITLE: {article_title}.
-A-TIER ACTORS: {a_tier_actors}.
-B-TIER ACTORS: {b_tier_actors}.
-Posted Date: {posted_time}.
-
----
-
-Title: {article_title}
-Summary: {summary}
-"""
 
 results = []
 
@@ -139,9 +123,7 @@ Posted Date: {posted_time}.
 ---
 
 Title: {article['title']}
-Summary: {article['summary']}
-""",
-        b_tier_actors=", ".join(b_tier_actors),
+Summary: {article['summary']}""",
         posted_time=posted_time
     )
 
