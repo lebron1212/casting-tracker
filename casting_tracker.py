@@ -4,7 +4,7 @@ import requests
 from openai import OpenAI
 from datetime import datetime
 import re
-from bs4 import BeautifulSoup
+from newspaper import Article  # switched from BeautifulSoup
 
 # Pull API keys from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -51,18 +51,14 @@ for feed_url in rss_feeds:
         if title not in seen_titles:
             seen_titles.add(title)
             try:
-                response = requests.get(link, timeout=10)
-                soup = BeautifulSoup(response.text, "html.parser")
-                paragraphs = [
-                    p.get_text().strip()
-                    for p in soup.find_all("p")
-                    if p.get_text().strip() and "advertisement" not in p.get_text().lower()
-                ]
-                full_text = "\n".join(paragraphs)
+                article_obj = Article(link)
+                article_obj.download()
+                article_obj.parse()
+                full_text = article_obj.text.strip()
                 if not full_text:
                     print(f"❌ No usable text extracted for '{title}' ({link})")
             except Exception as e:
-                print(f"⚠️ Failed to fetch full text from {link}: {e}")
+                print(f"⚠️ Failed to extract article from {link}: {e}")
                 full_text = ""
 
             print(f"🎯 EXTRACTED TEXT for '{title}':\n{full_text[:500]}")
