@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install feedparser python-dotenv openai requests beautifulsoup4 httpx
-          pip install feedparser python-dotenv openai requests newspaper3k
+          pip install feedparser python-dotenv openai requests newspaper3k 'lxml[html_clean]'
 
       - name: Run Script
         env:
