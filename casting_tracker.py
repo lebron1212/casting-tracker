@@ -4,6 +4,7 @@ import requests
 from openai import OpenAI
 from datetime import datetime
 import re
+from bs4 import BeautifulSoup
 
 # Pull API keys from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -17,13 +18,11 @@ try:
         timeout=10
     )
     if test_resp.status_code != 200:
-        print(f"❌ OpenAI pre-check failed: Status code {test_resp.status_code}")
-        exit(1)
+        print(f"⚠️ OpenAI pre-check warning: Status code {test_resp.status_code} — continuing anyway")
     else:
         print("✅ Network access to OpenAI confirmed")
 except Exception as e:
-    print(f"❌ Failed to connect to OpenAI API: {e}")
-    exit(1)
+    print(f"⚠️ Failed to connect to OpenAI API: {e} — continuing anyway")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -52,14 +51,16 @@ for feed_url in rss_feeds:
         if title not in seen_titles:
             seen_titles.add(title)
             try:
-                full_html = requests.get(link, timeout=10).text
-                paragraphs = re.findall(r"<p>(.*?)</p>", full_html, re.DOTALL)
-                cleaned_paragraphs = [
-                    re.sub(r"<.*?>", "", p).strip()
-                    for p in paragraphs
-                    if 'advertisement' not in p.lower() and len(p.strip()) > 30
+                response = requests.get(link, timeout=10)
+                soup = BeautifulSoup(response.text, "html.parser")
+                paragraphs = [
+                    p.get_text().strip()
+                    for p in soup.find_all("p")
+                    if p.get_text().strip() and "advertisement" not in p.get_text().lower()
                 ]
-                full_text = "\n".join(cleaned_paragraphs)
+                full_text = "\n".join(paragraphs)
+                if not full_text:
+                    print(f"❌ No usable text extracted for '{title}' ({link})")
             except Exception as e:
                 print(f"⚠️ Failed to fetch full text from {link}: {e}")
                 full_text = ""
@@ -103,7 +104,6 @@ results = []
 for article in articles:
     posted_time = get_readable_published_time(article['published_parsed'])
 
-    # Extract possible actor names from title and summary
     name_pattern = re.compile(r"\b[A-Z][a-zA-ZéÉ'’\-]+(?:\s+[A-Z][a-zA-ZéÉ'’\-]+)+\b")
     possible_names = name_pattern.findall(article["title"] + " " + article["summary"])
     unique_names = list(set(possible_names))
@@ -168,12 +168,13 @@ Actors:
             timeout=30
         )
         reply = response.choices[0].message.content.strip()
+        if not reply.startswith("ARTICLE TITLE:"):
+            reply = f"ARTICLE TITLE: {article['title']}.\n" + reply
         if reply:
             results.append(reply)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
-# Save output
 os.makedirs("reports", exist_ok=True)
 output_path = "reports/latest_casting_report.txt"
 
