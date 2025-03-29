@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install feedparser python-dotenv openai
+
+      - name: Install BeautifulSoup
+        run: pip install beautifulsoup4
    
       - name: Install dependencies
         run: |
