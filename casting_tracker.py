@@ -106,17 +106,24 @@ for article in articles:
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
     prompt = f"""
-You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity **and** whether they are widely known household names.
+You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity, cultural relevance, and the fact that they're being mentioned in an article. Lean generous on B-tier — if they're mentioned in a casting article, they likely qualify.
 
 - Tier A = popularity ≥ 80 **or** undeniably famous
-- Tier B = popularity 40–79 and solid industry presence
-- Ignore names that are unrecognizable, few small credits, or irrelevant (Tier C)
+- Tier B = popularity 25–79 and solid industry presence or buzz
+- Ignore names that are unrecognizable, irrelevant, or below 25 (Tier C)
+
+After classifying actors, generate 1–2 sentence blurbs about each A- and B-tier actor. The blurb should briefly describe their career position, recent trends, and what likely drew them to this project.
 
 Return only this format:
 
 ARTICLE TITLE: {article['title']}.
 A-TIER ACTORS: [names]
 B-TIER ACTORS: [names]
+
+BLURBS:
+Name: Description...
+Name: Description...
+
 Posted Date: {posted_time}.
 
 ---
