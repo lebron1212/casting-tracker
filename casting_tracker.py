@@ -106,7 +106,7 @@ for article in articles:
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
     prompt = f"""
-You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity, cultural relevance, and the fact that they're being mentioned in an article. Be generous with B-tier — if they're the subject of casting news, they likely qualify.
+You are a casting tracker. Classify only the actors who are newly joining the project — not producers, not existing stars. Use the article title and summary to identify which names are being cast.
 
 - Tier A = popularity ≥ 80 or widely famous
 - Tier B = popularity 25–79, rising, trending, or buzzworthy
