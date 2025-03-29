@@ -91,7 +91,7 @@ for article in articles:
     posted_time = get_readable_published_time(article['published_parsed'])
 
     # Extract possible actor names from title and summary
-    name_pattern = re.compile(r'\b[A-Z][a-z]+\s[A-Z][a-z]+\b')
+    name_pattern = re.compile(r"\b[A-Z][a-zA-ZéÉ'’\-]+(?:\s+[A-Z][a-zA-ZéÉ'’\-]+)+\b")
     possible_names = name_pattern.findall(article["title"] + " " + article["summary"])
     unique_names = list(set(possible_names))
 
@@ -100,6 +100,8 @@ for article in articles:
     for name in unique_names:
         popularity = get_tmdb_popularity(name)
         actor_popularity[name] = popularity
+        if popularity == 0:
+            print(f"⚠️ No TMDb result for: {name}")
 
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
@@ -108,7 +110,7 @@ You are a casting tracker. Classify each actor into A-tier or B-tier using their
 
 - Tier A = popularity ≥ 80 **or** undeniably famous
 - Tier B = popularity 40–79 and solid industry presence
-- Ignore anyone else (Tier C)
+- Ignore names that are unrecognizable, few small credits, or irrelevant (Tier C)
 
 Return only this format:
 
