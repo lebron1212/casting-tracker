@@ -84,9 +84,6 @@ def get_tmdb_popularity(name):
     return 0
 
 # Prompt template
-prompt_template = """
-You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
-
 - **Tier A actors**: Fame score of at least **8** (household names, long career, prestigious awards, high box office recognition)
 - **Tier B actors**: Fame score of at least **6.5** (trendiness, rising stars, good industry buzz)
 - **Tier C actors**: Fame score lower than **6.4** (lesser-known, emerging actors) – **DO NOT include these actors under any circumstances!**
@@ -124,10 +121,26 @@ for article in articles:
         elif popularity >= 40:
             b_tier_actors.append(name)
 
-    prompt = prompt_template.format(
-        article_title=article['title'],
-        summary=article['summary'],
-        a_tier_actors=", ".join(a_tier_actors),
+    prompt = f"""
+You are a casting tracker. Categorize actors into tiers based on TMDb popularity **and** household-name logic.
+
+Tier logic:
+- Tier A: popularity ≥ 80 or widely recognizable name (multiple blockbuster or award titles)
+- Tier B: popularity 40–79 and some industry buzz
+- Tier C: under 40 or unknown — DO NOT include
+
+Return this format:
+
+ARTICLE TITLE: {article['title']}.
+A-TIER ACTORS: {', '.join(a_tier_actors)}.
+B-TIER ACTORS: {', '.join(b_tier_actors)}.
+Posted Date: {posted_time}.
+
+---
+
+Title: {article['title']}
+Summary: {article['summary']}
+""",
         b_tier_actors=", ".join(b_tier_actors),
         posted_time=posted_time
     )
