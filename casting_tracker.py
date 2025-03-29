@@ -123,9 +123,7 @@ Posted Date: {posted_time}.
 ---
 
 Title: {article['title']}
-Summary: {article['summary']}""",
-        posted_time=posted_time
-    )
+Summary: {article['summary']}"""
 
     try:
         response = client.chat.completions.create(
