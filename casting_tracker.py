@@ -102,9 +102,7 @@ for article in articles:
         actor_popularity[name] = popularity
 
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
-    actor_block = "
-".join(actor_lines)
-
+    actor_block = "\n".join(actor_lines)
     prompt = f"""
 You are a casting tracker. Classify each actor into A-tier or B-tier using their TMDb popularity **and** whether they are widely known household names.
 
