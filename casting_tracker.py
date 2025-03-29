@@ -2,18 +2,18 @@ import os
 import feedparser
 import requests
 from openai import OpenAI
-from dotenv import load_dotenv
 from datetime import datetime
 import re
 
-# Load environment variables from .env
-load_dotenv()
+# Pull API keys from environment
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
-# Confirm network access to OpenAI before continuing
+# Pre-check OpenAI access
 try:
     test_resp = requests.get(
         "https://api.openai.com/v1/models",
-        headers={"Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}"},
+        headers={"Authorization": f"Bearer {OPENAI_API_KEY}"},
         timeout=10
     )
     if test_resp.status_code != 200:
@@ -25,13 +25,9 @@ except Exception as e:
     print(f"❌ Failed to connect to OpenAI API: {e}")
     exit(1)
 
-# Initialize OpenAI client
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY"),
-    base_url="https://api.openai.com/v1"
-)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
-# RSS feeds (casting-specific)
+# RSS feeds
 rss_feeds = [
     "https://deadline.com/category/casting/feed/",
     "https://variety.com/v/casting/feed/",
@@ -41,21 +37,7 @@ rss_feeds = [
     "https://ew.com/tag/casting/feed/"
 ]
 
-# Define Tier A and Tier B actors (refined household names only)
-A_TIER_ACTORS = [
-    "Tom Cruise", "Tom Hanks", "Will Ferrell", "Leonardo DiCaprio", "Brad Pitt",
-    "Jennifer Lawrence", "Scarlett Johansson", "Zac Efron", "Sandra Bullock", "Denzel Washington",
-    "Ryan Gosling", "Emma Stone", "George Clooney", "Julia Roberts", "Natalie Portman", "Chris Hemsworth",
-    "Anne Hathaway", "Matt Damon", "Robert Downey Jr.", "Ben Affleck", "Morgan Freeman"
-]
-
-B_TIER_ACTORS = [
-    "Kieran Culkin", "Jasmine Cephas Jones", "Kyle Chandler", "Garret Dillahunt",
-    "Vincent D'Onofrio", "James Van Der Beek", "Evan Peters", "Anya Taylor-Joy",
-    "William Moseley", "Mark Valley", "Ted Danson", "Mary Steenburgen"
-]
-
-# Parse feeds and collect unique entries
+# Parse RSS feeds
 seen_titles = set()
 articles = []
 
@@ -77,7 +59,7 @@ for feed_url in rss_feeds:
                 "published_parsed": published_parsed
             })
 
-# Function to convert the published time to a readable format
+# Parse published date
 def get_readable_published_time(published_parsed):
     try:
         if published_parsed:
@@ -88,7 +70,20 @@ def get_readable_published_time(published_parsed):
         print(f"Error parsing published date: {e}")
         return "Unknown"
 
-# GPT prompt logic for extraction (no longer includes project title)
+# Query TMDb popularity score
+def get_tmdb_popularity(name):
+    try:
+        url = "https://api.themoviedb.org/3/search/person"
+        params = {"query": name, "api_key": TMDB_API_KEY}
+        resp = requests.get(url, params=params, timeout=5)
+        data = resp.json()
+        if data["results"]:
+            return data["results"][0]["popularity"]
+    except Exception as e:
+        print(f"TMDb error for {name}: {e}")
+    return 0
+
+# Prompt template
 prompt_template = """
 You are a casting tracker. Your job is to extract casting attachments for actors with the following fame scores:
 
@@ -114,8 +109,20 @@ results = []
 for article in articles:
     posted_time = get_readable_published_time(article['published_parsed'])
 
-    a_tier_actors = [actor for actor in A_TIER_ACTORS if actor in article['title'] or actor in article['summary']]
-    b_tier_actors = [actor for actor in B_TIER_ACTORS if actor in article['title'] or actor in article['summary']]
+    # Extract possible actor names from title and summary
+    name_pattern = re.compile(r'\b[A-Z][a-z]+\s[A-Z][a-z]+\b')
+    possible_names = name_pattern.findall(article["title"] + " " + article["summary"])
+    unique_names = list(set(possible_names))
+
+    a_tier_actors = []
+    b_tier_actors = []
+
+    for name in unique_names:
+        popularity = get_tmdb_popularity(name)
+        if popularity >= 80:
+            a_tier_actors.append(name)
+        elif popularity >= 40:
+            b_tier_actors.append(name)
 
     prompt = prompt_template.format(
         article_title=article['title'],
@@ -136,20 +143,17 @@ for article in articles:
             timeout=30
         )
         reply = response.choices[0].message.content.strip()
-
         if reply:
             results.append(reply)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
-output_dir = "reports"
-os.makedirs(output_dir, exist_ok=True)
+# Save output
+os.makedirs("reports", exist_ok=True)
+output_path = "reports/latest_casting_report.txt"
 
-# Save raw text output
-text_output_path = f"{output_dir}/latest_casting_report.txt"
+with open(output_path, "w") as f:
+    for r in results:
+        f.write(r + "\n\n")
 
-with open(text_output_path, "w") as text_file:
-    for result in results:
-        text_file.write(result + "\n\n")
-
-print(f"✅ Plain text report generated: {text_output_path}")
+print(f"✅ Report written to {output_path}")
