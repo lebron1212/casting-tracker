@@ -147,7 +147,7 @@ Title: {article['title']}
 Summary: {article['summary']}
 
 Full Article Text:
-{article.get('full_text', '[No full text available]')}
+{article['full_text']}
 
 Actors:
 {actor_block}
@@ -167,6 +167,7 @@ Actors:
         if not reply.startswith("ARTICLE TITLE:"):
             reply = f"ARTICLE TITLE: {article['title']}.\n" + reply
         if reply:
+            reply += f"\n\nFULL ARTICLE TEXT:\n{article['full_text']}"
             results.append(reply)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
