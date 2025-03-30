@@ -1,9 +1,9 @@
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
-A-TIER ACTORS: Mary Steenburgen
-B-TIER ACTORS: 
+A-TIER ACTORS: [Mary Steenburgen]
+B-TIER ACTORS: []
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently seen in "Book Club: The Next Chapter". Often collaborates with husband, Danson.
+Mary Steenburgen: Oscar winner, recently seen in "Book Club: The Next Chapter". Often collaborates with Danson.
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -29,11 +29,11 @@ Season 1 of A Man on the Inside debuted atop Netflix’s weekly English series l
 Steenburgen most recently reprised her role as one of the leads in the sequel movie Book Club: The Next Chapter. She is repped by UTA, Entertainment 360 and Gang Tyre Ramer.
 
 ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
-A-TIER ACTORS: 
-B-TIER ACTORS: Jasmine Cephas Jones
+A-TIER ACTORS: []
+B-TIER ACTORS: [Jasmine Cephas Jones]
 
 BLURBS:
-Jasmine Cephas Jones: Known for "Origin", "Blindspotting", won an Emmy for "#FREERAYSHAWN".
+Jasmine Cephas Jones: Known for "Origin" and "Blindspotting"; recently won an Emmy for "#FREERAYSHAWN".
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -59,9 +59,9 @@ A-TIER ACTORS: André De Shields
 B-TIER ACTORS: Max Irons, Marc Menchaca
 
 BLURBS:
-André De Shields: Tony-winning actor for 'Hadestown,' recently played in 'Cats: The Jellicle Ball.'
-Max Irons: Known for 'Condor,' 'Miss Austen,' set to star in 'Young Sherlock' on Amazon.
-Marc Menchaca: Noted for roles in 'Ozark,' 'The Outsiders,' and 'American Rust.'
+André De Shields: Tony winner for "Hadestown," recently in "Cats: The Jellicle Ball."
+Max Irons: Known for "Condor," "Miss Austen," next in Amazon's "Young Sherlock."
+Marc Menchaca: Noted for roles in "Ozark," "The Outsiders," and "American Rust."
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -91,8 +91,8 @@ A-TIER ACTORS: [Lili Taylor]
 B-TIER ACTORS: [Matthew Lillard]
 
 BLURBS:
-Lili Taylor: Recently starred in Prime Video's 'Outer Range' and Apple TV+'s 'Manhunt'.
-Matthew Lillard: Known for his roles in 'Scooby-Doo' and 'SLC Punk!'.
+Lili Taylor: Recently starred in Prime Video's 'Outer Range', also featured on Apple TV+'s 'Manhunt'.
+Matthew Lillard: Joins 'Daredevil: Born Again' Season 2, previous work details not provided.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -114,14 +114,13 @@ A three-time Emmy nominee, Taylor is coming off a two-season starring turn oppos
 Taylor’s book, Turning To Birds, is coming out April 29. She is repped by Independent Artist Group and Untitled Entertainment.
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: James Van Der Beek
-B-TIER ACTORS: Charlie Gillespie, Roan Curtis, Drew Ray Tanner
+A-TIER ACTORS: [James Van Der Beek]
+B-TIER ACTORS: [Charlie Gillespie, Roan Curtis]
 
 BLURBS:
-James Van Der Beek: Known for "Pose", returns as Leroy Lahey in 'Sidelined 2: Intercepted'.
-Charlie Gillespie: Rising star from "Julie and the Phantoms", now playing Skyler in the sequel.
-Roan Curtis: From "Firefly Lane", joins as Charlotte, a USC senior in the new movie.
-Drew Ray Tanner: "Riverdale" actor reprising his role as Nathan Bryan in the sequel.
+James Van Der Beek: Known for "Pose", reprising role in "Sidelined 2: Intercepted", adding depth to his character.
+Charlie Gillespie: Rising star from "Julie and the Phantoms", bringing fresh energy to "Sidelined 2".
+Roan Curtis: From "Firefly Lane", joins "Sidelined 2" as a dynamic new addition.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -145,13 +144,13 @@ Sidelined 2: Intercepted is produced by Marshall Arts, Thunderbird Entertainment
 Sidelined: The QB & Me is currently available to stream for free on Tubi.
 
 ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
-A-TIER ACTORS: []
-B-TIER ACTORS: [Chandler Kinney, Jacob Moskovitz, Gabrielle Policano]
+A-TIER ACTORS: None
+B-TIER ACTORS: Chandler Kinney, Jacob Moskovitz, Gabrielle Policano
 
 BLURBS:
-Chandler Kinney: Known for 'Pretty Little Liars: Original Sin', soon reprising 'Willa' in 'Zombies 4'.
-Jacob Moskovitz: NY actor with roles in 'Y2K', 'Brian', and various TV shows. UNC School of the Arts grad.
-Gabrielle Policano: NY actor and spoken word poet. Starred in 'Breaking The Story' and 'Falcon Girls'.
+Chandler Kinney: Known for Pretty Little Liars: Original Sin, soon reprising role in Zombies 4: Dawn of the Vampires.
+Jacob Moskovitz: Upcoming roles in Seth Meyers-produced film Brian and A24's Y2K, also seen in Chicago P.D.
+Gabrielle Policano: Recent theater work, appeared opposite Nicole Kidman in A24's Babygirl, also a spoken word poet.
 
 Posted Date: 2025-03-27 19:00:00.
 
@@ -183,7 +182,7 @@ A-TIER ACTORS: [Billy Eichner]
 B-TIER ACTORS: []
 
 BLURBS:
-Billy Eichner: Known for his role as Timon in Mufasa: The Lion King, recently in Coen's Drive Away Dolls.
+Billy Eichner: Recently seen in "The Beauty" and "Drive Away Dolls", Eichner continues his comedic streak.
 
 Posted Date: 2025-03-27 18:00:00.
 
@@ -205,8 +204,8 @@ A-TIER ACTORS: [Josh Brolin]
 B-TIER ACTORS: [Austin Abrams]
 
 BLURBS:
-Josh Brolin: Known for Dune: Part 2, set to star in Weapons, The Running Man, and Wake Up Dead Man.
-Austin Abrams: Rising actor, gaining traction in the industry.
+Josh Brolin: Known for Dune: Part 2, upcoming in Weapons, The Running Man, and Wake Up Dead Man.
+Austin Abrams: Rising star, gaining recognition for diverse roles in recent projects.
 
 Posted Date: 2025-03-27 17:00:00.
 
@@ -232,7 +231,7 @@ A-TIER ACTORS: [Mishael Morgan]
 B-TIER ACTORS: []
 
 BLURBS:
-Mishael Morgan: Emmy-winning actress, known for Y&R and Chicago Med. Recently in Hallmark's Shari’s Second Act.
+Mishael Morgan: Daytime Emmy winner, known for roles in 'The Young and the Restless' and 'Chicago Med'.
 
 Posted Date: 2025-03-27 16:25:21.
 
@@ -256,11 +255,13 @@ In the meantime, fans can see Morgan in the Hallmark movie, Hearts Around the Ta
 Morgan is with The Kohner Agency and David Ritchie at Ambition Talent.
 
 ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
-A-TIER ACTORS: 
-B-TIER ACTORS: Arienne Mandi
+A-TIER ACTORS: [Arienne Mandi]
+B-TIER ACTORS: [William Moseley, Mark Valley]
 
 BLURBS:
-Arienne Mandi: Known for 'The L Word: Generation Q' and 'The Night Agent'. Next in 'Tatami'.
+Arienne Mandi: Known for "The Night Agent", Mandi's recent roles include TV's "The L Word: Generation Q".
+William Moseley: Moseley, of "Narnia" fame, continues to explore diverse roles in film and TV.
+Mark Valley: Valley, a steady TV actor, is known for his roles in "Boston Legal" and "Human Target".
 
 Posted Date: 2025-03-27 16:10:00.
 
@@ -279,11 +280,12 @@ Mandi was a series regular on Showtime’s The L Word: Generation Q for 3 season
 
 ARTICLE TITLE: Felicity Huffman, Olga Petsa & Eric Johnson Cast In ‘The 13th Wife: Escaping Polygamy’ Lifetime Movie.
 A-TIER ACTORS: Felicity Huffman
-B-TIER ACTORS: Eric Johnson
+B-TIER ACTORS: Eric Johnson, Olga Petsa
 
 BLURBS:
-Felicity Huffman: Known for "Criminal Minds", Huffman's roles often showcase resilience.
-Eric Johnson: Gained fame in "Fifty Shades of Grey", Johnson typically plays intense characters.
+Felicity Huffman: Known for "Criminal Minds", Huffman often plays complex, layered roles.
+Eric Johnson: Gained fame in "Fifty Shades of Grey", typically plays charismatic characters.
+Olga Petsa: Rising star from "I Used To Be Funny", often seen in comedic roles.
 
 Posted Date: 2025-03-27 16:00:00.
 
@@ -307,8 +309,8 @@ A-TIER ACTORS: [Halle Bailey, Regé-Jean Page]
 B-TIER ACTORS: []
 
 BLURBS:
-Halle Bailey: Known for Grammy-nominated duo Chloe x Halle, starred as Ariel in Disney's live-action Little Mermaid.
-Regé-Jean Page: Emmy-nominated Bridgerton star, recently featured in Steven Soderbergh’s film Black Bag.
+Halle Bailey: Known for her role as Ariel in Disney's 'The Little Mermaid' and 'The Color Purple'.
+Regé-Jean Page: Emmy-nominated 'Bridgerton' star, recently seen in Steven Soderbergh’s 'Black Bag'.
 
 Posted Date: 2025-03-27 16:00:00.
 
