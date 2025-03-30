@@ -1,9 +1,9 @@
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A-TIER ACTORS: Mary Steenburgen
-B-TIER ACTORS: None
+B-TIER ACTORS: 
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently starred in "Book Club: The Next Chapter", often collaborates with Danson.
+Mary Steenburgen: Oscar winner, recently in "Book Club: The Next Chapter". Often collaborates with husband, Ted Danson.
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -29,11 +29,11 @@ Season 1 of A Man on the Inside debuted atop Netflix’s weekly English series l
 Steenburgen most recently reprised her role as one of the leads in the sequel movie Book Club: The Next Chapter. She is repped by UTA, Entertainment 360 and Gang Tyre Ramer.
 
 ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
-A-TIER ACTORS: Jasmine Cephas Jones
-B-TIER ACTORS: 
+A-TIER ACTORS: []
+B-TIER ACTORS: [Jasmine Cephas Jones]
 
 BLURBS:
-Jasmine Cephas Jones: Emmy-winner for #FREERAYSHAWN, Grammy-winner for Hamilton, recently in Blindspotting.
+Jasmine Cephas Jones: Known for Origin, Blindspotting. Emmy winner for #FREERAYSHAWN, Grammy winner for Hamilton.
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -59,9 +59,9 @@ A-TIER ACTORS: André De Shields
 B-TIER ACTORS: Max Irons, Marc Menchaca
 
 BLURBS:
-André De Shields: Tony-winning actor known for 'Hadestown', recently in 'Cats: The Jellicle Ball'.
-Max Irons: Known for 'Condor', 'Miss Austen', will star in Amazon's 'Young Sherlock'.
-Marc Menchaca: Notable for roles in 'Ozark', 'The Outsiders', and 'American Rust'.
+André De Shields: Tony-winning actor known for Hadestown, recently in Cats: The Jellicle Ball.
+Max Irons: Known for Condor, Miss Austen, next in Amazon's Young Sherlock.
+Marc Menchaca: Recognized for roles in Ozark, The Outsiders, and American Rust.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -87,12 +87,12 @@ De Shields won Tony, Drama Desk, Outer Critics Circle and Grammy awards for his 
 Menchaca, known for his turns on HBO’s The Outsiders and Netflix’s Ozark, also portrayed Vic Walker on American Rust. He’s repped by Independent Artist Group and TMT Entertainment Group.
 
 ARTICLE TITLE: Lili Taylor Joins ‘Daredevil: Born Again’ Season 2.
-A-TIER ACTORS: 
-B-TIER ACTORS: Lili Taylor, Matthew Lillard
+A-TIER ACTORS: [Lili Taylor]
+B-TIER ACTORS: [Matthew Lillard]
 
 BLURBS:
-Lili Taylor: Recent star of Prime Video's Outer Range, now joining Daredevil as a political foe.
-Matthew Lillard: Known for Scooby-Doo, now set to recur in Daredevil's new season.
+Lili Taylor: Recently starred in 'Outer Range', known for Emmy-nominated roles.
+Matthew Lillard: Known for 'Scream', recently joined 'Daredevil: Born Again'.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -115,13 +115,13 @@ Taylor’s book, Turning To Birds, is coming out April 29. She is repped by Inde
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
 A-TIER ACTORS: [James Van Der Beek]
-B-TIER ACTORS: [Charlie Gillespie, Roan Curtis, Drew Ray Tanner]
+B-TIER ACTORS: [Drew Ray Tanner, Charlie Gillespie, Roan Curtis]
 
 BLURBS:
-James Van Der Beek: Known for "Pose", he's reprising his role in "Sidelined 2: Intercepted".
-Charlie Gillespie: Rising star from "Julie and the Phantoms", now cast in "Sidelined 2".
-Roan Curtis: From "Firefly Lane", joining "Sidelined 2" as a student athlete trainer.
-Drew Ray Tanner: "Riverdale" actor returning to his role in "Sidelined 2: Intercepted".
+James Van Der Beek: Known for 'Pose', returns as Leroy Lahey in 'Sidelined 2: Intercepted'.
+Drew Ray Tanner: 'Riverdale' actor reprising his role as Nathan Bryan in 'Sidelined' sequel.
+Charlie Gillespie: 'Julie and the Phantoms' star joins 'Sidelined 2' as musician Skyler.
+Roan Curtis: From 'Firefly Lane', cast as Charlotte in 'Sidelined 2: Intercepted'.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -145,13 +145,13 @@ Sidelined 2: Intercepted is produced by Marshall Arts, Thunderbird Entertainment
 Sidelined: The QB & Me is currently available to stream for free on Tubi.
 
 ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
-A-TIER ACTORS: [Chandler Kinney]
-B-TIER ACTORS: [Jacob Moskovitz, Gabrielle Policano]
+A-TIER ACTORS: 
+B-TIER ACTORS: Chandler Kinney, Jacob Moskovitz, Gabrielle Policano
 
 BLURBS:
-Chandler Kinney: Known for Pretty Little Liars: Original Sin, soon reprising role in Zombies 4: Dawn of the Vampires.
-Jacob Moskovitz: NY-based actor, upcoming in Seth Meyers-produced film Brian, recently in A24's Y2K.
-Gabrielle Policano: NY-based actor, recently in A24's Babygirl, award-winning spoken word poet.
+Chandler Kinney: Known for 'Pretty Little Liars: Original Sin', soon reprising 'Willa' in 'Zombies 4'.
+Jacob Moskovitz: NY-based actor, next in Seth Meyers-produced film 'Brian', starred in 'Y2K'.
+Gabrielle Policano: NY-based actor, recently in 'Breaking The Story', 'Falcon Girls', 'Baby Girl'.
 
 Posted Date: 2025-03-27 19:00:00.
 
@@ -183,7 +183,7 @@ A-TIER ACTORS: [Billy Eichner]
 B-TIER ACTORS: []
 
 BLURBS:
-Billy Eichner: Recently seen in "The Beauty" and "Drive Away Dolls", next in Coen's "Honey, Don't!".
+Billy Eichner: Recently seen on "The Beauty" and in "Drive Away Dolls". Next in Coen's "Honey, Don't!".
 
 Posted Date: 2025-03-27 18:00:00.
 
@@ -201,12 +201,12 @@ Watch on Deadline
 He is repped by UTA and Untitled Entertainment.
 
 ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
-A-TIER ACTORS: Josh Brolin
-B-TIER ACTORS: Austin Abrams
+A-TIER ACTORS: [Josh Brolin]
+B-TIER ACTORS: [Austin Abrams]
 
 BLURBS:
-Josh Brolin: Known for Dune: Part 2, set to star in Weapons, The Running Man, and Wake Up Dead Man.
-Austin Abrams: Rising star, yet to establish a defining role in his career.
+Josh Brolin: Known for Dune: Part 2, upcoming in Weapons, The Running Man, and Knives Out sequel.
+Austin Abrams: Rising star, gaining traction in the industry.
 
 Posted Date: 2025-03-27 17:00:00.
 
@@ -232,7 +232,7 @@ A-TIER ACTORS: Mishael Morgan
 B-TIER ACTORS: 
 
 BLURBS:
-Mishael Morgan: Daytime Emmy winner, known for 'Y&R' and 'Chicago Med', recently in a Hallmark movie.
+Mishael Morgan: Daytime Emmy winner, known for her roles in 'The Young & The Restless' and 'Chicago Med'.
 
 Posted Date: 2025-03-27 16:25:21.
 
@@ -256,11 +256,13 @@ In the meantime, fans can see Morgan in the Hallmark movie, Hearts Around the Ta
 Morgan is with The Kohner Agency and David Ritchie at Ambition Talent.
 
 ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
-A-TIER ACTORS: []
-B-TIER ACTORS: [Arienne Mandi]
+A-TIER ACTORS: [Arienne Mandi]
+B-TIER ACTORS: [William Moseley, Mark Valley]
 
 BLURBS:
-Arienne Mandi: Known for "The Night Agent" and "The L Word: Generation Q", now leading in "Hostage".
+Arienne Mandi: Regular on "The L Word: Generation Q", now leads in "The Night Agent" and "Hostage".
+William Moseley: Known for "The Chronicles of Narnia", now in political thriller "Hostage".
+Mark Valley: From "Boston Legal" to "Fringe", now plays a campaign manager in "Hostage".
 
 Posted Date: 2025-03-27 16:10:00.
 
@@ -282,9 +284,9 @@ A-TIER ACTORS: Felicity Huffman
 B-TIER ACTORS: Eric Johnson, Olga Petsa
 
 BLURBS:
-Felicity Huffman: Known for "Criminal Minds", Huffman's dramatic roles often involve complex narratives.
-Eric Johnson: Gained fame in "Fifty Shades of Grey", usually playing intense, conflicted characters.
-Olga Petsa: Rising star from "I Used To Be Funny", Petsa often portrays characters in transformation.
+Felicity Huffman: Known for 'Criminal Minds', Huffman often takes on complex, dramatic roles.
+Eric Johnson: Gained recognition in 'Fifty Shades of Grey', typically plays intense characters.
+Olga Petsa: Rising star from 'I Used To Be Funny', known for comedic roles, diversifying with drama.
 
 Posted Date: 2025-03-27 16:00:00.
 
@@ -308,8 +310,8 @@ A-TIER ACTORS: [Halle Bailey, Regé-Jean Page]
 B-TIER ACTORS: []
 
 BLURBS:
-Halle Bailey: Grammy-nominated singer turned actress, starred as Ariel in Disney's 'The Little Mermaid'.
-Regé-Jean Page: Emmy-nominated for 'Bridgerton', recently starred in Soderbergh's 'Black Bag'.
+Halle Bailey: Grammy-nominated singer turned actress, known for Ariel in Disney's The Little Mermaid.
+Regé-Jean Page: Emmy-nominated Bridgerton star, recently in Soderbergh's film Black Bag.
 
 Posted Date: 2025-03-27 16:00:00.
 
