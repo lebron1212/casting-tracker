@@ -1,9 +1,9 @@
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
-A-TIER ACTORS: [Mary Steenburgen]
-B-TIER ACTORS: []
+A-TIER ACTORS: Mary Steenburgen
+B-TIER ACTORS: None
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently seen in "Book Club: The Next Chapter". Often collaborates with Danson.
+Mary Steenburgen: Oscar winner, recently seen in "Book Club: The Next Chapter", joins husband in comedy series.
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -33,7 +33,7 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Jasmine Cephas Jones]
 
 BLURBS:
-Jasmine Cephas Jones: Known for "Origin" and "Blindspotting"; recently won an Emmy for "#FREERAYSHAWN".
+Jasmine Cephas Jones: Known for "Origin" and "Blindspotting", recently won an Emmy for "#FREERAYSHAWN".
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -59,9 +59,9 @@ A-TIER ACTORS: André De Shields
 B-TIER ACTORS: Max Irons, Marc Menchaca
 
 BLURBS:
-André De Shields: Tony winner for "Hadestown," recently in "Cats: The Jellicle Ball."
-Max Irons: Known for "Condor," "Miss Austen," next in Amazon's "Young Sherlock."
-Marc Menchaca: Noted for roles in "Ozark," "The Outsiders," and "American Rust."
+André De Shields: Tony-winning actor known for 'Hadestown'. Recently played in 'Cats: The Jellicle Ball'.
+Max Irons: Known for 'Condor', 'Miss Austen'. Soon to star in Amazon's 'Young Sherlock'.
+Marc Menchaca: Recognized for roles in 'Ozark', 'The Outsiders'. Recently in 'American Rust'.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -91,8 +91,8 @@ A-TIER ACTORS: [Lili Taylor]
 B-TIER ACTORS: [Matthew Lillard]
 
 BLURBS:
-Lili Taylor: Recently starred in Prime Video's 'Outer Range', also featured on Apple TV+'s 'Manhunt'.
-Matthew Lillard: Joins 'Daredevil: Born Again' Season 2, previous work details not provided.
+Lili Taylor: Recently seen in Prime Video's 'Outer Range' and Apple TV+'s 'Manhunt'.
+Matthew Lillard: Known for diverse roles, now joining 'Daredevil: Born Again' Season 2.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -118,9 +118,9 @@ A-TIER ACTORS: [James Van Der Beek]
 B-TIER ACTORS: [Charlie Gillespie, Roan Curtis]
 
 BLURBS:
-James Van Der Beek: Known for "Pose", reprising role in "Sidelined 2: Intercepted", adding depth to his character.
-Charlie Gillespie: Rising star from "Julie and the Phantoms", bringing fresh energy to "Sidelined 2".
-Roan Curtis: From "Firefly Lane", joins "Sidelined 2" as a dynamic new addition.
+James Van Der Beek: Known for "Pose", Van Der Beek returns as Leroy in "Sidelined 2: Intercepted".
+Charlie Gillespie: Starred in "Julie and the Phantoms", Gillespie plays Skyler in the sequel.
+Roan Curtis: From "Firefly Lane", Curtis portrays Charlotte, a student athlete trainer.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -144,13 +144,13 @@ Sidelined 2: Intercepted is produced by Marshall Arts, Thunderbird Entertainment
 Sidelined: The QB & Me is currently available to stream for free on Tubi.
 
 ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
-A-TIER ACTORS: None
-B-TIER ACTORS: Chandler Kinney, Jacob Moskovitz, Gabrielle Policano
+A-TIER ACTORS: [Chandler Kinney]
+B-TIER ACTORS: [Jacob Moskovitz, Gabrielle Policano]
 
 BLURBS:
-Chandler Kinney: Known for Pretty Little Liars: Original Sin, soon reprising role in Zombies 4: Dawn of the Vampires.
-Jacob Moskovitz: Upcoming roles in Seth Meyers-produced film Brian and A24's Y2K, also seen in Chicago P.D.
-Gabrielle Policano: Recent theater work, appeared opposite Nicole Kidman in A24's Babygirl, also a spoken word poet.
+Chandler Kinney: Known for 'Pretty Little Liars: Original Sin', soon reprising role in 'Zombies 4: Dawn of the Vampires'.
+Jacob Moskovitz: NY-based actor, upcoming in Seth Meyers-produced film 'Brian', seen in A24's 'Y2K'.
+Gabrielle Policano: Recently starred in 'Breaking The Story', appeared in A24's 'Babygirl', award-winning spoken word poet.
 
 Posted Date: 2025-03-27 19:00:00.
 
@@ -182,7 +182,7 @@ A-TIER ACTORS: [Billy Eichner]
 B-TIER ACTORS: []
 
 BLURBS:
-Billy Eichner: Recently seen in "The Beauty" and "Drive Away Dolls", Eichner continues his comedic streak.
+Billy Eichner: Recently featured in Coen's "Drive Away Dolls", Eichner will next appear in "Honey, Don't!".
 
 Posted Date: 2025-03-27 18:00:00.
 
@@ -204,8 +204,8 @@ A-TIER ACTORS: [Josh Brolin]
 B-TIER ACTORS: [Austin Abrams]
 
 BLURBS:
-Josh Brolin: Known for Dune: Part 2, upcoming in Weapons, The Running Man, and Wake Up Dead Man.
-Austin Abrams: Rising star, gaining recognition for diverse roles in recent projects.
+Josh Brolin: Known for Dune: Part 2, set to star in Weapons, The Running Man, and Wake Up Dead Man.
+Austin Abrams: Rising star, generating buzz in the industry, expected to bring freshness to Whalefall.
 
 Posted Date: 2025-03-27 17:00:00.
 
@@ -231,7 +231,7 @@ A-TIER ACTORS: [Mishael Morgan]
 B-TIER ACTORS: []
 
 BLURBS:
-Mishael Morgan: Daytime Emmy winner, known for roles in 'The Young and the Restless' and 'Chicago Med'.
+Mishael Morgan: Emmy-winning actress known for Y&R, recently seen in Hallmark's "Hearts Around the Table".
 
 Posted Date: 2025-03-27 16:25:21.
 
@@ -255,13 +255,11 @@ In the meantime, fans can see Morgan in the Hallmark movie, Hearts Around the Ta
 Morgan is with The Kohner Agency and David Ritchie at Ambition Talent.
 
 ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
-A-TIER ACTORS: [Arienne Mandi]
-B-TIER ACTORS: [William Moseley, Mark Valley]
+A-TIER ACTORS: []
+B-TIER ACTORS: [Arienne Mandi]
 
 BLURBS:
-Arienne Mandi: Known for "The Night Agent", Mandi's recent roles include TV's "The L Word: Generation Q".
-William Moseley: Moseley, of "Narnia" fame, continues to explore diverse roles in film and TV.
-Mark Valley: Valley, a steady TV actor, is known for his roles in "Boston Legal" and "Human Target".
+Arienne Mandi: Known for "The L Word: Generation Q" and "The Night Agent". Now leads in "Hostage".
 
 Posted Date: 2025-03-27 16:10:00.
 
@@ -283,9 +281,9 @@ A-TIER ACTORS: Felicity Huffman
 B-TIER ACTORS: Eric Johnson, Olga Petsa
 
 BLURBS:
-Felicity Huffman: Known for "Criminal Minds", Huffman often plays complex, layered roles.
-Eric Johnson: Gained fame in "Fifty Shades of Grey", typically plays charismatic characters.
-Olga Petsa: Rising star from "I Used To Be Funny", often seen in comedic roles.
+Felicity Huffman: Known for "Criminal Minds", Huffman's seasoned acting brings depth to complex roles.
+Eric Johnson: Recognized from "Fifty Shades of Grey", Johnson navigates intriguing, conflicted characters.
+Olga Petsa: Rising star from "I Used To Be Funny", Petsa brings fresh energy to dramatic roles.
 
 Posted Date: 2025-03-27 16:00:00.
 
@@ -305,12 +303,12 @@ The 13th Wife: Escaping Polygamy is produced by MCPA Films with Brad Krevoy and 
 Huffman is represented by Atlas Artists. Petsa is repped by Gersh and Principals Talent Management. Johnson is repped by GGA and Anonyous Content.
 
 ARTICLE TITLE: Halle Bailey And Regé-Jean Page To Star in ‘Italianna’ From Universal And Will Packer, Kat Coiro Directing With Ryan Engle Writing Script.
-A-TIER ACTORS: [Halle Bailey, Regé-Jean Page]
-B-TIER ACTORS: []
+A-TIER ACTORS: [Regé-Jean Page]
+B-TIER ACTORS: [Halle Bailey]
 
 BLURBS:
-Halle Bailey: Known for her role as Ariel in Disney's 'The Little Mermaid' and 'The Color Purple'.
-Regé-Jean Page: Emmy-nominated 'Bridgerton' star, recently seen in Steven Soderbergh’s 'Black Bag'.
+Regé-Jean Page: Emmy-nominated star of Bridgerton, recently in Soderbergh's Black Bag.
+Halle Bailey: Grammy-nominated singer, Ariel in Disney's Little Mermaid, joined Color Purple remake.
 
 Posted Date: 2025-03-27 16:00:00.
 
