@@ -113,14 +113,6 @@ em {
   transform: translateY(0);
   pointer-events: auto;
 }
-.day-header {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.2rem;
-  margin-top: 2em;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.25em;
-}
-
 .load-more-btn {
   margin: 2em auto;
   display: block;
@@ -134,10 +126,10 @@ em {
 }
 .day-header {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.25em;
+  font-size: 2rem;
+  letter-spacing: 3.5em;
   text-transform: uppercase;
-  color: #999;
+  color: #000000;
   margin: 2em 0 1em;
   border: none;
   padding: 0;
