@@ -14,12 +14,16 @@ body {
   padding-bottom: 6px;
   display: block;
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   transition: all 0.4s ease;
 }
-.line.a-tier {
-  border: 1px solid black;
-  padding: 8px;
-  border-radius: 6px;
+
+.line {
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+  display: block;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 .tooltip.flip {
   top: 125%;
