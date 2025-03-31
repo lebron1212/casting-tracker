@@ -127,10 +127,10 @@ em {
 .day-header {
   font-family: 'Orbitron', sans-serif;
   font-size: 0.9rem;               /* Slightly larger than listings */
-  letter-spacing: 0.75em;          /* Extra-wide kerning */
+  letter-spacing: -.25em;          /* Condensed kerning */
   text-transform: uppercase;
   color: #000;
-  transform: scaleY(1.5);
+  transform: scaleY(1.35);
 }
 
 
