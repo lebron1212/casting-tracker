@@ -1,10 +1,10 @@
 ARTICLE TITLE: ‘1923’: How Darren Mann Originally Read For Spencer Dutton But Ended Up As Nephew Jack.
-A-TIER ACTORS: []
-B-TIER ACTORS: [Darren Mann, Brandon Sklenar]
+A-TIER ACTORS: 
+B-TIER ACTORS: Darren Mann, Brandon Sklenar
 
 BLURBS:
-Darren Mann: Known for roles in 'Animal Kingdom' and 'Wayward Pines', now plays Jack in '1923'.
-Brandon Sklenar: Portrays Spencer in '1923', adding to his diverse performance portfolio.
+Darren Mann: Known for roles in "Animal Kingdom" and "Wayward Pines", now plays Jack in "1923".
+Brandon Sklenar: Portrays Spencer in "1923", adding to his diverse acting portfolio.
 
 Posted Date: 2025-03-30 19:00:00.
 
@@ -31,10 +31,10 @@ The opportunity to try out for 1883 never materialized, but Sheridan’s team ev
 
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A-TIER ACTORS: Mary Steenburgen
-B-TIER ACTORS: 
+B-TIER ACTORS: []
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently in 'Book Club: The Next Chapter'. Often collaborates with Danson.
+Mary Steenburgen: Oscar winner, recently starred in "Book Club: The Next Chapter", now joining S2 of "A Man On The Inside".
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -60,12 +60,11 @@ Season 1 of A Man on the Inside debuted atop Netflix’s weekly English series l
 Steenburgen most recently reprised her role as one of the leads in the sequel movie Book Club: The Next Chapter. She is repped by UTA, Entertainment 360 and Gang Tyre Ramer.
 
 ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
-A-TIER ACTORS: Kyle Chandler
+A-TIER ACTORS: 
 B-TIER ACTORS: Jasmine Cephas Jones
 
 BLURBS:
-Kyle Chandler: Known for "Friday Night Lights", recently seen in "Godzilla vs. Kong".
-Jasmine Cephas Jones: Emmy winner for "#FREERAYSHAWN", also starred in "Hamilton".
+Jasmine Cephas Jones: Emmy-winning actress known for #FREERAYSHAWN, Blindspotting, and Hamilton.
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -91,9 +90,9 @@ A-TIER ACTORS: André De Shields
 B-TIER ACTORS: Max Irons, Marc Menchaca
 
 BLURBS:
-André De Shields: Tony-winning actor known for 'Hadestown', recently in 'Cats: The Jellicle Ball'.
-Max Irons: Known for 'Condor', 'Miss Austen', soon to star in 'Young Sherlock'.
-Marc Menchaca: Noted for roles in 'Ozark', 'The Outsiders', and 'American Rust'.
+André De Shields: Tony-winning actor known for Hadestown, recently in Cats: The Jellicle Ball.
+Max Irons: Known for Condor and Miss Austen, set to star in Amazon's Young Sherlock.
+Marc Menchaca: Recognized for roles in HBO’s The Outsiders and Netflix’s Ozark.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -123,8 +122,8 @@ A-TIER ACTORS: [Lili Taylor]
 B-TIER ACTORS: [Matthew Lillard]
 
 BLURBS:
-Lili Taylor: Recent work includes a lead role in Prime Video's "Outer Range" and Apple TV+'s "Manhunt".
-Matthew Lillard: Known for his versatile roles, Lillard is set to bring a fresh dynamic to the series.
+Lili Taylor: Recently seen in Prime Video's 'Outer Range', now joining 'Daredevil: Born Again'.
+Matthew Lillard: Known for 'Scooby-Doo', now set to recur in 'Daredevil: Born Again' Season 2.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -146,14 +145,14 @@ A three-time Emmy nominee, Taylor is coming off a two-season starring turn oppos
 Taylor’s book, Turning To Birds, is coming out April 29. She is repped by Independent Artist Group and Untitled Entertainment.
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: [James Van Der Beek]
-B-TIER ACTORS: [Charlie Gillespie, Drew Ray Tanner, Roan Curtis]
+A-TIER ACTORS: James Van Der Beek
+B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie, Roan Curtis
 
 BLURBS:
-James Van Der Beek: Known for 'Pose', returns as Leroy Lahey in 'Sidelined 2: Intercepted'.
-Charlie Gillespie: Rising star from 'Julie and the Phantoms', cast as Skyler in the sequel.
-Drew Ray Tanner: 'Riverdale' actor reprising role as Nathan Bryan in 'Sidelined' sequel.
-Roan Curtis: 'Firefly Lane' actress joins as Charlotte, a student athlete trainer.
+James Van Der Beek: Known for 'Pose,' Van Der Beek returns as Leroy in 'Sidelined 2: Intercepted.'
+Drew Ray Tanner: 'Riverdale' actor reprising his role as Nathan Bryan in the 'Sidelined' sequel.
+Charlie Gillespie: Rising star from 'Julie and the Phantoms' cast as Skyler in 'Sidelined 2.'
+Roan Curtis: 'Firefly Lane' actress joins 'Sidelined 2' as Charlotte, a USC senior.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -181,9 +180,9 @@ A-TIER ACTORS: [None]
 B-TIER ACTORS: [Chandler Kinney, Jacob Moskovitz, Gabrielle Policano]
 
 BLURBS:
-Chandler Kinney: Known for her role in "Pretty Little Liars: Original Sin" and the "Zombies" franchise.
-Jacob Moskovitz: Notable for his roles in "Y2K" and various TV series including "Chicago P.D."
-Gabrielle Policano: Recently starred in "Baby Girl" and has a strong theatre background.
+Chandler Kinney: Known for 'Pretty Little Liars,' soon reprising role in 'Zombies 4.' Recently placed 3rd in 'Dancing with the Stars.'
+Jacob Moskovitz: NY-based actor, next in Seth Meyers-produced film 'Brian.' Credits include 'Chicago P.D.' and 'The Good Fight.'
+Gabrielle Policano: NY-based actor, recently in 'Breaking The Story.' Appeared in A24 film 'Babygirl.' Also an award-winning poet.
 
 Posted Date: 2025-03-27 19:00:00.
 
@@ -215,7 +214,7 @@ A-TIER ACTORS: [Billy Eichner]
 B-TIER ACTORS: []
 
 BLURBS:
-Billy Eichner: Recently seen in Ryan Murphy's 'The Beauty' and Ethan Coen’s 'Honey, Don’t!', now plays a bailiff.
+Billy Eichner: Known for his role in 'The Lion King', recently appeared in 'The Beauty' and 'Drive Away Dolls'.
 
 Posted Date: 2025-03-27 18:00:00.
 
@@ -233,12 +232,12 @@ Watch on Deadline
 He is repped by UTA and Untitled Entertainment.
 
 ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
-A-TIER ACTORS: [Josh Brolin]
-B-TIER ACTORS: [Austin Abrams]
+A-TIER ACTORS: Josh Brolin
+B-TIER ACTORS: Austin Abrams
 
 BLURBS:
-Josh Brolin: Known for roles in 'Dune: Part 2', 'Knives Out', and upcoming 'Weapons'.
-Austin Abrams: Rising star, previously in 'Euphoria', now venturing into big screen roles.
+Josh Brolin: Known for Dune: Part 2, Brolin's next roles include Weapons, The Running Man, and Wake Up Dead Man.
+Austin Abrams: Rising star Abrams joins Whalefall, adding to his growing list of impressive roles.
 
 Posted Date: 2025-03-27 17:00:00.
 
@@ -264,7 +263,7 @@ A-TIER ACTORS: [Mishael Morgan]
 B-TIER ACTORS: []
 
 BLURBS:
-Mishael Morgan: Daytime Emmy winner, known for Y&R and Chicago Med. Recently in Hallmark's Shari's Second Act.
+Mishael Morgan: Daytime Emmy winner, known for roles in 'Chicago Med' and 'Young & Restless'. 
 
 Posted Date: 2025-03-27 16:25:21.
 
@@ -288,11 +287,11 @@ In the meantime, fans can see Morgan in the Hallmark movie, Hearts Around the Ta
 Morgan is with The Kohner Agency and David Ritchie at Ambition Talent.
 
 ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
-A-TIER ACTORS: 
-B-TIER ACTORS: Arienne Mandi
+A-TIER ACTORS: []
+B-TIER ACTORS: [Arienne Mandi]
 
 BLURBS:
-Arienne Mandi: Known for 'The Night Agent' and 'The L Word: Generation Q'. Soon to star in 'Tatami'.
+Arienne Mandi: Known for "The Night Agent" & "The L Word: Generation Q". Upcoming lead in "Tatami".
 
 Posted Date: 2025-03-27 16:10:00.
 
@@ -314,9 +313,9 @@ A-TIER ACTORS: Felicity Huffman
 B-TIER ACTORS: Eric Johnson, Olga Petsa
 
 BLURBS:
-Felicity Huffman: Known for "Criminal Minds", Huffman brings experience in portraying complex characters.
-Eric Johnson: Recognized from "Fifty Shades of Grey", Johnson often plays intense, dramatic roles.
-Olga Petsa: Petsa, from "I Used To Be Funny", is a rising star known for her comedic timing.
+Felicity Huffman: Known for "Criminal Minds", Huffman's dramatic roles often involve complex narratives.
+Eric Johnson: Recognized from "Fifty Shades of Grey", Johnson usually plays charismatic, intense characters.
+Olga Petsa: Rising star Petsa, known for "I Used To Be Funny", often takes on quirky, relatable roles.
 
 Posted Date: 2025-03-27 16:00:00.
 
