@@ -130,7 +130,7 @@ em {
   letter-spacing: 0.75em;          /* Extra-wide kerning */
   text-transform: uppercase;
   color: #000;
-  transform: scaleY(1.1);
+  transform: scaleY(1.5);
 }
 
 
