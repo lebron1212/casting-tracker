@@ -5,56 +5,73 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   padding: 24px;
-  background-color: #0e0e0e; /* off-black */
-  color: #d6d6d6; /* soft light gray */
+  background-color: #f6f6f6; /* soft off-white */
+  color: #000000;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-.line.a-tier {
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.04),
-    rgba(255, 255, 255, 0.04) 2px,
-    transparent 2px,
-    transparent 4px
-  );
-  border-left: 2px solid #444; /* subtle accent edge */
-  padding-left: 12px;
+.status-indicator {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  background: #e0e0e0;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 9px;
+  letter-spacing: 1px;
   border-radius: 4px;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.05);
+  text-transform: uppercase;
+  z-index: 100;
+  user-select: none;
+}
+
+.line.a-tier {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(0, 0, 0, 0.06) 100%
+  );
+  border-left: 2px solid #000;
+  padding-left: 12px;
+  border-radius: 2px;
+  box-shadow: inset 2px 0 0 rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
 .line {
   margin-bottom: 10px;
   padding-bottom: 6px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
 }
 
 .cypher {
   display: inline-block;
   white-space: pre-wrap;
-  animation: glowPulse 3s ease-in-out infinite;
+  animation: cypherScroll 1.4s steps(12) infinite;
 }
 
-@keyframes glowPulse {
-  0%, 100% {
-    text-shadow: 0 0 2px #aaa;
+@keyframes cypherScroll {
+  0% {
+    opacity: 0.3;
   }
   50% {
-    text-shadow: 0 0 4px #bbb;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
   }
 }
 
 .bold {
   font-weight: 600;
-  color: #f2f2f2;
+  color: #000;
 }
 
 .timestamp {
   display: block;
   font-size: 8px;
-  color: #777;
+  color: #444;
   margin-top: 4px;
   opacity: 0;
   transition: opacity 0.6s ease-in;
@@ -67,33 +84,33 @@ body {
 
 em {
   font-style: italic;
-  color: #aaa;
+  color: #333;
 }
 
 .actor {
   position: relative;
   cursor: pointer;
-  color: #d6d6d6;
+  color: #000;
   transition: color 0.3s ease;
 }
 
 .actor:hover {
-  color: #fff;
+  color: #111;
 }
 
 .tooltip {
   position: absolute;
   bottom: 125%;
   left: 0;
-  background-color: #1a1a1a;
-  color: #ccc;
+  background-color: #eaeaea;
+  color: #000;
   padding: 6px 10px;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 9px;
   width: max-content;
   max-width: 240px;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(-10px);
