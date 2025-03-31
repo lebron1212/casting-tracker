@@ -45,24 +45,6 @@ body {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
 }
 
-.cypher {
-  display: inline-block;
-  white-space: pre-wrap;
-  animation: cypherScroll 1.4s steps(12) infinite;
-}
-
-@keyframes cypherScroll {
-  0% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-
 .bold {
   font-weight: 600;
   color: #000;
