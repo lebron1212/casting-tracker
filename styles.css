@@ -21,6 +21,11 @@ body {
   padding: 8px;
   border-radius: 6px;
 }
+.tooltip.flip {
+  top: 125%;
+  bottom: auto;
+  transform: translateY(10px);
+}
 .cypher {
   display: inline-block;
   white-space: pre-wrap;
