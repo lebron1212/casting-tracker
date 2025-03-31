@@ -125,6 +125,7 @@ em {
   margin: 2em auto;
   display: block;
   font-family: 'IBM Plex Mono', monospace;
+  text-transform: uppercase;
   padding: 0.5em 1em;
   background: black;
   color: white;
