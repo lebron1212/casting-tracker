@@ -1,10 +1,10 @@
 ARTICLE TITLE: Will Harrison & Johnny Berchtold Join Hulu’s Limited Series Based On Murdaugh Murders.
-A-TIER ACTORS: None
-B-TIER ACTORS: Johnny Berchtold, Will Harrison
+A-TIER ACTORS: []
+B-TIER ACTORS: [Will Harrison, Johnny Berchtold]
 
 BLURBS:
-Johnny Berchtold: Known for intense roles, recently in buzzworthy indie films.
-Will Harrison: Emerging talent, seen in several TV dramas, showing versatility.
+Will Harrison: Known for diverse roles, Harrison's recent work includes acclaimed series and films.
+Johnny Berchtold: Berchtold, a rising star, often plays complex characters in drama series.
 
 Posted Date: 2025-03-31 17:05:58.
 
@@ -26,12 +26,12 @@ Berchtold is repped by Buchwald, Canopy Media Partners, Jackoway Austen
 Harrison is represented by Gersh and Sugar23.
 
 ARTICLE TITLE: Tommy Flanagan Joins ‘House Of The Dragon’ Season 3 As Ser Roderick Dustin.
-A-TIER ACTORS: Tommy Flanagan
-B-TIER ACTORS: Dan Fogler
+A-TIER ACTORS: [Tommy Flanagan]
+B-TIER ACTORS: [Dan Fogler]
 
 BLURBS:
-Tommy Flanagan: Known for roles in 'Gladiator', 'Sons of Anarchy'. Recently in 'Westworld', 'Peaky Blinders'.
-Dan Fogler: Recognized for 'Fantastic Beasts' series. Recently seen in 'The Walking Dead'.
+Tommy Flanagan: Known for roles in 'Sons of Anarchy', 'Gladiator', joining 'House of the Dragon'.
+Dan Fogler: Noted for 'Fantastic Beasts', now cast in 'House of the Dragon' as Ser Torrhen Manderly.
 
 Posted Date: 2025-03-31 15:30:00.
 
@@ -60,10 +60,11 @@ He next will be seen starring opposite Russell Crowe in the feature film Sleepin
 
 ARTICLE TITLE: ‘1923’: How Darren Mann Originally Read For Spencer Dutton But Ended Up As Nephew Jack.
 A-TIER ACTORS: []
-B-TIER ACTORS: [Darren Mann]
+B-TIER ACTORS: [Darren Mann, Brandon Sklenar]
 
 BLURBS:
-Darren Mann: Known for roles in Animal Kingdom, Fortunate Son, and Wayward Pines. Excited to join a western.
+Darren Mann: Known for roles in "Animal Kingdom" and "Wayward Pines", now playing Jack in "1923".
+Brandon Sklenar: Plays Spencer in "1923", adding to his diverse acting portfolio.
 
 Posted Date: 2025-03-30 19:00:00.
 
@@ -89,11 +90,11 @@ The opportunity to try out for 1883 never materialized, but Sheridan’s team ev
 “He’s so pure intentioned,” Mann tells Deadline of Jack. “He’s so much different than the rest of ’em. He’s not hardened or jaded. He has such a beautiful, pure view of the world.”
 
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
-A-TIER ACTORS: Mary Steenburgen
-B-TIER ACTORS: 
+A-TIER ACTORS: [Mary Steenburgen]
+B-TIER ACTORS: []
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently in 'Book Club: The Next Chapter'. Often collaborates with husband, Danson.
+Mary Steenburgen: Oscar winner, recently in "Book Club: The Next Chapter", now joins husband in Netflix comedy.
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -123,7 +124,7 @@ A-TIER ACTORS:
 B-TIER ACTORS: Jasmine Cephas Jones
 
 BLURBS:
-Jasmine Cephas Jones: Known for "Origin" and "Blindspotting". Recently won an Emmy for "#FREERAYSHAWN".
+Jasmine Cephas Jones: Known for "Origin," "Blindspotting," and "Hamilton." Emmy and Grammy winner.
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -145,13 +146,13 @@ Also, her full-length album, Phoenix was released and can be listened to on all 
 She is repped by ATA Management, WME and Jackoway, Tyerman.
 
 ARTICLE TITLE: Max Irons, André De Shields & Marc Menchaca Round Out Cast Of ‘Neuromancer’ Apple TV+ Series.
-A-TIER ACTORS: André De Shields
-B-TIER ACTORS: Max Irons, Marc Menchaca
+A-TIER ACTORS: [André De Shields]
+B-TIER ACTORS: [Max Irons, Marc Menchaca]
 
 BLURBS:
-André De Shields: Tony winner for Hadestown, recently portrayed Old Deuteronomy in Cats.
-Max Irons: Known for Condor, soon to star in Amazon's Young Sherlock.
-Marc Menchaca: Recognized for roles in HBO's The Outsiders and Netflix's Ozark.
+André De Shields: Tony winner for 'Hadestown', recently played in 'Cats: The Jellicle Ball'.
+Max Irons: Known for 'Condor', 'Miss Austen', will star in 'Young Sherlock'.
+Marc Menchaca: Notable for roles in 'Ozark' and 'The Outsiders', also in 'American Rust'.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -177,12 +178,12 @@ De Shields won Tony, Drama Desk, Outer Critics Circle and Grammy awards for his 
 Menchaca, known for his turns on HBO’s The Outsiders and Netflix’s Ozark, also portrayed Vic Walker on American Rust. He’s repped by Independent Artist Group and TMT Entertainment Group.
 
 ARTICLE TITLE: Lili Taylor Joins ‘Daredevil: Born Again’ Season 2.
-A-TIER ACTORS: [Lili Taylor]
-B-TIER ACTORS: [Matthew Lillard]
+A-TIER ACTORS: Lili Taylor
+B-TIER ACTORS: Matthew Lillard
 
 BLURBS:
-Lili Taylor: Recently starred in Prime Video's 'Outer Range', now joins 'Daredevil' as a political foe.
-Matthew Lillard: Known for 'Scream', now set to recur in 'Daredevil: Born Again' Season 2.
+Lili Taylor: Recently starred in Prime Video's 'Outer Range' and Apple TV+'s 'Manhunt'.
+Matthew Lillard: Joins 'Daredevil: Born Again' Season 2 in a recurring role.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -208,10 +209,10 @@ A-TIER ACTORS: James Van Der Beek
 B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie, Roan Curtis
 
 BLURBS:
-James Van Der Beek: Known for "Pose", returns as Leroy Lahey in "Sidelined 2: Intercepted".
-Drew Ray Tanner: "Riverdale" actor reprising role as Nathan Bryan in "Sidelined" sequel.
-Charlie Gillespie: From "Julie and the Phantoms", joins as Skyler, a musician in "Sidelined 2".
-Roan Curtis: "Firefly Lane" actress cast as Charlotte, a student athlete trainer in sequel.
+James Van Der Beek: Known for 'Pose', returns as Leroy Lahey in 'Sidelined 2: Intercepted'.
+Drew Ray Tanner: 'Riverdale' actor reprising his role as Nathan Bryan in 'Sidelined' sequel.
+Charlie Gillespie: Starred in 'Julie and the Phantoms', now plays Skyler in 'Sidelined 2'.
+Roan Curtis: From 'Firefly Lane', cast as Charlotte in the 'Sidelined' sequel.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -235,13 +236,13 @@ Sidelined 2: Intercepted is produced by Marshall Arts, Thunderbird Entertainment
 Sidelined: The QB & Me is currently available to stream for free on Tubi.
 
 ARTICLE TITLE: Chandler Kinney, Gabrielle Policano & Jacob Moskovitz Join ‘Legally Blonde’ Prequel Series.
-A-TIER ACTORS: [Chandler Kinney]
-B-TIER ACTORS: [Gabrielle Policano, Jacob Moskovitz]
+A-TIER ACTORS: None
+B-TIER ACTORS: Chandler Kinney, Jacob Moskovitz, Gabrielle Policano
 
 BLURBS:
-Chandler Kinney: Known for 'Pretty Little Liars: Original Sin', soon to reprise 'Willa' in 'Zombies 4'.
-Gabrielle Policano: Recent lead in 'Falcon Girls', supporting role in A24's 'Babygirl'.
-Jacob Moskovitz: NY actor with roles in 'Y2K', 'Chicago P.D.', and upcoming 'Brian'.
+Chandler Kinney: Known for 'Pretty Little Liars: Original Sin', will reprise role in 'Zombies 4: Dawn of the Vampires'.
+Jacob Moskovitz: NY-based actor with roles in 'Y2K', 'Chicago P.D.', and upcoming Seth Meyers-produced film 'Brian'.
+Gabrielle Policano: NY-based actor, recently seen in 'Baby Girl' and theatre productions at Yale Rep and Second Stage.
 
 Posted Date: 2025-03-27 19:00:00.
 
@@ -273,7 +274,7 @@ A-TIER ACTORS: [Billy Eichner]
 B-TIER ACTORS: []
 
 BLURBS:
-Billy Eichner: Recently seen in Ryan Murphy's "The Beauty", and Ethan Coen's "Honey, Don't!" and "Drive Away Dolls".
+Billy Eichner: Known for comedic roles, recently in Coen's "Drive Away Dolls" and Murphy's "The Beauty".
 
 Posted Date: 2025-03-27 18:00:00.
 
@@ -291,12 +292,12 @@ Watch on Deadline
 He is repped by UTA and Untitled Entertainment.
 
 ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
-A-TIER ACTORS: Josh Brolin
-B-TIER ACTORS: Austin Abrams
+A-TIER ACTORS: [Josh Brolin]
+B-TIER ACTORS: [Austin Abrams]
 
 BLURBS:
-Josh Brolin: Recently seen in Dune: Part 2, Brolin is set to star in upcoming films Weapons and Wake Up Dead Man.
-Austin Abrams: Rising actor known for roles in Euphoria and Dash & Lily, now joining the cast of Whalefall.
+Josh Brolin: Known for roles in "Dune: Part 2" and "Knives Out," next in "Weapons" and "The Running Man."
+Austin Abrams: Rising star, recently seen in "Euphoria," joins "Whalefall" in a leading role.
 
 Posted Date: 2025-03-27 17:00:00.
 
@@ -322,7 +323,7 @@ A-TIER ACTORS: [Mishael Morgan]
 B-TIER ACTORS: []
 
 BLURBS:
-Mishael Morgan: Emmy-winning actress known for "The Young and the Restless". Recently starred in a Hallmark movie.
+Mishael Morgan: Emmy-winning actress, known for roles in Y&R and Chicago Med, returning for guest arc.
 
 Posted Date: 2025-03-27 16:25:21.
 
