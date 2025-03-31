@@ -125,17 +125,13 @@ em {
   cursor: pointer;
 }
 .day-header {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 0.9rem;               /* Slightly larger than listings */
   letter-spacing: 0.75em;          /* Extra-wide kerning */
   text-transform: uppercase;
   color: #000;
-  margin: 2.5em 0 1em;
-  border: none;
-  padding: 0;
+  transform: scaleY(1.1);
 }
-
-
 
 
 @media (prefers-color-scheme: dark) {
