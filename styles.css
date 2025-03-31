@@ -125,16 +125,14 @@ em {
   cursor: pointer;
 }
 .day-header {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.6rem;            /* Big */
-  font-weight: 700;             /* Thick */
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;              /* Big */
   text-transform: uppercase;
-  letter-spacing: 0.1em;        /* Tight kerning for density */
+  letter-spacing: 0.05em;       /* Tight kerning */
   line-height: 1;
-  color: #ccc;
+  color: #000;                  /* Pure black text */
   margin: 2.5em 0 1em;
 }
-
 
 @media (prefers-color-scheme: dark) {
   body {
