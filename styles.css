@@ -113,6 +113,25 @@ em {
   transform: translateY(0);
   pointer-events: auto;
 }
+.day-header {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2rem;
+  margin-top: 2em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25em;
+}
+
+.load-more-btn {
+  margin: 2em auto;
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 0.5em 1em;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
 
 @media (prefers-color-scheme: dark) {
   body {
