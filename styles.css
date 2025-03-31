@@ -113,3 +113,54 @@ em {
   transform: translateY(0);
   pointer-events: auto;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0e0e0e;
+    color: #f2f2f2;
+  }
+
+  .line {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+  }
+
+  .line.a-tier {
+    background-color: #1a1a1a;
+    border-left: 2px solid #f2f2f2;
+  }
+
+  .bold {
+    color: #ffffff;
+  }
+
+  .timestamp {
+    color: #999;
+  }
+
+  em {
+    color: #ccc;
+  }
+
+  .actor {
+    color: #f2f2f2;
+  }
+
+  .actor:hover {
+    color: #fff;
+  }
+
+  .tooltip {
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+    border: 1px solid #333;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+  }
+
+  .status-indicator {
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+    border: 1px solid #444;
+  }
+}
+
+
