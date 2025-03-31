@@ -3,8 +3,8 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Darren Mann, Brandon Sklenar]
 
 BLURBS:
-Darren Mann: Known for roles in "Animal Kingdom" and "Wayward Pines". Now stars as Jack in "1923".
-Brandon Sklenar: Plays Spencer in "1923". Has a history of diverse roles in various genres.
+Darren Mann: Known for roles in "Animal Kingdom" and "Wayward Pines". Now playing Jack in "1923".
+Brandon Sklenar: Plays Spencer in "1923", adding to his growing list of roles.
 
 Posted Date: 2025-03-30 19:00:00.
 
@@ -31,10 +31,10 @@ The opportunity to try out for 1883 never materialized, but Sheridan’s team ev
 
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A-TIER ACTORS: Mary Steenburgen
-B-TIER ACTORS: 
+B-TIER ACTORS: []
 
 BLURBS:
-Mary Steenburgen: Oscar-winner, recently led in "Book Club: The Next Chapter". Often collaborates with Danson.
+Mary Steenburgen: Oscar winner, recently seen in "Book Club: The Next Chapter". Known for diverse roles.
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -60,11 +60,17 @@ Season 1 of A Man on the Inside debuted atop Netflix’s weekly English series l
 Steenburgen most recently reprised her role as one of the leads in the sequel movie Book Club: The Next Chapter. She is repped by UTA, Entertainment 360 and Gang Tyre Ramer.
 
 ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
-A-TIER ACTORS: 
-B-TIER ACTORS: Jasmine Cephas Jones
+A-TIER ACTORS: Kyle Chandler
+B-TIER ACTORS: Jasmine Cephas Jones, Aaron Pierre, Kelly MacDonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen
 
 BLURBS:
-Jasmine Cephas Jones: Emmy winner for #FREERAYSHAWN, known for Blindspotting and Hamilton.
+Kyle Chandler: Known for 'Friday Night Lights', recently in 'Godzilla vs. Kong'.
+Jasmine Cephas Jones: Emmy winner for '#FREERAYSHAWN', also in 'Hamilton'.
+Aaron Pierre: Breakthrough in 'The Underground Railroad', now in 'Lanterns'.
+Kelly MacDonald: 'Boardwalk Empire' star, recently in 'Line of Duty'.
+Garret Dillahunt: Veteran actor, recently in 'Fear The Walking Dead'.
+Poorna Jagannathan: 'Never Have I Ever' star, now joins 'Lanterns'.
+Ulrich Thomsen: Known for 'The Blacklist', joins 'Lanterns' cast.
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -86,13 +92,13 @@ Also, her full-length album, Phoenix was released and can be listened to on all 
 She is repped by ATA Management, WME and Jackoway, Tyerman.
 
 ARTICLE TITLE: Max Irons, André De Shields & Marc Menchaca Round Out Cast Of ‘Neuromancer’ Apple TV+ Series.
-A-TIER ACTORS: André De Shields
-B-TIER ACTORS: Max Irons, Marc Menchaca
+A-TIER ACTORS: [None]
+B-TIER ACTORS: [Max Irons, André De Shields, Marc Menchaca]
 
 BLURBS:
-André De Shields: Tony-winning actor from Hadestown, recently in Cats: The Jellicle Ball.
-Max Irons: Known for Condor, upcoming in Amazon's Young Sherlock.
-Marc Menchaca: Recognized for roles in Ozark and The Outsiders, also in American Rust.
+Max Irons: Known for 'Condor', soon to star in Amazon's 'Young Sherlock'. 
+André De Shields: Tony-winning 'Hadestown' actor, recently in 'Cats: The Jellicle Ball'.
+Marc Menchaca: Recognized for roles in 'Ozark' and 'The Outsiders', also in 'American Rust'.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -118,12 +124,12 @@ De Shields won Tony, Drama Desk, Outer Critics Circle and Grammy awards for his 
 Menchaca, known for his turns on HBO’s The Outsiders and Netflix’s Ozark, also portrayed Vic Walker on American Rust. He’s repped by Independent Artist Group and TMT Entertainment Group.
 
 ARTICLE TITLE: Lili Taylor Joins ‘Daredevil: Born Again’ Season 2.
-A-TIER ACTORS: Lili Taylor
-B-TIER ACTORS: Matthew Lillard
+A-TIER ACTORS: [Lili Taylor]
+B-TIER ACTORS: [Matthew Lillard]
 
 BLURBS:
-Lili Taylor: Recently starred in Prime Video's "Outer Range" and Apple TV+'s "Manhunt".
-Matthew Lillard: Joins "Daredevil: Born Again" Season 2, furthering his diverse career.
+Lili Taylor: Recently seen in 'Outer Range' with Josh Brolin, now joining Marvel's 'Daredevil'.
+Matthew Lillard: Known for 'Scream', now set to recur in 'Daredevil: Born Again' Season 2.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -145,13 +151,13 @@ A three-time Emmy nominee, Taylor is coming off a two-season starring turn oppos
 Taylor’s book, Turning To Birds, is coming out April 29. She is repped by Independent Artist Group and Untitled Entertainment.
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: James Van Der Beek
-B-TIER ACTORS: Charlie Gillespie, Roan Curtis
+A-TIER ACTORS: [James Van Der Beek]
+B-TIER ACTORS: [Charlie Gillespie, Roan Curtis]
 
 BLURBS:
-James Van Der Beek: Known for "Pose", he reprises his role as Leroy in "Sidelined 2: Intercepted".
-Charlie Gillespie: Rising star from "Julie and the Phantoms", plays Skyler, a musician in the sequel.
-Roan Curtis: From "Firefly Lane", joins as Charlotte, a student athlete trainer in the sequel.
+James Van Der Beek: Known for 'Pose', reprising his role as Leroy Lahey in 'Sidelined 2: Intercepted'.
+Charlie Gillespie: Rising star from 'Julie and the Phantoms', playing Skyler in 'Sidelined 2: Intercepted'.
+Roan Curtis: Recognized from 'Firefly Lane', cast as Charlotte in 'Sidelined 2: Intercepted'.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -179,9 +185,9 @@ A-TIER ACTORS: [None]
 B-TIER ACTORS: [Chandler Kinney, Jacob Moskovitz, Gabrielle Policano]
 
 BLURBS:
-Chandler Kinney: Known for Pretty Little Liars: Original Sin, soon reprising role in Zombies 4: Dawn of the Vampires.
-Jacob Moskovitz: Upcoming roles in Seth Meyers-produced film Brian and A24 feature Y2K.
-Gabrielle Policano: Recently starred in Breaking The Story, appeared in A24 film Babygirl.
+Chandler Kinney: Known for HBO's Pretty Little Liars: Original Sin, soon reprising role in Zombies 4.
+Jacob Moskovitz: NY-based actor, seen in A24's Y2K, upcoming in Seth Meyers-produced film, Brian.
+Gabrielle Policano: NY-based actor, recently in A24's Babygirl, award-winning spoken word poet.
 
 Posted Date: 2025-03-27 19:00:00.
 
@@ -213,7 +219,7 @@ A-TIER ACTORS: [Billy Eichner]
 B-TIER ACTORS: []
 
 BLURBS:
-Billy Eichner: Known for voice role in Lion King, recently seen in Coen's Drive Away Dolls & Ryan Murphy's The Beauty.
+Billy Eichner: Known for his role as Timon in Mufasa: The Lion King, recently seen in Coen's Drive Away Dolls.
 
 Posted Date: 2025-03-27 18:00:00.
 
@@ -231,12 +237,12 @@ Watch on Deadline
 He is repped by UTA and Untitled Entertainment.
 
 ARTICLE TITLE: Josh Brolin In Talks To Co-Star Opposite Austin Abrams In ‘Whalefall’ From 20th Century And Imagine Entertainment.
-A-TIER ACTORS: Josh Brolin
-B-TIER ACTORS: Austin Abrams
+A-TIER ACTORS: [Josh Brolin]
+B-TIER ACTORS: [Austin Abrams]
 
 BLURBS:
-Josh Brolin: Known for roles in "Dune: Part 2" and "Knives Out", Brolin brings seasoned star power.
-Austin Abrams: Rising talent from "Euphoria", Abrams' buzzworthy performance could boost his career.
+Josh Brolin: Known for Dune: Part 2, set to star in Weapons, The Running Man, and Wake Up Dead Man.
+Austin Abrams: Rising star, gaining traction in the industry.
 
 Posted Date: 2025-03-27 17:00:00.
 
@@ -258,11 +264,11 @@ Brolin will next be seen starring in Zach Cregger’s Weapons, Edgar Wright’s 
 He is repped by CAA and Johnson, Shapiro, Slewett, Kole.
 
 ARTICLE TITLE: ‘The Young & The Restless’ Brings Back Mishael Morgan.
-A-TIER ACTORS: Mishael Morgan
-B-TIER ACTORS: 
+A-TIER ACTORS: []
+B-TIER ACTORS: [Mishael Morgan]
 
 BLURBS:
-Mishael Morgan: Daytime Emmy winner, known for 'Y&R' and 'Chicago Med'. Recently in Hallmark's 'Hearts Around the Table'.
+Mishael Morgan: Emmy-winning actress known for her roles in 'The Young & The Restless' and 'Chicago Med'.
 
 Posted Date: 2025-03-27 16:25:21.
 
@@ -286,11 +292,13 @@ In the meantime, fans can see Morgan in the Hallmark movie, Hearts Around the Ta
 Morgan is with The Kohner Agency and David Ritchie at Ambition Talent.
 
 ARTICLE TITLE: ‘The Night Agent’s Arienne Mandi Joins New Luca Elmi Thriller ‘Hostage’ In Leading Role.
-A-TIER ACTORS: 
-B-TIER ACTORS: Arienne Mandi
+A-TIER ACTORS: [None]
+B-TIER ACTORS: [Arienne Mandi, William Moseley, Mark Valley]
 
 BLURBS:
-Arienne Mandi: Known for The L Word: Generation Q and The Night Agent. Upcoming lead in Tatami.
+Arienne Mandi: Known for Showtime's "The L Word: Generation Q" and Netflix's "The Night Agent".
+William Moseley: Familiar face from "The Chronicles of Narnia", now moving into political thrillers.
+Mark Valley: Veteran actor, known for diverse roles across TV and film.
 
 Posted Date: 2025-03-27 16:10:00.
 
@@ -312,9 +320,9 @@ A-TIER ACTORS: Felicity Huffman
 B-TIER ACTORS: Eric Johnson, Olga Petsa
 
 BLURBS:
-Felicity Huffman: Known for "Criminal Minds", Huffman plays complex characters with depth.
-Eric Johnson: From "Fifty Shades of Grey", Johnson often portrays intense, dynamic roles.
-Olga Petsa: Rising star from "I Used To Be Funny", Petsa excels in dramatic roles.
+Felicity Huffman: Known for "Criminal Minds", Huffman's roles often tackle challenging narratives.
+Eric Johnson: After "Fifty Shades of Grey", Johnson continues to explore complex characters.
+Olga Petsa: Rising star Petsa, known for "I Used To Be Funny", takes on a dramatic role. 
 
 Posted Date: 2025-03-27 16:00:00.
 
