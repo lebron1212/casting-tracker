@@ -126,14 +126,15 @@ em {
 }
 .day-header {
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 3.5em;
+  font-size: 0.9rem;               /* Slightly larger than listings */
+  letter-spacing: 0.75em;          /* Extra-wide kerning */
   text-transform: uppercase;
-  color: #000000;
-  margin: 2em 0 1em;
+  color: #000;
+  margin: 2.5em 0 1em;
   border: none;
   padding: 0;
 }
+
 
 
 
