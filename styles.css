@@ -1,7 +1,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;                  /* Chrome/Safari */
 }
 
 body {
@@ -13,10 +20,6 @@ body {
   background-color: #f6f6f6;
   color: #000000;
   transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .status-indicator {
