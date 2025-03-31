@@ -131,6 +131,17 @@ em {
   border: 1px solid white;
   cursor: pointer;
 }
+.day-header {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 2em 0 1em;
+  border: none;
+  padding: 0;
+}
+
 
 
 @media (prefers-color-scheme: dark) {
