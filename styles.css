@@ -1,82 +1,99 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 3px;
+  font-size: 11px;
+  letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 20px;
-  background-color: #ffffff;
-  color: #000000;
+  padding: 24px;
+  background-color: #0e0e0e; /* off-black */
+  color: #d6d6d6; /* soft light gray */
   transition: background-color 0.4s ease, color 0.4s ease;
 }
+
 .line.a-tier {
   background: repeating-linear-gradient(
     90deg,
-    rgba(0, 255, 255, 0.04),
-    rgba(0, 255, 255, 0.04) 2px,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.04) 2px,
     transparent 2px,
     transparent 4px
   );
-  border-left: 2px solid #0ff; /* cyan LED edge */
-  padding-left: 10px;
-  border-radius: 2px;
-  box-shadow: 0 0 4px rgba(0, 255, 255, 0.1);
+  border-left: 2px solid #444; /* subtle accent edge */
+  padding-left: 12px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.05);
   position: relative;
 }
+
 .line {
-  margin-bottom: 8px;
-  padding-bottom: 4px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.08); /* dotted scanline feel */
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
 }
-.tooltip.flip {
-  top: 125%;
-  bottom: auto;
-  transform: translateY(10px);
-}
+
 .cypher {
   display: inline-block;
   white-space: pre-wrap;
+  animation: glowPulse 3s ease-in-out infinite;
 }
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 2px #aaa;
+  }
+  50% {
+    text-shadow: 0 0 4px #bbb;
+  }
+}
+
 .bold {
-  font-weight: 700;
-  display: inline;
+  font-weight: 600;
+  color: #f2f2f2;
 }
+
 .timestamp {
   display: block;
   font-size: 8px;
-  color: #666;
+  color: #777;
   margin-top: 4px;
   opacity: 0;
   transition: opacity 0.6s ease-in;
   letter-spacing: 1px;
 }
+
 .timestamp.visible {
   opacity: 1;
 }
+
 em {
   font-style: italic;
+  color: #aaa;
 }
+
 .actor {
   position: relative;
   cursor: pointer;
+  color: #d6d6d6;
+  transition: color 0.3s ease;
 }
-.actor:hover .tooltip {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
+
+.actor:hover {
+  color: #fff;
 }
+
 .tooltip {
   position: absolute;
   bottom: 125%;
   left: 0;
-  background-color: #222;
-  color: #fff;
+  background-color: #1a1a1a;
+  color: #ccc;
   padding: 6px 10px;
+  border: 1px solid #333;
   border-radius: 4px;
   font-size: 9px;
   width: max-content;
-  max-width: 220px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  max-width: 240px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(-10px);
@@ -84,4 +101,16 @@ em {
   z-index: 10;
   text-transform: none;
   letter-spacing: 0;
+}
+
+.tooltip.flip {
+  top: 125%;
+  bottom: auto;
+  transform: translateY(10px);
+}
+
+.actor:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
