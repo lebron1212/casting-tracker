@@ -1,13 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 body {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 24px;
-  background-color: #f6f6f6; /* soft off-white */
+  background-color: #f6f6f6;
   color: #000000;
   transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .status-indicator {
@@ -113,6 +122,7 @@ em {
   transform: translateY(0);
   pointer-events: auto;
 }
+
 .load-more-btn {
   margin: 2em auto;
   display: block;
@@ -124,6 +134,7 @@ em {
   border: 1px solid white;
   cursor: pointer;
 }
+
 .day-header {
   font-family: 'Michroma', sans-serif;
   font-size: 2rem;
@@ -181,5 +192,3 @@ em {
     border: 1px solid #444;
   }
 }
-
-
