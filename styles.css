@@ -126,11 +126,12 @@ em {
 }
 .day-header {
   font-family: 'Anton', sans-serif;
-  font-size: 2rem;              /* Big */
+  font-size: 2.2rem;             /* BIG */
+  font-weight: 400;              /* Anton only has one weight */
   text-transform: uppercase;
-  letter-spacing: 0.05em;       /* Tight kerning */
+  letter-spacing: -0.03em;       /* Slight negative tracking */
   line-height: 1;
-  color: #000;                  /* Pure black text */
+  color: #000;
   margin: 2.5em 0 1em;
 }
 
