@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daily Casting Report</title>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://lebron1212.github.io/casting-tracker/styles.css" />
-</head>
-<body>
-  <div id="casting-report"></div>
-  <script>
 function extractBlurbs(block) {
   const match = block.match(/BLURBS:\n([\s\S]*?)\n(?:Posted Date:|FULL ARTICLE TEXT:)/i);
   const blurbs = {};
@@ -213,6 +201,3 @@ document.addEventListener('mouseover', e => {
 });
 
 renderReport();
-  </script>
-</body>
-</html>
