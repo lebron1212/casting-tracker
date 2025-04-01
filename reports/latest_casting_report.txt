@@ -3,12 +3,12 @@ A-TIER ACTORS: Kal Penn, Charlie Heaton
 B-TIER ACTORS: Claire Forlani, Max Minghella, Kiernan Shipka, Jack Farthing
 
 BLURBS:
-Kal Penn: Known for 'Designated Survivor', Penn brings political drama experience.
-Charlie Heaton: 'Stranger Things' star, Heaton is adept at portraying complex characters.
-Claire Forlani: From 'Departure' to 'Industry', Forlani continues to explore drama roles.
-Max Minghella: Minghella, from 'The Handmaid's Tale', adds another drama to his roster.
-Kiernan Shipka: 'Chilling Adventures of Sabrina' star, Shipka takes on finance drama.
-Jack Farthing: Known for 'Poldark', Farthing brings his historical drama skills to 'Industry'.
+Kal Penn: Known for 'Designated Survivor', Penn brings his comedic charm to 'Industry'.
+Charlie Heaton: 'Stranger Things' star, Heaton steps into the role of a finance journalist.
+Claire Forlani: Known for 'Departure', Forlani plays a corporate PR heavy-hitter.
+Max Minghella: 'Handmaid's Tale' actor, Minghella joins as a CFO in 'Industry'.
+Kiernan Shipka: 'Chilling Adventures of Sabrina' star, Shipka plays an executive assistant.
+Jack Farthing: 'Poldark' actor, Farthing brings his period drama experience to 'Industry'.
 
 Posted Date: 2025-03-31 20:45:00.
 
@@ -31,10 +31,10 @@ Penn is repped by UTA, Industry Entertainment and Fuller Law. Heaton is repped b
 
 ARTICLE TITLE: Nathan Fillion Joins ‘Lanterns’ DC Series At HBO.
 A-TIER ACTORS: Nathan Fillion
-B-TIER ACTORS: []
+B-TIER ACTORS: 
 
 BLURBS:
-Nathan Fillion: Known for voicing Green Lantern, now brings Guy Gardner to life in HBO's Lanterns.
+Nathan Fillion: Known for voicing Green Lantern, now bringing Guy Gardner to life in HBO's 'Lanterns'.
 
 Posted Date: 2025-03-31 19:54:49.
 
@@ -52,11 +52,11 @@ Nathan Fillion as Guy Gardner Warner Bros.
 HBO produces the eight-episode Lanterns in association with Warner Bros Television and DC Studios. Mundy, who serves as showrunner, Lindelof, and King co-wrote and executive produced. James Hawes directed and executive produced, with Stephen Williams, Geeta Vasant Patel and Alik Sakharov also tapped to direct.
 
 ARTICLE TITLE: Cristin Milioti To Star Opposite Elizabeth Olsen In FX Drama Pilot ‘Seven Sisters’.
-A-TIER ACTORS: Cristin Milioti
-B-TIER ACTORS: 
+A-TIER ACTORS: [Cristin Milioti]
+B-TIER ACTORS: []
 
 BLURBS:
-Cristin Milioti: Recently seen in HBO's "The Penguin". Known for "How I Met Your Mother" and "Black Mirror".
+Cristin Milioti: Known for roles in 'The Penguin' & 'How I Met Your Mother', recently in 'Black Mirror'.
 
 Posted Date: 2025-03-31 19:30:00.
 
@@ -80,7 +80,7 @@ A-TIER ACTORS: Shailene Woodley
 B-TIER ACTORS: 
 
 BLURBS:
-Shailene Woodley: Known for 'Divergent', 'Big Little Lies'. Recently seen in 'Killer Heat' and 'Three Women'.
+Shailene Woodley: Known for "Divergent" and "Big Little Lies", recently debuted on Broadway.
 
 Posted Date: 2025-03-31 19:30:00.
 
@@ -100,12 +100,12 @@ Known for her starring turns in the Divergent and The Fault In Our Stars movies 
 Most recently, she made her Broadway debut in Leslye Headland’s Cult of Love alongside Zachary Quinto and Barbie Ferreira. In 2024, Woodley completed production on Potsy Ponciroli’s movie Motor City, and was seen as a lead in Amazon MGM Studios’ film Killer Heat and Starz’s series Three Women. She is repped by CAA and Range Media Partners.
 
 ARTICLE TITLE: Will Harrison & Johnny Berchtold Join Hulu’s Limited Series Based On Murdaugh Murders.
-A-TIER ACTORS: None
+A-TIER ACTORS: 
 B-TIER ACTORS: Johnny Berchtold, Will Harrison
 
 BLURBS:
-Johnny Berchtold: Known for his roles in thrillers, Berchtold's casting adds suspense to the series.
-Will Harrison: With a history of playing complex characters, Harrison's role is anticipated.
+Johnny Berchtold: Known for his roles in thrillers, Berchtold's edgy acting style suits the series.
+Will Harrison: Rising star Harrison brings a fresh face to the series, adding to his diverse portfolio.
 
 Posted Date: 2025-03-31 17:05:58.
 
@@ -129,8 +129,8 @@ A-TIER ACTORS: [Tommy Flanagan]
 B-TIER ACTORS: [Dan Fogler]
 
 BLURBS:
-Tommy Flanagan: Known for "Sons of Anarchy" and "Gladiator", recently seen in "Westworld" and "Peaky Blinders".
-Dan Fogler: Recognized for "Fantastic Beasts", recently starred in "The Walking Dead".
+Tommy Flanagan: Known for roles in 'Gladiator', 'Sons of Anarchy', and 'Westworld'. Next in 'Sleeping Dogs'.
+Dan Fogler: Starred in 'Fantastic Beasts' series. Joins 'House of the Dragon' as Ser Torrhen Manderly.
 
 Posted Date: 2025-03-31 15:30:00.
 
@@ -160,8 +160,8 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Darren Mann, Brandon Sklenar]
 
 BLURBS:
-Darren Mann: Known for roles in "Animal Kingdom" and "Wayward Pines", now playing Jack in "1923".
-Brandon Sklenar: Plays Spencer in "1923", adding to his diverse acting portfolio.
+Darren Mann: Known for roles in "Animal Kingdom" and "Wayward Pines", Mann now stars in "1923".
+Brandon Sklenar: Plays Spencer in "1923", adding to his diverse portfolio of roles.
 
 Posted Date: 2025-03-30 19:00:00.
 
@@ -189,7 +189,7 @@ A-TIER ACTORS: [Mary Steenburgen]
 B-TIER ACTORS: []
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently led in 'Book Club: The Next Chapter'. Known for diverse roles.
+Mary Steenburgen: Recently in "Book Club: The Next Chapter", now joins husband in "A Man on the Inside".
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -217,7 +217,7 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Jasmine Cephas Jones]
 
 BLURBS:
-Jasmine Cephas Jones: Known for 'Origin', 'Blindspotting'. Emmy winner for '#FREERAYSHAWN', Grammy winner for 'Hamilton'.
+Jasmine Cephas Jones: Recent Emmy winner, known for roles in "Origin" and "Blindspotting". 
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -241,9 +241,9 @@ A-TIER ACTORS: [André De Shields]
 B-TIER ACTORS: [Max Irons, Marc Menchaca]
 
 BLURBS:
-André De Shields: Tony winner for 'Hadestown', recently in 'Cats: The Jellicle Ball'.
-Max Irons: Known for 'Condor', 'Miss Austen', next in 'Young Sherlock'.
-Marc Menchaca: Notable for 'Ozark', 'The Outsiders', recently in 'American Rust'.
+André De Shields: Tony-winning actor, known for 'Hadestown' and 'Cats: The Jellicle Ball'.
+Max Irons: Known for 'Condor', 'Miss Austen', set to star in 'Young Sherlock'.
+Marc Menchaca: Recognized for roles in 'Ozark', 'The Outsiders', and 'American Rust'.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -267,12 +267,12 @@ De Shields won Tony, Drama Desk, Outer Critics Circle and Grammy awards for his 
 Menchaca, known for his turns on HBO’s The Outsiders and Netflix’s Ozark, also portrayed Vic Walker on American Rust. He’s repped by Independent Artist Group and TMT Entertainment Group.
 
 ARTICLE TITLE: Lili Taylor Joins ‘Daredevil: Born Again’ Season 2.
-A-TIER ACTORS: Lili Taylor
-B-TIER ACTORS: Matthew Lillard
+A-TIER ACTORS: [Lili Taylor]
+B-TIER ACTORS: [Matthew Lillard]
 
 BLURBS:
-Lili Taylor: Known for her role opposite Josh Brolin in Prime's sci-fi series Outer Range.
-Matthew Lillard: Known for his versatile roles, now set to recur in Daredevil: Born Again.
+Lili Taylor: Recently starred in Prime Video's 'Outer Range', now joining Marvel's universe.
+Matthew Lillard: Known for 'Scooby-Doo', now stepping into a recurring role in 'Daredevil'.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -285,6 +285,8 @@ A continuation of the Daredevil series that aired on Netflix from 2015 to 2018, 
 
 In addition to Cox and D’Onofrio, returning cast members include Deborah Ann Woll, Elden Henson and Jon Bernthal. They are joined in Born Again Season 1 — currently streaming on Disney+ — by new cast members Margarita Levieva, Ayelet Zurer, Zabryna Guevara, Nikki M. James, Genneya Walton, Arty Froushan, Clark Johnson, Michael Gandolfini, Wilson Bethel, and Tony Dalton.
 
+Watch on Deadline
+
 Dario Scardapane serves as executive producer and showrunner on Season 1 and will be back in that capacity for Season 2. Also executive producing are Kevin Feige, Louis D’Esposito, Brad Winderbaum, Sana Amanat, Dario Scardapane, Justin Benson and Aaron Moorhead.
 
 A three-time Emmy nominee, Taylor is coming off a two-season starring turn opposite Josh Brolin on the Prime Video sci-fi neo-Western series Outer Range and was also recently featured on the Apple TV+ limited series Manhunt.
@@ -293,13 +295,13 @@ Taylor’s book, Turning To Birds, is coming out April 29. She is repped by Inde
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
 A-TIER ACTORS: James Van Der Beek
-B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie, Roan Curtis
+B-TIER ACTORS: Charlie Gillespie, Roan Curtis, Drew Ray Tanner
 
 BLURBS:
-James Van Der Beek: Known for 'Pose', returns as Leroy in 'Sidelined 2', adding depth to the sequel.
-Drew Ray Tanner: 'Riverdale' star, reprising role as Nathan in 'Sidelined 2', a key character.
-Charlie Gillespie: Rising star from 'Julie and the Phantoms', brings fresh energy as Skyler.
-Roan Curtis: From 'Firefly Lane', joins as Charlotte, adding new dynamic to the cast.
+James Van Der Beek: Known for "Pose", Van Der Beek returns as Leroy Lahey in 'Sidelined 2: Intercepted'.
+Charlie Gillespie: Rising star from "Julie and the Phantoms", Gillespie joins as musician Skyler.
+Roan Curtis: Recognized from "Firefly Lane", Curtis takes on the role of USC senior, Charlotte.
+Drew Ray Tanner: "Riverdale" actor Tanner reprises his role as Nathan Bryan in the sequel.
 
 Posted Date: 2025-03-27 19:15:48.
 
@@ -309,6 +311,8 @@ EXCLUSIVE: James Van Der Beek (Pose) and Drew Ray Tanner (Riverdale), who starre
 Based on Wattpad sensation The QB Bad Boy and Me by Tay Marley, Sidelined 2: Intercepted will focus on freshman star quarterback Drayton (Beck) as he struggles with the weight of expectations after a devastating setback, while dancer Dallas (Agudong) begins to question the future she thought she wanted. As their high school relationship begins to unravel under the pressures of distance and self-discovery, they’ll learn that the bravest versions of themselves emerge when they let life redirect them
 
 Van Der Beek will reprise his role as Leroy Lahey, Drayton’s tough but well-meaning father. Tanner will return as Nathan Bryan, Dallas’ older brother and her guardian ever since their parents died a couple of years ago. Gillespie plays Skyler a musician and CalArts Senior and Curtis plays Charlotte, a USC senior working as a student athlete trainer.
+
+Watch on Deadline
 
 Other new cast members include Kolton Stewart as Zach, Sage Linder as Miley, Terry Mullany as Ryan, and Michael Xavier as Coach Watson.
 
