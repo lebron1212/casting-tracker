@@ -39,11 +39,7 @@ body {
 }
 
 .line.a-tier {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.04) 0%,
-    rgba(0, 0, 0, 0.06) 100%
-  );
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.06) 100%);
   border-left: 2px solid #000;
   padding-left: 12px;
   border-radius: 2px;
@@ -83,6 +79,7 @@ em {
 
 .actor {
   position: relative;
+  display: inline-block;
   cursor: pointer;
   color: #000;
   transition: color 0.3s ease;
@@ -94,8 +91,6 @@ em {
 
 .tooltip {
   position: absolute;
-  bottom: 125%;
-  left: 0;
   background-color: #eaeaea;
   color: #000;
   padding: 6px 10px;
@@ -106,21 +101,29 @@ em {
   max-width: 240px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(-10px);
+  transform: translateY(10px);
   pointer-events: none;
-  z-index: 10;
+  z-index: 9999;
   text-transform: none;
   letter-spacing: 0;
+  white-space: normal;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.tooltip.flip {
-  top: 125%;
+.tooltip.flip-up {
   bottom: auto;
+  top: 125%;
+  transform: translateY(-100%);
+}
+
+.tooltip.flip-down {
+  top: auto;
+  bottom: 125%;
   transform: translateY(10px);
 }
 
 .actor:hover .tooltip {
+  display: block;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
