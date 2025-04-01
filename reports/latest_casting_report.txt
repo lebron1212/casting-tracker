@@ -3,12 +3,12 @@ A-TIER ACTORS: Kal Penn, Charlie Heaton
 B-TIER ACTORS: Claire Forlani, Max Minghella, Kiernan Shipka, Jack Farthing
 
 BLURBS:
-Kal Penn: Known for 'Designated Survivor', Penn's comedic flair may add a new dynamic.
-Charlie Heaton: 'Stranger Things' star, Heaton's role as a finance journalist is a genre shift.
-Claire Forlani: From 'Departure' to 'Industry', Forlani continues her drama streak.
-Max Minghella: 'Handmaid's Tale' actor Minghella takes on a corporate role in 'Industry'.
-Kiernan Shipka: 'Chilling Adventures of Sabrina' star, Shipka enters the finance world.
-Jack Farthing: Known for 'Poldark', Farthing's role as a troublemaker should be intriguing.
+Kal Penn: Known for "Designated Survivor", Penn joins "Industry" as a CEO.
+Charlie Heaton: "Stranger Things" star Heaton will play a finance journalist.
+Claire Forlani: From "Departure" to "Industry", Forlani will portray a corporate PR.
+Max Minghella: Minghella, known for "The Handmaid's Tale", joins as a CFO.
+Kiernan Shipka: "Chilling Adventures of Sabrina" star Shipka will play an executive assistant.
+Jack Farthing: Known for "Poldark", Farthing will portray a troublemaker in "Industry".
 
 Posted Date: 2025-03-31 20:45:00.
 
@@ -34,7 +34,7 @@ A-TIER ACTORS: Nathan Fillion
 B-TIER ACTORS: 
 
 BLURBS:
-Nathan Fillion: Known for voicing Green Lantern, he's joining HBO's 'Lanterns'. Recently in 'Superman'.
+Nathan Fillion: Known for voicing Green Lantern in past DC animations, now brings Guy Gardner to life.
 
 Posted Date: 2025-03-31 19:54:49.
 
@@ -56,8 +56,8 @@ A-TIER ACTORS: [Elizabeth Olsen]
 B-TIER ACTORS: [Cristin Milioti]
 
 BLURBS:
-Elizabeth Olsen: Known for her role in Marvel's WandaVision, Olsen is a key player in the MCU.
-Cristin Milioti: Recently seen in HBO's The Penguin, Milioti has a diverse TV and film portfolio.
+Elizabeth Olsen: Known for her role in Marvel's WandaVision, Olsen is a sought-after leading actress.
+Cristin Milioti: Recently seen in HBO's The Penguin, Milioti is a versatile actress on the rise.
 
 Posted Date: 2025-03-31 19:30:00.
 
@@ -81,7 +81,7 @@ A-TIER ACTORS: Shailene Woodley
 B-TIER ACTORS: 
 
 BLURBS:
-Shailene Woodley: Known for 'Divergent', 'Big Little Lies'. Recently seen in 'Killer Heat', 'Three Women'.
+Shailene Woodley: Known for 'Divergent', 'Big Little Lies', recently debuted on Broadway.
 
 Posted Date: 2025-03-31 19:30:00.
 
@@ -102,11 +102,11 @@ Most recently, she made her Broadway debut in Leslye Headland’s Cult of Love a
 
 ARTICLE TITLE: Will Harrison & Johnny Berchtold Join Hulu’s Limited Series Based On Murdaugh Murders.
 A-TIER ACTORS: []
-B-TIER ACTORS: [Johnny Berchtold, Will Harrison]
+B-TIER ACTORS: [Will Harrison, Johnny Berchtold]
 
 BLURBS:
-Johnny Berchtold: Known for diverse roles, recently gained traction in the indie film scene.
-Will Harrison: Rising star, praised for nuanced performances in drama series.
+Will Harrison: Known for his versatile roles, Harrison's recent work includes a recurring role in "Quarry".
+Johnny Berchtold: Gaining traction with his dynamic performances, Berchtold's latest includes a stint in "Locke & Key".
 
 Posted Date: 2025-03-31 17:05:58.
 
@@ -126,12 +126,12 @@ Berchtold is repped by Buchwald, Canopy Media Partners, Jackoway Austen
 Harrison is represented by Gersh and Sugar23.
 
 ARTICLE TITLE: Tommy Flanagan Joins ‘House Of The Dragon’ Season 3 As Ser Roderick Dustin.
-A-TIER ACTORS: Tommy Flanagan
-B-TIER ACTORS: Dan Fogler
+A-TIER ACTORS: [Tommy Flanagan]
+B-TIER ACTORS: [Dan Fogler]
 
 BLURBS:
-Tommy Flanagan: Known for 'Sons of Anarchy', 'Gladiator'. Recently in 'Westworld', 'Power Book IV: Force'.
-Dan Fogler: Recognized from 'Fantastic Beasts'. Adds another fantasy franchise to his portfolio.
+Tommy Flanagan: Known for "Sons of Anarchy" & "Gladiator". Now in HBO's "House of the Dragon".
+Dan Fogler: From "Fantastic Beasts", now joining "House of the Dragon" as Ser Torrhen Manderly.
 
 Posted Date: 2025-03-31 15:30:00.
 
@@ -161,8 +161,8 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Darren Mann, Brandon Sklenar]
 
 BLURBS:
-Darren Mann: Known for roles in "Animal Kingdom", "Fortunate Son", now stars as Jack in "1923".
-Brandon Sklenar: Plays Spencer in "1923", adding to his growing portfolio of diverse roles.
+Darren Mann: Known for roles in "Animal Kingdom" and "Fortunate Son", now stars in "1923".
+Brandon Sklenar: Plays Spencer in "1923", adding to his diverse acting portfolio.
 
 Posted Date: 2025-03-30 19:00:00.
 
@@ -187,10 +187,10 @@ The opportunity to try out for 1883 never materialized, but Sheridan’s team ev
 
 ARTICLE TITLE: ‘A Man On The Inside’: Mary Steenburgen Joins Ted Danson As Details About Season 2 Start To Emerge.
 A-TIER ACTORS: Mary Steenburgen
-B-TIER ACTORS: 
+B-TIER ACTORS: []
 
 BLURBS:
-Mary Steenburgen: Oscar winner, recently in 'Book Club: The Next Chapter'. Often collaborates with Danson.
+Mary Steenburgen: Oscar winner, recently in "Book Club: The Next Chapter", now joining husband on Netflix.
 
 Posted Date: 2025-03-28 17:00:00.
 
@@ -214,17 +214,11 @@ Season 1 of A Man on the Inside debuted atop Netflix’s weekly English series l
 Steenburgen most recently reprised her role as one of the leads in the sequel movie Book Club: The Next Chapter. She is repped by UTA, Entertainment 360 and Gang Tyre Ramer.
 
 ARTICLE TITLE: Jasmine Cephas Jones Joins ‘Lanterns’ DC Series At HBO.
-A-TIER ACTORS: [Kyle Chandler]
-B-TIER ACTORS: [Jasmine Cephas Jones, Aaron Pierre, Kelly MacDonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen]
+A-TIER ACTORS: []
+B-TIER ACTORS: [Jasmine Cephas Jones]
 
 BLURBS:
-Kyle Chandler: Known for "Friday Night Lights". Recently in "Godzilla vs. Kong". 
-Jasmine Cephas Jones: Emmy winner for "#FREERAYSHAWN". Also in "Hamilton".
-Aaron Pierre: Starred in "Krypton". Recently in "The Underground Railroad".
-Kelly MacDonald: Known for "Boardwalk Empire". Recently in "Line of Duty".
-Garret Dillahunt: Known for "Fear the Walking Dead". Recently in "Army of the Dead".
-Poorna Jagannathan: Known for "The Night Of". Recently in "Never Have I Ever".
-Ulrich Thomsen: Known for "The Blacklist". Recently in "The New Pope".
+Jasmine Cephas Jones: Emmy-winning actress known for roles in 'Blindspotting' and '#FREERAYSHAWN'.
 
 Posted Date: 2025-03-27 21:24:37.
 
@@ -248,9 +242,9 @@ A-TIER ACTORS: André De Shields
 B-TIER ACTORS: Max Irons, Marc Menchaca
 
 BLURBS:
-André De Shields: Tony-winning actor, known for Hadestown and Cats: The Jellicle Ball.
-Max Irons: Known for Condor and Miss Austen, soon to star in Amazon's Young Sherlock.
-Marc Menchaca: Recognized for roles in HBO's The Outsiders and Netflix's Ozark.
+André De Shields: Tony-winning Hadestown actor, recently in re-imagined Cats. Known for acclaimed roles.
+Max Irons: Known for Condor & Miss Austen, next in Amazon's Young Sherlock. Rising British actor.
+Marc Menchaca: Noted for HBO's The Outsiders & Netflix's Ozark. Portrayed Vic Walker in American Rust.
 
 Posted Date: 2025-03-27 21:15:15.
 
@@ -278,8 +272,8 @@ A-TIER ACTORS:
 B-TIER ACTORS: Lili Taylor, Matthew Lillard
 
 BLURBS:
-Lili Taylor: Recently starred in Prime Video's 'Outer Range'. Also featured in Apple TV+'s 'Manhunt'.
-Matthew Lillard: No recent work mentioned in the article.
+Lili Taylor: Recently starred in Prime Video's "Outer Range" and Apple TV+'s "Manhunt".
+Matthew Lillard: Known for his diverse roles, joins "Daredevil: Born Again" in a recurring role.
 
 Posted Date: 2025-03-27 19:49:42.
 
@@ -299,14 +293,14 @@ A three-time Emmy nominee, Taylor is coming off a two-season starring turn oppos
 Taylor’s book, Turning To Birds, is coming out April 29. She is repped by Independent Artist Group and Untitled Entertainment.
 
 ARTICLE TITLE: James Van Der Beek & Drew Ray Tanner To Reprise Roles In ‘Sidelined’ Sequel; Charlie Gillespie & Roan Curtis Also Cast.
-A-TIER ACTORS: James Van Der Beek
-B-TIER ACTORS: Drew Ray Tanner, Charlie Gillespie, Roan Curtis
+A-TIER ACTORS: [James Van Der Beek]
+B-TIER ACTORS: [Drew Ray Tanner, Charlie Gillespie, Roan Curtis]
 
 BLURBS:
-James Van Der Beek: Known for 'Pose', returns as Drayton’s father in 'Sidelined 2: Intercepted'.
-Drew Ray Tanner: 'Riverdale' star, reprising his role as Dallas' guardian in the sequel.
-Charlie Gillespie: From 'Julie and the Phantoms', joins as Skyler, a musician in 'Sidelined 2'.
-Roan Curtis: 'Firefly Lane' actress, cast as Charlotte, a student athlete trainer.
+James Van Der Beek: Known for "Pose", returns as Leroy Lahey in "Sidelined 2: Intercepted".
+Drew Ray Tanner: "Riverdale" actor reprising his role as Nathan Bryan in the "Sidelined" sequel.
+Charlie Gillespie: Star of "Julie and the Phantoms", joins as Skyler, a musician in "Sidelined 2".
+Roan Curtis: From "Firefly Lane", cast as Charlotte, a USC senior in "Sidelined 2".
 
 Posted Date: 2025-03-27 19:15:48.
 
