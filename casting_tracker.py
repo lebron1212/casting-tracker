@@ -4,29 +4,13 @@ import requests
 from openai import OpenAI
 from datetime import datetime
 import re
-from newspaper import Article  # switched from BeautifulSoup
+from newspaper import Article
 
-# Pull API keys from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
-# Pre-check OpenAI access
-try:
-    test_resp = requests.get(
-        "https://api.openai.com/v1/models",
-        headers={"Authorization": f"Bearer {OPENAI_API_KEY}"},
-        timeout=10
-    )
-    if test_resp.status_code != 200:
-        print(f"⚠️ OpenAI pre-check warning: Status code {test_resp.status_code} — continuing anyway")
-    else:
-        print("✅ Network access to OpenAI confirmed")
-except Exception as e:
-    print(f"⚠️ Failed to connect to OpenAI API: {e} — continuing anyway")
-
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-# RSS feeds
 rss_feeds = [
     "https://deadline.com/category/casting/feed/",
     "https://variety.com/v/casting/feed/",
@@ -36,7 +20,73 @@ rss_feeds = [
     "https://ew.com/tag/casting/feed/"
 ]
 
-# Parse RSS feeds
+def extract_project_title(title, text):
+    title = title.strip()
+    match = re.search(r'["\'“‘](.+?)["\'”’]', title)
+    if match:
+        return match.group(1).upper()
+    match = re.search(r'([A-Z0-9:&\'\-+ ]+)[”’']?\s+(?:series|movie|project|feature|reboot|prequel)', title, re.I)
+    if match:
+        return match.group(1).upper()
+    caps = re.findall(r'[A-Z][A-Z0-9 :&\'\-]{4,}', title)
+    blacklist = {'AND','THE','WITH','JOINS','CAST','OF','IN','TO','ON','BY','FROM','FOR','NEW','SERIES','MOVIE','PROJECT'}
+    clean = [c.strip() for c in caps if c not in blacklist and not re.match(r'^([A-Z]{2,4})$', c)]
+    if clean:
+        return max(clean, key=len)
+    return 'UNTITLED PROJECT'
+
+def get_readable_published_time(published_parsed):
+    try:
+        if published_parsed:
+            published_time = datetime(*published_parsed[:6])
+            return published_time.strftime("%Y-%m-%d %H:%M:%S")
+        return "Unknown"
+    except Exception:
+        return "Unknown"
+
+def get_tmdb_popularity(name):
+    try:
+        url = "https://api.themoviedb.org/3/search/person"
+        params = {"query": name, "api_key": TMDB_API_KEY}
+        resp = requests.get(url, params=params, timeout=5)
+        data = resp.json()
+        if data["results"]:
+            return data["results"][0]["popularity"]
+    except Exception:
+        pass
+    return 0
+
+def get_stylized_tag(article_text, project_title):
+    prompt = f"""
+You are a Hollywood trade analyst creating a verbose, stylized tag describing the most notable *non-cast* differentiator of a film/TV project.
+
+RULES:
+- Avoid mentioning actors or characters
+- Disregard anything with words 'joins,' 'cast,' 'acts'
+- Describe the most *trade-relevant hook*: IP, platform, creator, studio, adaptation, awards, bestseller source, etc.
+
+ARTICLE:
+{article_text}
+
+PROJECT TITLE:
+{project_title}
+
+TAG:"""
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a Hollywood trade analyst generating stylized metadata tags."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=100
+        )
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"GPT TAG ERROR: {e}")
+        return "UNKNOWN"
+
 seen_titles = set()
 articles = []
 
@@ -55,13 +105,9 @@ for feed_url in rss_feeds:
                 article_obj.download()
                 article_obj.parse()
                 full_text = article_obj.text.strip()
-                if not full_text:
-                    print(f"❌ No usable text extracted for '{title}' ({link})")
-            except Exception as e:
-                print(f"⚠️ Failed to extract article from {link}: {e}")
+            except Exception:
                 full_text = ""
 
-            print(f"🎯 EXTRACTED TEXT for '{title}':\n{full_text[:500]}")
             articles.append({
                 "title": title,
                 "link": link,
@@ -71,46 +117,15 @@ for feed_url in rss_feeds:
                 "full_text": full_text
             })
 
-# Parse published date
-def get_readable_published_time(published_parsed):
-    try:
-        if published_parsed:
-            published_time = datetime(*published_parsed[:6])
-            return published_time.strftime("%Y-%m-%d %H:%M:%S")
-        return "Unknown"
-    except Exception as e:
-        print(f"Error parsing published date: {e}")
-        return "Unknown"
-
-# Query TMDb popularity score
-def get_tmdb_popularity(name):
-    try:
-        url = "https://api.themoviedb.org/3/search/person"
-        params = {"query": name, "api_key": TMDB_API_KEY}
-        resp = requests.get(url, params=params, timeout=5)
-        data = resp.json()
-        if data["results"]:
-            return data["results"][0]["popularity"]
-    except Exception as e:
-        print(f"TMDb error for {name}: {e}")
-    return 0
-
 results = []
 
 for article in articles:
     posted_time = get_readable_published_time(article['published_parsed'])
-
     name_pattern = re.compile(r"\b[A-Z][a-zA-ZéÉ'’\-]+(?:\s+[A-Z][a-zA-ZéÉ'’\-]+)+\b")
     possible_names = name_pattern.findall(article["title"] + " " + article["summary"])
     unique_names = list(set(possible_names))
 
-    actor_popularity = {}
-
-    for name in unique_names:
-        popularity = get_tmdb_popularity(name)
-        actor_popularity[name] = popularity
-        if popularity == 0:
-            print(f"⚠️ No TMDb result for: {name}")
+    actor_popularity = {name: get_tmdb_popularity(name) for name in unique_names}
 
     actor_lines = [f"{name}: {score:.1f}" for name, score in actor_popularity.items()]
     actor_block = "\n".join(actor_lines)
@@ -121,13 +136,6 @@ You are a casting tracker. Classify only the actors who are newly joining the pr
 - Tier A = popularity ≥ 80 or widely famous
 - Tier B = popularity 25–79, rising, trending, or buzzworthy
 - Tier C = below 25 or unrecognizable — skip
-
-After the tier breakdown, write short, contextual career blurbs for each A- and B-tier actor. Focus mainly on recent work, usual roles, and career stage. Occasionally include why they might've taken this project — but only if it adds something interesting or insightful. Use short, professional sentences.
-
-⛔️ Do not explain or justify tier rankings.
-⛔️ Do not say "none qualify" — always return structured output.
-
-Blurb length limit: **max 130 characters per blurb**. If over, abbreviate or reword — do not cut off. Keep sentences short.
 
 Return in this exact format:
 
@@ -165,18 +173,19 @@ Actors:
         )
         reply = response.choices[0].message.content.strip()
         if not reply.startswith("ARTICLE TITLE:"):
-            reply = f"ARTICLE TITLE: {article['title']}.\n" + reply
-        if reply:
-            reply += f"\n\nFULL ARTICLE TEXT:\n{article['full_text']}"
-            results.append(reply)
+            reply = f"ARTICLE TITLE: {article['title']}\n" + reply
+
+        project_title = extract_project_title(article["title"], article["full_text"])
+        tag = get_stylized_tag(article["full_text"], project_title)
+        reply += f"\n\nTAG: {tag}\n\nFULL ARTICLE TEXT:\n{article['full_text']}"
+
+        results.append(reply)
     except Exception as e:
         print(f"Error processing article: {article['title']} | {e}")
 
 os.makedirs("reports", exist_ok=True)
-output_path = "reports/latest_casting_report.txt"
-
-with open(output_path, "w") as f:
+with open("reports/latest_casting_report.txt", "w") as f:
     for r in results:
         f.write(r + "\n\n")
 
-print(f"✅ Report written to {output_path}")
+print("✅ Report written to reports/latest_casting_report.txt")
