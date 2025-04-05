@@ -25,7 +25,7 @@ def extract_project_title(title, text):
     match = re.search(r'["\'“‘](.+?)["\'”’]', title)
     if match:
         return match.group(1).upper()
-    match = re.search(r'([A-Z0-9:&\'\-+ ]+)[”’']?\s+(?:series|movie|project|feature|reboot|prequel)', title, re.I)
+    match = re.search(r'([A-Z0-9:&\'\-\+ ]+)[\'"]?\s+(?:series|movie|project|feature|reboot|prequel)', title, re.I)
     if match:
         return match.group(1).upper()
     caps = re.findall(r'[A-Z][A-Z0-9 :&\'\-]{4,}', title)
