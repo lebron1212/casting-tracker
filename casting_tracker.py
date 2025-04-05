@@ -58,12 +58,15 @@ def get_tmdb_popularity(name):
 
 def get_stylized_tag(article_text, project_title):
     prompt = f"""
-You are a Hollywood trade analyst creating a verbose, stylized tag describing the most notable *non-cast* differentiator of a film/TV project.
+You are a Hollywood trade analyst writing stylized tags for casting reports.
 
-RULES:
-- Avoid mentioning actors or characters
-- Disregard anything with words 'joins,' 'cast,' 'acts'
-- Describe the most *trade-relevant hook*: IP, platform, creator, studio, adaptation, awards, bestseller source, etc.
+Rules:
+- ONE concise parenthetical tag (e.g. (APLTV CRIME DRAMA))
+- Prioritize franchise, IP, creator, platform, awards, bestseller status, adaptation
+- NEVER mention actors or casting
+- NEVER use hashtags
+- NEVER return more than 1 tag
+- Final format must be: (UPPERCASE TRADEWORDS)
 
 ARTICLE:
 {article_text}
@@ -72,20 +75,36 @@ PROJECT TITLE:
 {project_title}
 
 TAG:"""
+
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=[
                 {"role": "system", "content": "You are a Hollywood trade analyst generating stylized metadata tags."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.7,
-            max_tokens=100
+            temperature=0.4,
+            max_tokens=50
         )
-        return response.choices[0].message.content.strip()
+        tag = response.choices[0].message.content.strip()
+
+        # Clean tag formatting
+        tag = tag.replace("#", "")  # remove hashtags
+        tag = re.sub(r'\s+', ' ', tag)  # normalize whitespace
+        tag = re.sub(r'[^\w\s&\'().,:/-]', '', tag)  # remove strange chars
+
+        # Force (ALL CAPS) parentheses
+        if not tag.startswith("("):
+            tag = f"({tag}"
+        if not tag.endswith(")"):
+            tag += ")"
+
+        tag = tag.upper()
+        return tag
+
     except Exception as e:
         print(f"GPT TAG ERROR: {e}")
-        return "UNKNOWN"
+        return "(UNKNOWN)"
 
 seen_titles = set()
 articles = []
