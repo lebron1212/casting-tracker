@@ -32,14 +32,16 @@ def extract_project_title(title, text):
     blacklist = {'AND','THE','WITH','JOINS','CAST','OF','IN','TO','ON','BY','FROM','FOR','NEW','SERIES','MOVIE','PROJECT'}
     clean = [c.strip() for c in caps if c not in blacklist and not re.match(r'^([A-Z]{2,4})$', c)]
     if clean:
-        return max(clean, key=len)
+        longest = max(clean, key=len)
+        if len(longest) > 2:
+            return longest
     return 'UNTITLED PROJECT'
 
 def get_readable_published_time(published_parsed):
     try:
         if published_parsed:
             published_time = datetime(*published_parsed[:6])
-            return published_time.strftime("%Y-%m-%d %H:%M:%S")
+            return published_time.strftime("%Y-%m-%d")
         return "Unknown"
     except Exception:
         return "Unknown"
@@ -61,12 +63,12 @@ def get_stylized_tag(article_text, project_title):
 You are a Hollywood trade analyst writing stylized tags for casting reports.
 
 Rules:
-- ONE concise parenthetical tag (e.g. (APLTV CRIME DRAMA))
-- Prioritize franchise, IP, creator, platform, awards, bestseller status, adaptation
-- NEVER mention actors or casting
-- NEVER use hashtags
-- NEVER return more than 1 tag
-- Final format must be: (UPPERCASE TRADEWORDS)
+- Return ONE concise tag wrapped in parentheses, like (NETFLIX ACTION THRILLER)
+- Focus on IP, creator, platform, awards, adaptation, source material
+- Do NOT include actor names or character names
+- Do NOT use hashtags or lowercase
+- NEVER give more than one tag
+- Avoid long phrases or full sentences
 
 ARTICLE:
 {article_text}
@@ -74,8 +76,8 @@ ARTICLE:
 PROJECT TITLE:
 {project_title}
 
-TAG:"""
-
+TAG:
+"""
     try:
         response = client.chat.completions.create(
             model="gpt-4",
@@ -88,20 +90,18 @@ TAG:"""
         )
         tag = response.choices[0].message.content.strip()
 
-        # Clean tag formatting
-        tag = tag.replace("#", "")  # remove hashtags
-        tag = re.sub(r'\s+', ' ', tag)  # normalize whitespace
-        tag = re.sub(r'[^\w\s&\'().,:/-]', '', tag)  # remove strange chars
+        tag = tag.strip('"“”').replace("#", "")
+        tag = re.sub(r'[^\w\s&\'\-]', '', tag)
+        tag = re.sub(r'\s+', ' ', tag).strip()
 
-        # Force (ALL CAPS) parentheses
-        if not tag.startswith("("):
-            tag = f"({tag}"
-        if not tag.endswith(")"):
-            tag += ")"
+        # Wrap if needed
+        if not (tag.startswith("(") and tag.endswith(")")):
+            tag = f"({tag})"
 
         tag = tag.upper()
+        if len(tag) > 60 or not re.match(r'^\([A-Z0-9 &\'\-]+\)$', tag):
+            return "(UNKNOWN)"
         return tag
-
     except Exception as e:
         print(f"GPT TAG ERROR: {e}")
         return "(UNKNOWN)"
@@ -126,7 +126,8 @@ for feed_url in rss_feeds:
                 full_text = article_obj.text.strip()
             except Exception:
                 full_text = ""
-
+            if not full_text or len(full_text.split()) < 50:
+                continue
             articles.append({
                 "title": title,
                 "link": link,
@@ -179,7 +180,6 @@ Full Article Text:
 Actors:
 {actor_block}
 """
-
     try:
         response = client.chat.completions.create(
             model="gpt-4",
@@ -196,7 +196,9 @@ Actors:
 
         project_title = extract_project_title(article["title"], article["full_text"])
         tag = get_stylized_tag(article["full_text"], project_title)
-        reply += f"\n\nTAG: {tag}\n\nFULL ARTICLE TEXT:\n{article['full_text']}"
+
+        reply += f"\n\nTAG: {tag}\n"
+        reply += f"FULL ARTICLE TEXT:\n{article['full_text']}\n---\n"
 
         results.append(reply)
     except Exception as e:
