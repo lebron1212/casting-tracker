@@ -1,10 +1,10 @@
 ARTICLE TITLE: ‘The Equalizer’: First Look At Titus Welliver Ahead Of Potential CBS Spinoff.
-A-TIER ACTORS: ['Titus Welliver']
-B-TIER ACTORS: ['Juani Feliz']
+A-TIER ACTORS: [Titus Welliver]
+B-TIER ACTORS: [Juani Feliz]
 
 BLURBS:
-Titus Welliver: Bosch alum set to lead potential CBS spinoff of The Equalizer.
-Juani Feliz: Cast as lead alongside Welliver in potential Equalizer spinoff.
+Titus Welliver: Bosch alum, joining The Equalizer for potential spinoff, playing Hudson Reed.
+Juani Feliz: Cast alongside Welliver, playing Samantha Reed, trained weapons expert with mysterious past.
 
 Posted Date: 2025-04-04.
 
@@ -32,14 +32,14 @@ Feliz recently recurred on Tracy Oliver’s Amazon television series Harlem Her 
 ---
 
 
-ARTICLE TITLE: Sophina Brown, Jeff Pierre & Cedric Joe Round Out Series Regular Cast Of Courtney A. Kemp’s ‘Nemesis’
+ARTICLE TITLE: Sophina Brown, Jeff Pierre & Cedric Joe Round Out Series Regular Cast Of Courtney A. Kemp’s ‘Nemesis’.
 A-TIER ACTORS: []
 B-TIER ACTORS: [Sophina Brown, Jeff Pierre, Cedric Joe]
 
 BLURBS:
-Sophina Brown: Joining 'Nemesis' as Charlie, known for roles in 'Twenties', 'Kindred'.
-Jeff Pierre: Cast as Malik Jacobs in 'Nemesis', previously in 'Walker', 'Mercy'.
-Cedric Joe: Will play Noah Stiles in 'Nemesis', starred in 'Space Jam: A New Legacy'.
+Sophina Brown: Joining 'Nemesis' as Charlie, previously seen in 'Twenties', 'Kindred'.
+Jeff Pierre: Cast as Malik Jacobs in 'Nemesis', known for 'Walker', 'Mercy'.
+Cedric Joe: Will play Noah Stiles in 'Nemesis', starred in 'Space Jam: A New Legacy', 'Women of the Movement'.
 
 Posted Date: 2025-04-04.
 
@@ -68,11 +68,11 @@ A-TIER ACTORS: [Christopher Gorham]
 B-TIER ACTORS: []
 
 BLURBS:
-Christopher Gorham: Known for roles in "Covert Affairs" and "The Lincoln Lawyer," Gorham joins CBS comedy as guest star.
+Christopher Gorham: Known for roles in 'Covert Affairs', 'The Lincoln Lawyer', joining 'Georgie & Mandy's First Marriage' as guest star.
 
 Posted Date: 2025-04-04.
 
-TAG: (CBS COMEDY SEQUEL)
+TAG: (CBS COMEDY FROM BIG BANG THEORY CREATORS)
 FULL ARTICLE TEXT:
 Christopher Gorham (Covert Affairs, The Lincoln Lawyer) is set to guest star in the CBS comedy Georgie & Mandy’s First Marriage.
 
@@ -92,19 +92,33 @@ Gorham most recently appeared on the CBS hit series Matlock and recurred in the 
 ---
 
 
+ARTICLE TITLE: Jesse Armstrong’s HBO Movie ‘Mountainhead’ Releases First-Look Images And Sets Premiere Date
+Jason Schwartzman: 0.0
+Cory Michael Smith: 0.0
+Ramy Youssef: 0.0
+Hadley Robinson: 0.0
+Andy Daly: 0.0
+Ali Kinkade: 0.0
+Daniel Oreskes: 0.0
+David Thompson: 0.0
+Amie MacKenzie: 0.0
+Ava Kostia: 0.0
+
 ARTICLE TITLE: Jesse Armstrong’s HBO Movie ‘Mountainhead’ Releases First-Look Images And Sets Premiere Date.
 A-TIER ACTORS: [Steve Carell]
-B-TIER ACTORS: [Jason Schwartzman, Cory Michael Smith, Ramy Youssef]
+B-TIER ACTORS: [Jason Schwartzman, Cory Michael Smith, Ramy Youssef, Hadley Robinson, Andy Daly]
 
 BLURBS:
-Steve Carell: Stars in Jesse Armstrong's new film 'Mountainhead'.
+Steve Carell: Stars in Jesse Armstrong's HBO movie 'Mountainhead'.
 Jason Schwartzman: Cast in Armstrong's 'Mountainhead'.
-Cory Michael Smith: Joins the cast of 'Mountainhead'.
-Ramy Youssef: Featured in HBO's upcoming film 'Mountainhead'. 
+Cory Michael Smith: Joins the cast of HBO's 'Mountainhead'.
+Ramy Youssef: Featured in Armstrong's new film 'Mountainhead'.
+Hadley Robinson: Part of the supporting cast in 'Mountainhead'.
+Andy Daly: Included in the cast of HBO's 'Mountainhead'.
 
 Posted Date: 2025-04-04.
 
-TAG: (HBO ARMSTRONG DIRECTORIAL DEBUT)
+TAG: (HBO DIRECTORIAL DEBUT FROM EMMY-WINNING SUCCESSION CREATOR)
 FULL ARTICLE TEXT:
 HBO on Friday released the first images from Jesse Armstrong‘s movie Mountainhead, the follow-up project to his hit series Succession. The film, marking Armstrong’s feature directorial debut, is now set to premiere May 31 on HBO and stream on Max as it wraps production this week in Park City, Utah.
 
@@ -124,17 +138,17 @@ Here are more stills from Mountainhead:
 ---
 
 
-ARTICLE TITLE: Pierce Brosnan Says Aaron Taylor-Johnson “Would Be Great” As 007
+ARTICLE TITLE: Pierce Brosnan Says Aaron Taylor-Johnson “Would Be Great” As 007.
 A-TIER ACTORS: [Pierce Brosnan]
 B-TIER ACTORS: [Aaron Taylor-Johnson]
 
 BLURBS:
-Pierce Brosnan: Brosnan praised Taylor-Johnson, suggesting he'd be a good fit for James Bond.
-Aaron Taylor-Johnson: Brosnan's praise fuels speculation that Taylor-Johnson could be the next 007.
+Pierce Brosnan: Brosnan praises Aaron Taylor-Johnson as a potential successor in the 007 franchise.
+Aaron Taylor-Johnson: Brosnan suggests Taylor-Johnson as a potential new James Bond.
 
 Posted Date: 2025-04-04.
 
-TAG: (007 FRANCHISE AMAZON MGM)
+TAG: (007 FRANCHISE AMAZON MGM STUDIOS)
 FULL ARTICLE TEXT:
 Although Daniel Craig might not have much to say on the topic, Pierce Brosnan has a good idea for who should take over their lead role in the 007 franchise.
 
@@ -157,16 +171,16 @@ After announcing that Amy Pascal and David Heyman will produce the next film in 
 
 
 ARTICLE TITLE: Naomi Baker & Jay Reeves To Lead New Tyler Perry Netflix Drama Feature ‘Doing Life’.
-A-TIER ACTORS: 
-B-TIER ACTORS: Naomi Baker, Jay Reeves, Tamberla Perry, Karen Obilom, Jasmine Sargent, Danielle Moné Truitt
+A-TIER ACTORS: []
+B-TIER ACTORS: [Naomi Baker, Jay Reeves, Tamberla Perry, Karen Obilom, Jasmine Sargent, Danielle Moné Truitt]
 
 BLURBS:
-Naomi Baker: Leading new Tyler Perry Netflix drama 'Doing Life'
-Jay Reeves: Co-leading 'Doing Life', previously in 'The Six Triple Eight'
-Tamberla Perry: Part of 'Doing Life' ensemble, known from 'Brilliant Minds'
-Karen Obilom: Featured in 'Doing Life', previously in 'Doom Patrol'
-Jasmine Sargent: Cast in 'Doing Life', known from 'Dynasty'
-Danielle Moné Truitt: Part of 'Doing Life', known from 'Law & Order: Organized Crime'
+Naomi Baker: Leading new Tyler Perry Netflix drama 'Doing Life'.
+Jay Reeves: Co-leads in 'Doing Life', previously in 'The Six Triple Eight'.
+Tamberla Perry: Joins ensemble cast of 'Doing Life', known from 'Brilliant Minds'.
+Karen Obilom: Part of 'Doing Life' cast, previously in 'Doom Patrol'.
+Jasmine Sargent: Joins 'Doing Life', known from 'Dynasty'.
+Danielle Moné Truitt: Cast in 'Doing Life', previously in 'Law & Order: Organized Crime'.
 
 Posted Date: 2025-04-03.
 
@@ -209,9 +223,9 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Abigail Spencer, Holt McCallany, Lucas Till]
 
 BLURBS:
-Abigail Spencer: Known for roles in 'Suits', 'Mad Men', 'Grey’s Anatomy'. Recently produced 'The Actor'.
-Holt McCallany: Acclaimed for 'Mindhunter', returns to Netflix in 'The Waterfront'. Set to direct 'The Star Maker'.
-Lucas Till: Known for 'MacGyver', will star in Netflix's 'The Abandons'. Played Havok in 'X-Men' films.
+Abigail Spencer: Known for roles in 'Suits', 'Mad Men', 'Grey’s Anatomy', she'll portray Dana in 'Clean Hands'.
+Holt McCallany: Acclaimed for 'Mindhunter', he'll play Maryland Congressman David Trone in 'Clean Hands'.
+Lucas Till: Known for 'MacGyver', he'll play Sheriff’s Deputy Dormer in 'Clean Hands'.
 
 Posted Date: 2025-04-03.
 
@@ -242,7 +256,7 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Maika Monroe]
 
 BLURBS:
-Maika Monroe: Recently starred in "Longlegs" with Nicolas Cage, will star in "The Hand That Rocks the Cradle" remake.
+Maika Monroe: Recently led "Reminders of Him," now joins "Place to Be." Known for commanding major motion pictures.
 
 Posted Date: 2025-04-03.
 
@@ -271,9 +285,9 @@ A-TIER ACTORS: [Alec Baldwin]
 B-TIER ACTORS: [Michael Boatman, Karen Allen]
 
 BLURBS:
-Alec Baldwin: Oscar nominee, known for roles in films like Rust and Supercell.
-Michael Boatman: Known for TV work, recently in Paramount+'s The Good Fight.
-Karen Allen: Known for classic films, including Indiana Jones franchise, recent work in Unsinkable.
+Alec Baldwin: Oscar nominee, recently seen in films like Rust and Supercell.
+Michael Boatman: Known for his work in TV, recently starring on Paramount+'s The Good Fight.
+Karen Allen: Known for her work in numerous classic films, including multiple installments of the Indiana Jones franchise.
 
 Posted Date: 2025-04-03.
 
@@ -391,7 +405,7 @@ A-TIER ACTORS: []
 B-TIER ACTORS: [Jonathan Tucker]
 
 BLURBS:
-Jonathan Tucker: Veteran of Westworld, Justified, Snowfall and Netflix’s Echoes.
+Jonathan Tucker: Joins Netflix's 'I Will Find You' as Police Sergeant Adam Mackenzie, a pivotal role in the series.
 
 Posted Date: 2025-04-02.
 
@@ -418,12 +432,12 @@ A-TIER ACTORS: [Julia Stiles, David Cross]
 B-TIER ACTORS: [Alex Moffat, Stephen Root, Caroline Rhea, Mena Suvari]
 
 BLURBS:
-Julia Stiles: Principal cast in Kevin Cate's debut feature, 'Unbearable Christmas'.
-David Cross: Cast in indie comedy 'Unbearable Christmas', known for 'Arrested Development'.
-Alex Moffat: Featured in 'Unbearable Christmas', recognized from SNL.
-Stephen Root: Joins the cast of 'Unbearable Christmas', known for 'Barry'.
-Caroline Rhea: Cast in 'Unbearable Christmas', remembered as 'Sabrina the Teenage Witch'.
-Mena Suvari: Joins the ensemble of 'Unbearable Christmas', known for 'American Beauty'.
+Julia Stiles: Starring in Kevin Cate's debut feature, 'Unbearable Christmas'.
+David Cross: Part of the principal cast in 'Unbearable Christmas'.
+Alex Moffat: Featured in the ensemble of 'Unbearable Christmas'.
+Stephen Root: Joins the cast of the holiday road trip comedy.
+Caroline Rhea: Cast in the indie comedy 'Unbearable Christmas'.
+Mena Suvari: Joins the cast of Kevin Cate's debut feature.
 
 Posted Date: 2025-04-02.
 
